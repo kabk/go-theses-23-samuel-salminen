@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+@font-face {
+  font-family: "Synt Variable";
+  src: url("../fonts/ABCSyntVariable-Regular.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Synt";
+  font-weight: normal;
+  src: url("../fonts/ABCSynt-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: normal;
+  src: url("../fonts/Arial.ttf") format("truetype");
+}
+
+
+
+
+/* VARIABLES */
+
+:root {
+  /* Color settings */
+  --color-background: #f8f8ff;
+  --color-text: 000;
+  --color-text-link: rgba(70,0,0,0.625);
+  --color-text-link-hover: rgba(0,0,0,0.2);
+  --color-theme-1: rgba(150,175,255,0.8);
+  --color-theme-2: rgba(255,100,0,0.8);
+  --color-theme-3: rgba(255,125,255,0.8);
+  --color-theme-4: rgba(255,25,200,0.8);
+  --color-theme-5: rgba(195,170,120,0.8);
+  /* Font settings */
+  --font-family: 'Synt Variable';
+  --font-size: 22px;
+  /* Margins settings */
+  --margin: 0;
+}
+
+
+
+/* GENERAL STYLES */
+
+html {
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+body {
+  position:relative;
+  background-color: var(--color-background);
+  font: var(--font-size) var(--font-family);
+  color: var(--color-text);
+  width:100%;
+  height:auto;
+  overflow-y:auto;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ef2a30;
+}
+
+a:focus-visible {
+  color: var(--color-text-link-hover);
+  text-decoration: none;
+}
+
+.cover {
+    width: 100vW;
+    margin-top: 10vH;
+}
+
+h1{
+  /* h1 style */
+}
+
+h2{
+  /* h2 style */
+  display:block;
+  vertical-align: center;
+  width:auto;
+  text-align: left;
+  width:auto;
+  min-width: 50%;
+  height:auto;
+  font-weight: normal;
+  border-radius:2rem;
+  font-size:2rem;
+  line-height: 110%;
+
+*/
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: transform 125ms ease-in-out 0ms;
+  -moz-transition: transform 125ms ease-in-out 0ms;
+  transition: transform 125ms ease-in-out 0ms;
+
+}
+
+h2:hover{
+
+}
+
+
+
+h3{
+    display:block;
+    vertical-align: center;
+    width:auto;
+    text-align: left;
+    width:auto;
+    min-width: 50%;
+    height:auto;
+    font-weight: normal;
+    border-radius:1rem;
+    font-size:1.2rem;
+    padding-top:1.5rem;
+}
+
+h4, h5, h6{
+  /* h4-h5-h6 style */
+}
+
+p {
+  /* paragraph style */
+  font-size:0.875rem;
+  line-height:125%;
+  hyphens: auto
+}
+
+ol, ul{
+  /* ordered list and unordered list styles */
+}
+
+.navigation {
+    width: 100vW;
+    height: 60vH;
+}
+
+.toc {
+    position: relative;
+    width:50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.abstract {
+    position: relative;
+    width: 49%;
+    height: 100%;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.quote {
+ font-variation-settings: "slnt" -20;
+ background-color: #009834;
+}
+
+.highlight {
+ font-variation-settings: "slnt" -20;
+ transition: font-variation-settings 0.3s ease-in-out;
+}
+
+.highlight:hover {
+font-variation-settings: "slnt" -32;
+}
+
+.toponym {
+
+     font-family: 'Arial';
+     font-size: 0.78rem;
+     color: #009834;
+}
+
+.red {
+    color: #ef2a30;
+}
+
+.green {
+    color: #009834;
+}
+
+.footnotes {
+    width:21vW;
+    position: absolute;
+    right:0;
+    padding: 2vW;
+}
+
+.footnotes p {
+    font-size:0.6rem;
+    text-align: justify;
+    color: #009834;
+    hyphens: auto
+}
+
+.first {
+    top:580vH;
+}
+
+.second {
+    top:692vH;
+}
+
+.third {
+    top: 737vH;
+}
+.figures {
+    width:21vW;
+    position: absolute;
+    top:523vH;
+    left:0;
+    padding: 2vW;
+}
+
+.figures img {
+    width: 100%;
+}
+
+.figures p {
+    font-size:0.6rem;
+    text-align: justify;
+    color: #ef2a30;
+    hyphens: auto
+}
+
+hr{
+  /* horizontal rule style */
+  border:none;
+  border-bottom:0.25rem dotted var(--color-text);
+}
+
+
+
+/* PAGE STYLES */
+
+/* page structure */
+
+div.page-wrapper {
+  /* the element that 'wraps' everything */
+  padding: var(--margin);
+}
+
+/* navigation */
+
+header{
+  text-align: center;
+}
+
+header h1{
+  display:block;
+  font-size:12vw;
+  line-height:100%;
+  font-weight:normal;
+  width:100%;
+  padding:0;
+  margin-top: 3vH;
+  background-color: transparent;
+  box-sizing:border-box;
+  font-variation-settings: "slnt" -32;
+  position: fixed;
+  top:0;
+  z-index: 1;
+}
+
+header p{
+  color:var(--color-text-link);
+  font-size:2rem;
+  margin:0;padding:0;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+
+header p strong{
+  font-weight:normal;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--color-text-link);
+  border-bottom: 0.25rem solid var(--color-text-link);
+  box-sizing: border-box;
+}
+
+nav{
+  margin-top: 2vH;
+  display: inline;
+}
+
+nav ol, nav ul{
+  font-size:1.5rem;
+  letter-spacing: 0rem;
+  padding-left:0;
+}
+
+nav ol li, nav ul li{
+  list-style-type: none;
+  margin:0;padding:0;
+}
+
+nav ol li a, nav ul li a{
+  color:black;
+  letter-spacing: -0.125rem;
+  padding-left:0;
+  -webkit-transition: letter-spacing 100ms ease-in-out 0ms, padding 100ms ease-in-out 0ms;
+  -moz-transition: letter-spacing 100ms ease-in-out 0ms, padding 100ms ease-in-out 0ms;
+  transition: letter-spacing 100ms ease-in-out 0ms, padding 100ms ease-in-out 0ms;
+}
+
+nav ol li a:hover, nav ul li a:hover{
+  color: #ef2a30;
+  padding-left:0.75rem;
+}
+
+nav ol li a:hover, nav ul li a:hover{
+  color: #ef2a30;
+  padding-left:0.75rem;
+}
+
+/* content */
+
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align:justify;
+  padding-left:25%;
+  padding-right:25%;
+  box-sizing: content-box;
+  margin-top: 10vH;
+}
+
+details{
+  border: 2px solid var(--color-text-link-hover);
+  padding: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+summary{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+figure img{
+  cursor: zoom-in;
+  -webkit-transition: all 250ms ease-in-out 0ms;
+  -moz-transition: all 250ms ease-in-out 0ms;
+  transition: all 250ms ease-in-out 0ms;
+  filter: grayscale(20%) brightness(40%) saturate(200%) hue-rotate(-90deg) contrast(200%);
+}
+
+figure img:hover{
+  filter: grayscale(0%) brightness(100%) saturate(150%) hue-rotate(20deg) contrast(110%);
+}
+
+figcaption p{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer{
+    height: 6vH;
+    width: 100vW;
+  position: fixed;
+  bottom: 0;
+}
+
+select {
+    font-size: 0.7rem;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    right: 2vW;
+    bottom: 3vH;
+    background-color: #f8f8ff;
+}
+
+
+select:focus {
+    outline:none;
+}
+
+.description {
+    position: absolute;
+    left: 2vW;
+    bottom: 0vH;
+    font-size: 0.7rem;
+    background-color: #f8f8ff;
+
+}
+
+
+/* GENERAL USABILITY */
+
+/* hide desktop mobile etc */
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* responsive typeface */
+
+@media (max-width: 298px) {
+  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 299px) and (max-width: 339px) {
+  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 340px) and (max-width: 439px) {
+  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 440px) and (max-width: 599px) {
+  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 600px) and (max-width: 779px) {
+  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 780px) and (max-width: 992px) {
+  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1201px) and (max-width: 1319px) {
+  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1320px) and (max-width: 1619px) {
+  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1620px) and (max-width: 1879px) {
+  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1880px) {
+  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
+}
+
+
+
+/* website media queries */
+
+@media (max-width: 779px) {
+
+  /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
+  /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
+
+  h2{
+    /* h2 style */
+    width:85vW;
+    height:25vw;
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  p{
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  header p{
+    font-size:1.5rem;
+  }
+
+  nav ol, nav ul{
+    font-size:2rem;
+  }
+
+  nav ol li a, nav ul li a{
+    letter-spacing: -0.0625rem;
+  }
+
+  main{
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+  /* utilities */
+
+  .desktop{display:none!important;}
+  .mobile{display:block;}
+
+}
+
+
+
+@media (max-width: 339px) {
+
+  /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+}
+
+
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+  /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+}
+
+
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* use this query to apply style for 'small' desktop screens */
+
+}
