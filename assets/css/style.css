@@ -83,6 +83,19 @@ a:focus-visible {
     margin-top: 10vH;
 }
 
+
+.sidenote {
+    font-family: "Synt";
+    font-size:0.6rem;
+    text-align: justify;
+    color: #009834;
+    hyphens: auto;
+    line-height: 120%;
+    width:21vW;
+    right:0;
+    padding: 2vW;
+}
+
 h1{
   /* h1 style */
 }
@@ -224,7 +237,7 @@ font-variation-settings: "slnt" -32;
 .figures {
     width:21vW;
     position: absolute;
-    top:523vH;
+    top:683vH;
     left:0;
     padding: 2vW;
 }
@@ -274,7 +287,7 @@ header h1{
   background-color: transparent;
   box-sizing:border-box;
   font-variation-settings: "slnt" -32;
-  position: fixed;
+  position: absolute;
   top:0;
   z-index: 1;
 }
@@ -485,7 +498,9 @@ select:focus {
 
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
-
+  .sidenote {
+    display: none;
+  }
   h2{
     /* h2 style */
     width:85vW;
