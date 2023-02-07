@@ -100,7 +100,7 @@ h1{
   /* h1 style */
 }
 
-h2{
+.chapter {
   /* h2 style */
   display:block;
   vertical-align: center;
@@ -113,6 +113,8 @@ h2{
   border-radius:2rem;
   font-size:2rem;
   line-height: 110%;
+  margin-top: 10vH;
+  margin-bottom:5vH;
 
 */
   -webkit-transform: rotate(0deg);
@@ -131,7 +133,7 @@ h2:hover{
 
 
 
-h3{
+.sub{
     display:block;
     vertical-align: center;
     width:auto;
@@ -143,6 +145,9 @@ h3{
     border-radius:1rem;
     font-size:1.2rem;
     padding-top:1.5rem;
+    margin-top: 5vH;
+    margin-bottom:5vH;
+    line-height: 1.5rem;
 }
 
 h4, h5, h6{
@@ -236,17 +241,14 @@ font-variation-settings: "slnt" -32;
 }
 .figures {
     width:21vW;
-    position: absolute;
-    top:683vH;
-    left:0;
-    padding: 2vW;
+
 }
 
 .figures img {
     width: 100%;
 }
 
-.figures p {
+.figures span {
     font-size:0.6rem;
     text-align: justify;
     color: #ef2a30;
@@ -274,6 +276,11 @@ div.page-wrapper {
 
 header{
   text-align: center;
+  top:0;
+  transition: top 0.2s ease-in-out;
+   position: fixed;
+   width:100%;
+
 }
 
 header h1{
@@ -287,9 +294,11 @@ header h1{
   background-color: transparent;
   box-sizing:border-box;
   font-variation-settings: "slnt" -32;
-  position: absolute;
-  top:0;
   z-index: 1;
+}
+
+.nav-up {
+    top: -25vH;
 }
 
 header p{

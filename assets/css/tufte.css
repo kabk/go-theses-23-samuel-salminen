@@ -14,11 +14,38 @@
     float: right;
     clear: right;
     margin-right: -50%;
-    margin-top: -3vH;
+    margin-top: -3.2vH;
     margin-bottom: 0;
     vertical-align: baseline;
     position: relative;
 }
+
+.caption {
+    width: 21vW;
+    float: left;
+    clear: left;
+    margin-left: -50%;
+    margin-top: -3.2vH;
+    margin-bottom: 0;
+    vertical-align: baseline;
+    position: relative;
+    font-family: "Synt";
+    font-size:0.6rem;
+    text-align: justify;
+    color: #ef2a30;
+    hyphens: auto;
+    line-height: 120%;
+    width:21vW;
+    right:0;
+    padding: 2vW;
+}
+
+.caption img {
+    width: 21vW;
+    margin-bottom:1vH;
+}
+
+
 
 .sidenote-number {
     counter-increment: sidenote-counter;
@@ -33,14 +60,15 @@
 
 .sidenote-number:after {
     content: counter(sidenote-counter);
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     top: -0.3rem;
+    left: 0.1rem;
 }
 
 .sidenote:before {
     content: counter(sidenote-counter) " ";
-    font-size: 0.4rem;
-    top: -0.3rem;
+    font-size: 0.5rem;
+    top: -0.2rem;
 }
 
 blockquote .sidenote,
