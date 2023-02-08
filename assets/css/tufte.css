@@ -20,30 +20,6 @@
     position: relative;
 }
 
-.caption {
-    width: 21vW;
-    float: left;
-    clear: left;
-    margin-left: -50%;
-    margin-top: -3.2vH;
-    margin-bottom: 0;
-    vertical-align: baseline;
-    position: relative;
-    font-family: "Synt";
-    font-size:0.5rem;
-    text-align: justify;
-    color: #ef2a30;
-    hyphens: auto;
-    line-height: 120%;
-    width:21vW;
-    right:0;
-    padding: 2vW;
-}
-
-.caption img {
-    width: 21vW;
-    margin-bottom:1vH;
-}
 
 
 

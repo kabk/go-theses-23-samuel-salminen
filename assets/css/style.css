@@ -20,8 +20,47 @@
   font-weight: normal;
   src: url("../fonts/Arial.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Quadrant";
+  font-weight: normal;
+  src: url("../fonts/QuadrantText-Regular.otf") format("opentype");
+}
 
+@font-face {
+  font-family: "Kazimir";
+  font-weight: normal;
+  src: url("../fonts/KazimirRegular.otf") format("opentype");
+}
 
+@font-face {
+  font-family: "Sometimes";
+  font-weight: normal;
+  src: url("../fonts/BLSometimesNeue-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Murrayfield";
+  font-weight: normal;
+  src: url("../fonts/Murrayfield-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Rosart";
+  font-weight: normal;
+  src: url("../fonts/Rosart-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rosart-Bold";
+  font-weight: normal;
+  src: url("../fonts/Rosart-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rosart-Italic";
+  font-weight: normal;
+  src: url("../fonts/Rosart-RegularItalic.ttf") format("truetype");
+}
 
 
 /* VARIABLES */
@@ -38,7 +77,7 @@
   --color-theme-4: rgba(255,25,200,0.8);
   --color-theme-5: rgba(195,170,120,0.8);
   /* Font settings */
-  --font-family: 'Synt Variable';
+  --font-family: 'Rosart';
   --font-size: 22px;
   /* Margins settings */
   --margin: 0;
@@ -62,6 +101,35 @@ body {
   width:100%;
   height:auto;
   overflow-y:auto;
+}
+.caption {
+    width: 21vW;
+    float: left;
+    clear: left;
+    margin-left: -50%;
+    margin-top: -3.2vH;
+    margin-bottom: 0;
+    vertical-align: baseline;
+    position: relative;
+    font-family: "Rosart";
+    font-size:0.5rem;
+    text-align: justify;
+    color: #ef2a30;
+    hyphens: auto;
+    line-height: 120%;
+    width:21vW;
+    right:0;
+    padding: 2vW;
+}
+
+.term {
+    color: #ef2a30;
+    font-family: 'Rosart-Bold';
+}
+
+.caption img {
+    width: 21vW;
+    margin-bottom:1vH;
 }
 
 #menuToggle {
@@ -173,14 +241,14 @@ body {
 
 #menu li {
     z-index: 4;
-    font-family: "Synt";
+    font-family: "Rosart";
     font-size:0.8rem;
     line-height: 120%;
     margin-bottom: 1.8vH;
 
 }
 #menuToggle a {
-    font-family: "Synt";
+    font-family: "Rosart";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -315,14 +383,14 @@ text-decoration: underline;
 
 #menu2 li {
     z-index: 4;
-    font-family: "Synt";
+    font-family: "Rosart";
     font-size:0.6rem;
     line-height: 120%;
     margin-bottom: 1.5vH;
 
 }
 #menuToggle2 a {
-    font-family: "Synt";
+    font-family: "Rosart";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -348,9 +416,19 @@ a:focus-visible {
     margin-top: 10vH;
 }
 
+.references {
+    display: block;
+    columns: 2;
+    width: 96vW;
+    /* height: 200vH; */
+    position: relative;
+    font-size: 0.6rem;
+    padding: 2vW;
+    margin-bottom: 5vH;
+}
 
 .sidenote {
-    font-family: "Synt";
+    font-family: "Rosart";
     font-size:0.5rem;
     text-align: justify;
     color: #009834;
@@ -453,8 +531,12 @@ ol, ul{
 }
 
 .quote {
- font-variation-settings: "slnt" -20;
+ font-family: 'Rosart-Italic';
  background-color: #009834;
+}
+
+.author {
+    font-family: 'Rosart-Bold';
 }
 
 .highlight {
@@ -565,6 +647,7 @@ header h1{
   margin-top: 3vH;
   background-color: transparent;
   box-sizing:border-box;
+  font-family: 'Synt Variable';
   font-variation-settings: "slnt" -32;
 }
 
