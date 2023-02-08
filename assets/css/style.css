@@ -93,7 +93,10 @@ a:focus-visible {
     line-height: 120%;
     width:21vW;
     right:0;
-    padding: 2vW;
+    padding-left: 2vW;
+    padding-right: 2vW;
+    padding-top: 1.5vW;
+    padding-bottom: 1vW;
 }
 
 h1{
@@ -280,6 +283,7 @@ header{
   transition: top 0.2s ease-in-out;
    position: fixed;
    width:100%;
+   z-index: 1;
 
 }
 
@@ -294,7 +298,6 @@ header h1{
   background-color: transparent;
   box-sizing:border-box;
   font-variation-settings: "slnt" -32;
-  z-index: 1;
 }
 
 .nav-up {
@@ -364,7 +367,6 @@ main{
   padding-left:25%;
   padding-right:25%;
   box-sizing: content-box;
-  margin-top: 10vH;
 }
 
 details{
