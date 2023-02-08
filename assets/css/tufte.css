@@ -14,7 +14,7 @@
     float: right;
     clear: right;
     margin-right: -50%;
-    margin-top: -3.2vH;
+    margin-top: -2.6vH;
     margin-bottom: 0;
     vertical-align: baseline;
     position: relative;
@@ -30,7 +30,7 @@
     vertical-align: baseline;
     position: relative;
     font-family: "Synt";
-    font-size:0.6rem;
+    font-size:0.5rem;
     text-align: justify;
     color: #ef2a30;
     hyphens: auto;
@@ -68,7 +68,7 @@
 .sidenote:before {
     content: counter(sidenote-counter) " ";
     font-size: 0.5rem;
-    top: -0.2rem;
+    top: -0.1rem;
 }
 
 blockquote .sidenote,
