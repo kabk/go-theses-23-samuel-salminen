@@ -78,7 +78,7 @@
 
                 <div id="menuToggle2">
 
-                    <input type="checkbox" />
+                    <input id="checkbox" type="checkbox" />
 
                     <span></span>
                     <span></span>
@@ -88,16 +88,16 @@
                     <ul id="menu2">
 
                         <p>Glossary</p>
-                        <li><span class="red">[Dispositif]</span></br>The term, coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physical, and admin-istrative mechanisms and knowledge structures which enhance and maintain the exercise of power within the social body.</li>
-                        <li><span class="red">[Endonym]</span></br>Native geographical names in local language and script.</li>
-                        <li><span class="red">[Exonym]</span></br>Non-native geographical names established outside the local linguistic community.</li>
-                        <li><span class="red">[Linguicism]</span></br>Ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language.</li>
-                        <li><span class="red">[Memoricide]</span></br>The erasure of the history of one people on order to write that of another people's over it.</li>
-                        <li><span class="red">[Nakba]</span></br>The ethnic cleansing of Palestine in 1948.</li>
-                        <li><span class="red">[Romanization]</span></br>Conversion from a non-Latin script to the Latin writing system.</li>
-                        <li><span class="red">[Toponym]</span></br>Place names or geographical names.</li>
-                        <li><span class="red">[Zionism]</span></br>A Jewish nationalist movement that has had as its goal the creation and support of a Jewish national state in Palestine, the ancient homeland of the Jews (Hebrew: Eretz Yisraʾel, “the Land of Israel”).</li>
-                    
+                        <li><span class="red" id="dispositif">[Dispositif]</span></br>The term, coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physical, and admin-istrative mechanisms and knowledge structures which enhance and maintain the exercise of power within the social body.</li>
+                        <li><span class="red" id="endonym">[Endonym]</span></br>Native geographical names in local language and script.</li>
+                        <li><span class="red" id="exonym">[Exonym]</span></br>Non-native geographical names established outside the local linguistic community.</li>
+                        <li><span class="red" id="linguicism">[Linguicism]</span></br>Ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language.</li>
+                        <li><span class="red" id="memoricide">[Memoricide]</span></br>The erasure of the history of one people on order to write that of another people's over it.</li>
+                        <li><span class="red" id="nakba">[Nakba]</span></br>The ethnic cleansing of Palestine in 1948.</li>
+                        <li><span class="red" id="romanization">[Romanization]</span></br>Conversion from a non-Latin script to the Latin writing system.</li>
+                        <li><span class="red" id="toponym">[Toponym]</span></br>Place names or geographical names.</li>
+                        <li><span class="red" id="zionism">[Zionism]</span></br>A Jewish nationalist movement that has had as its goal the creation and support of a Jewish national state in Palestine, the ancient homeland of the Jews (Hebrew: Eretz Yisraʾel, “the Land of Israel”).</li>
+
                         </br></br>
 
 
@@ -155,7 +155,7 @@
                 process of naming the globe — and by doing so owning and controlling the narratives of those environments. Depending on whether someone is a hunter-gatherer, farmer, navigator, merchant, conqueror, settler, dreamer, survivor,
                 engineer,
                 or administrator, this can take on quite various forms. Regardless of whether someone is colonizing a frontier, reclaiming ancestral lands or erasing symbols of authoritarian regimes, whether or not they speak a language with written
-                characters, the naming operation is never ultimate or exclusive; but it plays a key role in structuring reality (Giraut & Houssay-Holzschuch, 2022). <span class="highlight">Toponyms</span><label class="margin-toggle sidenote-number"></label>
+                characters, the naming operation is never ultimate or exclusive; but it plays a key role in structuring reality (Giraut & Houssay-Holzschuch, 2022). <a href="#toponym" class="highlight" onclick="myValidation()">Toponyms</a><label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the geographical features of our planet.
                 </span> — also known as place names or geographical
                 names — play an important role in constructing historical memories, identifying the locations that are absorbed by those memories and granting them a tangible presence. They are a cultural element of shared public capital and
@@ -234,7 +234,7 @@
                     to us all.
                 </span>
                 — served
-                as a starting point for accelerated efforts to destroy the diverse cultural heritage of the land by the Israeli state; a toponymic project employing extensive memoricide
+                as a starting point for accelerated efforts to destroy the diverse cultural heritage of the land by the Israeli state; a toponymic project employing extensive <a onclick="myValidation()" href="#memoricide">memoricide</a>
                 <label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Memoricide: “The ‘erasure of the history of one people in order to write that of another people’s over it’, the continuous imposition of a Zionist layer and national pattern over everything that had been
                     Palestinian” (Pappé, 2006).
@@ -451,7 +451,7 @@
         <footer>
 
             <p class="description">
-                <span class="highlight">Linguistic Hegemony in Geographical Naming</span> ● Bachelor Thesis [Graphic Design] by Samuel Salminen, 2023</p>
+                Toponymicide — <span class="highlight">Linguistic Hegemony in Geographical Naming </span>● <span id="current">Current section</span></p>
 
             <!-- <select id="framework" onchange="getOption()">
                 <option value="ipa">International Phonetic Alphabet</option>
@@ -485,6 +485,54 @@
             }
 
         }
+
+        function myValidation() {
+            $("#checkbox").prop("checked", true);
+        }
+
+
+        let ch0 = window.scrollY + document.querySelector('#chapter-0').getBoundingClientRect().top;
+        let ch1 = window.scrollY + document.querySelector('#chapter-1').getBoundingClientRect().top;
+        let ch1_1 = window.scrollY + document.querySelector('#chapter-1-1').getBoundingClientRect().top;
+        let ch1_2 = window.scrollY + document.querySelector('#chapter-1-2').getBoundingClientRect().top;
+        let ch1_3 = window.scrollY + document.querySelector('#chapter-1-3').getBoundingClientRect().top;
+        let ch2 = window.scrollY + document.querySelector('#chapter-2').getBoundingClientRect().top;
+        let ch2_1 = window.scrollY + document.querySelector('#chapter-2-1').getBoundingClientRect().top;
+        let ch2_2 = window.scrollY + document.querySelector('#chapter-2-2').getBoundingClientRect().top;
+        let ch2_3 = window.scrollY + document.querySelector('#chapter-2-3').getBoundingClientRect().top;
+        let ch3 = window.scrollY + document.querySelector('#chapter-3').getBoundingClientRect().top;
+        let ch3_1 = window.scrollY + document.querySelector('#chapter-3-1').getBoundingClientRect().top;
+
+        addEventListener("scroll", (event) => {
+            let top = window.pageYOffset;
+            let section = document.getElementById("current");
+
+
+            if (top < ch1) {
+                section.textContent = "Geopolitics of Toponymic Inscription";
+            } else if (top > ch1 && top < ch1_1) {
+                section.textContent = "The Cartographic Cleansing of Palestine";
+            } else if (top > ch1_1 && top < ch1_2) {
+                section.textContent = "Territorial Entitlement";
+            } else if (top > ch1_2 && top < ch1_3) {
+                section.textContent = "The Cultural Arena";
+            } else if (top > ch1_3 && top < ch2) {
+                section.textContent = "A Comparative Reading of Palestinian and Israeli Toponyms";
+            } else if (top > ch2 && top < ch2_1) {
+                section.textContent = "A Rose by Any Other Name Would Smell as Sweet?";
+            } else if (top > ch2_1 && top < ch2_2) {
+                section.textContent = "The Great Toponymic Divide";
+            } else if (top > ch2_2 && top < ch2_3) {
+                section.textContent = "Tamed Dragon's Teeth";
+            } else if (top > ch2_3 && top < ch3) {
+                section.textContent = "Transliteration and Homogenization";
+            } else if (top > ch3 && top < ch3_1) {
+                section.textContent = "Infrapolitics in Geography";
+            } else if (top > ch3_1) {
+                section.textContent = "Toponymic Resistance";
+            }
+        });
+
 
     </script>
 

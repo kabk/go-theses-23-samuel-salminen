@@ -364,6 +364,11 @@ a:focus-visible {
     padding-bottom: 1vW;
 }
 
+a {
+    text-decoration: none;
+    color:#ef2a30;
+}
+
 h1{
   /* h1 style */
 }
