@@ -427,6 +427,15 @@ a:focus-visible {
     margin-bottom: 5vH;
 }
 
+.references p {
+    font-size: 0.6rem;
+    margin: 0;
+    padding-left: 2rem ;
+  text-indent: -2rem ;
+}
+
+
+
 .sidenote {
     font-family: "Rosart";
     font-size:0.5rem;
@@ -507,7 +516,7 @@ h4, h5, h6{
 
 p {
   /* paragraph style */
-  font-size:0.875rem;
+  font-size:0.8rem;
   line-height:125%;
   hyphens: auto
 }
