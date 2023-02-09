@@ -10,6 +10,26 @@
 }
 
 @font-face {
+  font-family: "Alpina";
+  src: url("../fonts/GT-Alpina-Standard-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlpinaBold";
+  src: url("../fonts/GT-Alpina-Standard-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlpinaMedium";
+  src: url("../fonts/GT-Alpina-Standard-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlpinaItalic";
+  src: url("../fonts/GT-Alpina-Standard-Regular-Italic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Synt";
   font-weight: normal;
   src: url("../fonts/ABCSynt-Regular.otf") format("opentype");
@@ -77,7 +97,7 @@
   --color-theme-4: rgba(255,25,200,0.8);
   --color-theme-5: rgba(195,170,120,0.8);
   /* Font settings */
-  --font-family: 'Rosart';
+  --font-family: 'Alpina';
   --font-size: 22px;
   /* Margins settings */
   --margin: 0;
@@ -111,7 +131,7 @@ body {
     margin-bottom: 0;
     vertical-align: baseline;
     position: relative;
-    font-family: "Rosart";
+    font-family: "Alpina";
     font-size:0.5rem;
     text-align: justify;
     color: #ef2a30;
@@ -124,7 +144,7 @@ body {
 
 .term {
     color: #ef2a30;
-    font-family: 'Rosart-Bold';
+    font-family: 'AlpinaBold';
 }
 
 .caption img {
@@ -241,14 +261,14 @@ body {
 
 #menu li {
     z-index: 4;
-    font-family: "Rosart";
+    font-family: "AlpinaMedium";
     font-size:0.8rem;
     line-height: 120%;
     margin-bottom: 1.8vH;
 
 }
 #menuToggle a {
-    font-family: "Rosart";
+    font-family: "AlpinaMedium";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -383,14 +403,14 @@ text-decoration: underline;
 
 #menu2 li {
     z-index: 4;
-    font-family: "Rosart";
+    font-family: "Alpina";
     font-size:0.6rem;
     line-height: 120%;
     margin-bottom: 1.5vH;
 
 }
 #menuToggle2 a {
-    font-family: "Rosart";
+    font-family: "Alpina";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -425,6 +445,7 @@ a:focus-visible {
     font-size: 0.6rem;
     padding: 2vW;
     margin-bottom: 5vH;
+    border-top: 2px solid black;
 }
 
 .references p {
@@ -437,7 +458,7 @@ a:focus-visible {
 
 
 .sidenote {
-    font-family: "Rosart";
+    font-family: "Alpina";
     font-size:0.5rem;
     text-align: justify;
     color: #009834;
@@ -520,6 +541,10 @@ p {
   line-height:125%;
   hyphens: auto
 }
+.credits {
+    font-size: 0.6rem;
+    text-align: right;
+}
 
 ol, ul{
   /* ordered list and unordered list styles */
@@ -532,25 +557,30 @@ ol, ul{
 
 
 .abstract {
-    position: relative;
-    width: 49%;
-    height: 100%;
-    background-color: yellow;
-    display: inline-block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:justify;
+    padding-left:25%;
+    padding-right:25%;
+    box-sizing: content-box;
+    padding-bottom: 10vH;
 }
 
 .quote {
- font-family: 'Rosart-Italic';
+ font-family: 'AlpinaItalic';
  background-color: #009834;
 }
 
 .author {
-    font-family: 'Rosart-Bold';
+    font-family: 'AlpinaBold';
 }
 
 .highlight {
- font-variation-settings: "slnt" -20;
- transition: font-variation-settings 0.3s ease-in-out;
+    font-family: 'AlpinaItalic';
 }
 
 .highlight:hover {
