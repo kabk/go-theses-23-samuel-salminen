@@ -908,15 +908,48 @@ body, html {
     display: none;
   }
 
-  #menu2, #menu {
+  #menu {
       width: 70vW !important;
-      margin: -98vH 0 0 -1.5vW;
+      margin: -1vH 0 0 -1.5vW;
       padding: 5vW;
-      padding-top: 8vW;
+      padding-top: 15vW;
+  }
+
+  #menu2 {
+      width: 70vW !important;
+      margin: -1vH 0 0 -6.5vW;
+      padding: 5vW;
+      padding-top: 15vW;
   }
 
   #menuToggle, #menuToggle2 {
       width: 70vW !important;
+  }
+
+  #menuToggle2 {
+      top: 1vH;
+      right: 2vW;
+  }
+
+  #menuToggle {
+      top: 1vW;
+      left: 2vW;
+  }
+
+  #menuToggle span, #menuToggle2 span {
+      width: 8vW;
+      height: 0.3vH;
+      margin-bottom: 0.7vH;
+  }
+
+  #menuToggle2 span {
+      right: -61vW;
+      top:0.5vH;
+  }
+
+  #menuToggle span {
+      left: 1vW;
+      top:1vH;
   }
 
   #menu li {
@@ -927,12 +960,42 @@ body, html {
       margin-bottom: 1.8vH;
 
   }
+
+  #menu2 li {
+      font-size: 0.8rem;
+  }
   #menuToggle a {
       font-family: "AlpinaMedium";
       font-variation-settings: "slnt" 0;
       transition: font-variation-settings 0.3s ease-in-out;
       text-decoration: none;
       color: black;
+  }
+
+  #menuToggle input, #menuToggle2 input  {
+      display: block;
+      width: 5vH;
+      height: 5.5vH;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 20;
+      -webkit-touch-callout: none;
+  }
+
+  #menuToggle2 input {
+      top: 0;
+      right: 0;
+
+  }
+
+  footer {
+      width: 84vW;
+      right: 8vW;
+  }
+
+  footer p {
+      text-align: center;
   }
 
   .references {
@@ -951,6 +1014,58 @@ body, html {
       padding-right:3%;
       box-sizing: content-box;
       padding-bottom: 2vH;
+  }
+
+  .green {
+      top: 0 !important;
+      left: 0 !important;
+  }
+
+  .red {
+      top: 0 !important;
+      left: 0 !important;
+  }
+
+  .term {
+      left:0 !important;
+      top: 0 !important;
+  }
+
+  .chapter {
+      margin-top: 7vH;
+      margin-bottom: 3vH;
+  }
+
+  .sub {
+      margin-top: 3vH;
+      margin-bottom: 3vH;
+  }
+
+  header{
+    text-align: center;
+    top:0;
+    transition: top 0.2s ease-in-out;
+     position: fixed;
+     width:100%;
+     z-index: 1;
+     height:5.5vH;
+     background-color: white;
+     border-bottom: 2px solid black;
+
+  }
+
+  header h1{
+    display:block;
+    font-size:9vw;
+    line-height:100%;
+    font-weight:normal;
+    width:100%;
+    padding:0;
+    margin-top: 1vH;
+    background-color: transparent;
+    box-sizing:border-box;
+    font-family: 'Synt Variable';
+    font-variation-settings: "slnt" -32;
   }
 
   h2{
