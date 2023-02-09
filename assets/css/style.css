@@ -153,8 +153,8 @@ body {
 }
 
 .fullwidth {
-    width: 200%;
-transform: translate(-25%, 0);
+    width: 192%;
+transform: translate(-24%, 0);
 margin-bottom: 0.5vH;
 }
 
