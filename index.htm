@@ -458,7 +458,39 @@
 
 </p>
         </main>
+        <div class="line"></div>
+        <button id="footnotes-m" class="collapsible">Notes</button>
+        <div class="mobile-footnotes">
 
+        <p>[1] Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the geographical features of our planet.</p>
+        <p>[2] ‘With 2022 Deadliest Year in Israel-Palestine Conflict, Reversing Violent Trends Must Be International Priority, Middle East Coordinator Tells Security Council’, United Nations, 18 January 2023</p>
+        <p>[3] ‘Benjamin Netanyahu returns as PM of Israel’s most far-right gov’t’, Al Jazeera, 29 December 2022</p>
+        <p>[4] ‘Germany just took a drastic step toward criminalizing Palestine activism’, Nederlands Palestina Komitee, 21 December 2022</p>
+        <p>[5] In Reassemblage (1982) by Trinh T. Minh-ha</p>
+        <p>[6] It is fair, however, to question the adequacy of the term ‘Nakba’. Referring to the ethnic cleansing of Palestine as a catastrophe or disaster suggests a sense of passivity. We regard earthquakes and tsunamis as disasters, of which no-body is responsible for and everybody is a victim of. The same cannot be said about the events of 1948—the ethnic cleansing was a crime; the roles of criminal and victim are abundantly clear and know to us all. “Insisting on describ-ing what happened to the Palestinians in 1948 and ever since as a crime and not just a tragedy or even a catastrophe is essential if past evils are to be rectified” (Pappé, 2015).</p>
+        <p>[7] Memoricide: “The ‘erasure of the history of one people in order to write that of another people’s over it’, the contin-uous imposition of a Zionist layer and national pattern over everything that had been Palestinian” (Pappé, 2006).</p>
+        <p>[8] Alternatively wād—an Arabic term traditionally referring to a valley. In some instances, it may refer to a wet (ephemeral) riverbed that contains water only when heavy rain occurs.</p>
+
+        <p>[9] Further developed by Husserl, Lacan, Levinas, Sartre and de Beauvoir among others.</p>
+        <p>[10] Traditionally, in European colonial history, authority was generally supported by an ideology of cultural supremacy; in Zionism, it was accompanied by redemptive nationalism.</p>
+        <p>[11] Committee operating under the Royal Geographical Society, the only body authorized to assign names throughout the British Empire, including Mandatory Palestine.</p>
+        <p>[12] Survey of Palestine was the government department responsible for the survey and mapping of Palestine during the British mandate period (1920–1948).</p>
+        <p>[13] A vast desert region in the southern part of present-day Israel.</p>
+        <p>[14] Arab (desert) tribes who follow a nomadic way of life.</p>
+        <p>[15] This map was based on the 1:100 000 map prepared by the British mandate government in 1942. The official place names of Mandatory Palestine were mainly Arabic or relating to Christian traditions, rendering them foreign from the perspective of Jewish nationalism and the Zionist project (Azaryahu and Golan, 2001).</p>
+        <p>[16] Coined by Tove Skutnabb-Kangas in 1986. She defines linguicism as “ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language” (Skutnabb-Kangas, 2015).</p>
+        <p>[17] Dispositif, a term coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physi-cal, and administrative mechanisms and knowledge structures which enhance and maintain the exercise of power with-in the social body. Understanding place naming as dispositif allows us to interpret and analyze the process more gen-erally in relation to a wider social, political and spatial order (Giraut & Houssay-Holzschuch, 2016).</p>
+
+        <p>[18] Although the Latin script is the most widespread script in the world, there are regions, such as China and several Arab countries, where a large proportion of the population is not familiar of proficient in the Latin script.</p>
+        <p>[19] The IPA is, however, not the only phonetic alphabet available. Others include the Americanist Phonetic Notation, the Uralic Phonetic Alphabet, Pinyin and the Arabic International Phonetic Alphabet.</p>
+        <p>[20] Tyne is still today a thriving city on the Mediterranean coast of Lebanon.</p>
+        <p>[21] The Phoenician alphabet (c. 1050–150 BC) is also called the Early Linear script because it is an early development of the Proto- or Old Canaanite or Proto-Sinaitic script, into a linear, purely alphabetic script, also marking the transfer from a multi-directional writing system, where a variety of writing directions occurred, to a regulated horizontal, right-to-left script.</p>
+
+        <p>[22] Kazakh, a Turkic language, used to be written in Arabic until the 1920s when the Soviet Union briefly introduced the Latin alphabet before eventually replacing it by the Cyrillic one in 1940 (The Guardian, 2017).</p>
+        <p>[23] Fought between Israel and the joined forces of Egypt, Syria and Jordan from 5 to 10 of June 1967. As a result of Israel’s victory, it annexed the Golan Heights from Syria, the West Bank and East Jerusalem from Jordan and the Gaza Strip and the Sinai Peninsula from Egypt. </p>
+        <p>[24] An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.</p>
+    </div>
+    
         <div class="references" id="references">
             <p><span class="author" id="aderet">Aderet, Ofer</span> (2011) ‘A Stir Over Sign Language’, Haaretz (https://www.haaretz.com/2011-07-29/ty-article/a-stir-over-sign-language/0000017f-e24c-d568-ad7f-f36f17ee0000)</p>
             <p><span class="author" id="agamben1">Agamben, Giorgio</span> (1998) Homo sacer: Sovereign Power and Bare Life (Stanford: Stanford
@@ -618,6 +650,21 @@
             }
         });
 
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+            console.log('hey');
+          });
+        }
 
     </script>
 
