@@ -900,9 +900,59 @@ select:focus {
 
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
+body, html {
+    width: 100vW;
+}
+
   .sidenote {
     display: none;
   }
+
+  #menu2, #menu {
+      width: 70vW !important;
+      margin: -98vH 0 0 -1.5vW;
+      padding: 5vW;
+      padding-top: 8vW;
+  }
+
+  #menuToggle, #menuToggle2 {
+      width: 70vW !important;
+  }
+
+  #menu li {
+      z-index: 4;
+      font-family: "AlpinaMedium";
+      font-size:1.2rem;
+      line-height: 120%;
+      margin-bottom: 1.8vH;
+
+  }
+  #menuToggle a {
+      font-family: "AlpinaMedium";
+      font-variation-settings: "slnt" 0;
+      transition: font-variation-settings 0.3s ease-in-out;
+      text-decoration: none;
+      color: black;
+  }
+
+  .references {
+      columns: 1;
+  }
+
+  .abstract {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align:left;
+      padding-left:3%;
+      padding-right:3%;
+      box-sizing: content-box;
+      padding-bottom: 2vH;
+  }
+
   h2{
     /* h2 style */
     width:85vW;
@@ -932,6 +982,11 @@ select:focus {
     padding-left:3%;
     padding-right:3%;
   }
+
+
+
+
+
 
   /* utilities */
 
