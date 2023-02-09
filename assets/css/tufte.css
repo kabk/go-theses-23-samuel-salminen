@@ -97,10 +97,10 @@ pre.fullwidth > code {
     width: 90%;
 }
 
-.fullwidth {
+/* .fullwidth {
     max-width: 90%;
     clear:both;
-}
+} */
 
 span.newthought {
     font-variant: small-caps;

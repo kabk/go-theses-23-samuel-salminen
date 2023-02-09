@@ -152,6 +152,17 @@ body {
     margin-bottom:1vH;
 }
 
+.fullwidth {
+    width: 200%;
+transform: translate(-25%, 0);
+margin-bottom: 0.5vH;
+}
+
+.big_caption {
+    font-size: 0.6rem;
+    color: #ef2a30;
+}
+
 #menuToggle {
     display: block;
     position: fixed;
@@ -829,6 +840,14 @@ select:focus {
   display: block;
 }
 
+.ondesktop {
+    display: block;
+}
+
+.onmobile {
+    display: none;
+}
+
 .mobile {
   display: none;
 }
@@ -906,6 +925,20 @@ body, html {
 
   .sidenote {
     display: none;
+  }
+
+  .fullwidth {
+      width: 100%;
+  transform: translate(0, 0);
+  margin-bottom: 0.5vH;
+  }
+
+  .ondesktop {
+      display: none;
+  }
+
+  .onmobile {
+      display: block;
   }
 
   #menu {
