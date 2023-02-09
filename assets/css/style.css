@@ -945,7 +945,7 @@ body, html {
     position: relative;
     font-family: "Alpina";
     font-size:0.8rem;
-    text-align: justify;
+    text-align: left;
     color: #ef2a30;
     hyphens: auto;
     line-height: 120%;
