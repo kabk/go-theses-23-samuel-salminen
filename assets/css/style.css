@@ -333,6 +333,13 @@ text-decoration: underline;
     -webkit-touch-callout: none;
 }
 
+.box {
+    color: #009834;
+    font-family: Arial;
+    font-size: 0.75rem;
+    cursor: help;
+}
+
 
 #menuToggle2 span {
     display: block;
