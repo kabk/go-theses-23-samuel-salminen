@@ -1033,9 +1033,21 @@ body, html {
       outline: none;
   }
 
+  .box {
+      color: #009834;
+      font-family: Arial;
+      font-size: 0.95rem;
+      cursor: help;
+  }
+
+  .tooltip {
+  	font-size: 0.95rem;
+  	line-height: 1rem;
+  }
+
   #menu {
       width: 70vW !important;
-      margin: -1vH 0 0 -1.5vW;
+      margin: -1vH 0 0 -2.5vW;
       padding: 5vW;
       padding-top: 15vW;
   }
