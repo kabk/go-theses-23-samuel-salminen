@@ -467,7 +467,7 @@
 		var tooltip = new TooltipClass(element);
 		tooltip.setOptions(options);
 
-		tooltip.createTooltipNode(element.getAttribute('title'));
+		tooltip.createTooltipNode(element.getAttribute('data-tooltip'));
 
 		// Attach next to the element
 		element.parentNode.insertBefore(tooltip.node, element.nextSibling);
