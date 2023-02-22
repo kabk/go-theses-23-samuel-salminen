@@ -577,10 +577,13 @@ ol, ul{
     height: 60vH;
 }
 
-
-.abstract {
+.abs-container {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+}
+
+.abstract {
+
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -589,7 +592,24 @@ ol, ul{
     padding-left:25%;
     padding-right:25%;
     box-sizing: content-box;
+    padding-bottom: 4vH;
+}
+
+.noteson {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:center;
+    padding-left:25%;
+    padding-right:25%;
+    box-sizing: content-box;
     padding-bottom: 10vH;
+
+}
+
+.noteson span {
+    font-family: 'AlpinaBold';
 }
 
 .quote {
