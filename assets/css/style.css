@@ -1163,8 +1163,7 @@ body, html {
   }
 
   .abstract {
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
+
       font-size: 0.8rem;
       display: flex;
       flex-direction: column;
@@ -1174,6 +1173,19 @@ body, html {
       padding-right:3%;
       box-sizing: content-box;
       padding-bottom: 2vH;
+  }
+
+  .noteson {
+      font-size: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align:center;
+      padding-left:3%;
+      padding-right:3%;
+      box-sizing: content-box;
+      padding-bottom: 4vH;
+
   }
 
   .green {
