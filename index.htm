@@ -63,10 +63,10 @@
 
             <h1 class="toponymicide"> TOPONYMICIDE</h1>
 
-            </header>
-            <img src="assets/images/header_image3.png" class="cover">
+        </header>
+        <img src="assets/images/header_image3.png" class="cover">
 
-            <!-- <nav>
+        <!-- <nav>
 				<ul>
 					<li><a href="#intro">Intro</a></li>
 					<li><a href="#chapter-1">Chapter 1</a></li>
@@ -75,143 +75,175 @@
 					<li><a href="#epilogue">Epilogue</a></li>
 				</ul>
 			</nav> -->
-            <nav role="navigation">
+        <nav role="navigation">
 
-                <div id="menuToggle2">
+            <div id="menuToggle2">
 
-                    <input id="checkbox" type="checkbox" />
+                <input id="remember" type="checkbox" onclick="validate()"/>
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <span class="icon icon1">📖</span>
 
 
-                    <ul id="menu2">
 
-                        <p class="bold" >Glossary</p>
-                        <li><span class="term" id="dispositif">[Dispositif]</span></br>The term, coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physical, and admin-istrative mechanisms and knowledge structures which enhance and maintain the exercise of power within the social body.</li>
-                        <li><span class="term" id="bedouin">[Druze]</span></br>An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.</li>
-                        <li><span class="term" id="bedouin">[Bedouin]</span></br>Arab (desert) tribes who follow a nomadic way of life.</li>
-                        <li><span class="term" id="endonym">[Endonym]</span></br>Native geographical names in local language and script.</li>
-                        <li><span class="term" id="exonym">[Exonym]</span></br>Non-native geographical names established outside the local linguistic community.</li>
-                        <li><span class="term" id="grammatology">[Grammatology]</span></br>The scientific study of writing systems or scripts.</li>
-                        <li><span class="term" id="infrapolitics">[Infrapolitics]</span></br>Acts of resistance in the everyday life of the subordinate; one that is not as dramatic or visible as rebellions, riots, demonstrations, revolutions, etc., but rather quiet, dispersed, disguised or otherwise seemingly invisible to elites, the state or mainstream society.</li>
-                        <li><span class="term" id="linguicism">[Linguicism]</span></br>Coined by Tove Skutnabb-Kangas in 1986. She defines linguicism as “ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language” (Skutnabb-Kangas, 2015)</li>
-                        <li><span class="term" id="memoricide">[Memoricide]</span></br>The erasure of the history of one people on order to write that of another people's over it.</li>
-                        <li><span class="term" id="nakba">[Nakba]</span></br>The ethnic cleansing of Palestine in 1948.</li>
-                        <li><span class="term" id="other">[The Other]</span></br>The concept identifies the other human being in their state of being different from the social identity of the Self. Labeling a person as the Other alienates them from the center of society and places them at the margins of society.</li>
-                        <li><span class="term" id="romanization">[Romanization]</span></br>Conversion from a non-Latin script to the Latin writing system.</li>
-                        <li><span class="term" id="subaltern">[Subaltern]</span></br>Coined by Antonio Gramsci, the term identifies the cultural hegemony that excludes and displaces specific people and social groups from socio-economic institutions of society in order to deny their agency and voices in colonial politics</li>
-                        <li><span class="term" id="talmud">[Talmud]</span></br>The central text of Rabbinic Judaism and the primary source of Jewish religious law and Jewish theology.</li>
-                        <li><span class="term" id="talmud">[Taxonomical]</span></br>Relating to taxonomy — the practice and science of categorization or classification.</li>
-                        <li><span class="term" id="terra">[Terra Nullius]</span></br>Meaning “nobody’s land” (latin) — a colonial and ideological concept that perceives land as formally unoccupied.</li>
-                        <li><span class="term" id="toponym">[Toponym]</span></br>Place names or geographical names.</li>
-                        <li><span class="term" id="toponymicide">[Toponymicide]</span></br>The erasure of ancient place names and their replacement by newly coined ones.</li>
-                        <li><span class="term" id="zionism">[Zionism]</span></br>A Jewish nationalist movement that has had as its goal the creation and support of a Jewish national state in Palestine, the ancient homeland of the Jews (Hebrew: Eretz Yisraʾel, “the Land of Israel”).</li>
+                <ul id="menu2">
 
-                        </br></br>
+                    <p class="bold">Glossary</p>
+                    <li><span class="term" id="dispositif">[Dispositif]</span></br>The term, coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physical, and admin-istrative mechanisms and knowledge structures
+                        which enhance and maintain the exercise of power within the social body.</li>
+                    <li><span class="term" id="bedouin">[Druze]</span></br>An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.</li>
+                    <li><span class="term" id="bedouin">[Bedouin]</span></br>Arab (desert) tribes who follow a nomadic way of life.</li>
+                    <li><span class="term" id="endonym">[Endonym]</span></br>Native geographical names in local language and script.</li>
+                    <li><span class="term" id="exonym">[Exonym]</span></br>Non-native geographical names established outside the local linguistic community.</li>
+                    <li><span class="term" id="grammatology">[Grammatology]</span></br>The scientific study of writing systems or scripts.</li>
+                    <li><span class="term" id="infrapolitics">[Infrapolitics]</span></br>Acts of resistance in the everyday life of the subordinate; one that is not as dramatic or visible as rebellions, riots, demonstrations, revolutions, etc., but
+                        rather quiet, dispersed, disguised or otherwise seemingly invisible to elites, the state or mainstream society.</li>
+                    <li><span class="term" id="linguicism">[Linguicism]</span></br>Coined by Tove Skutnabb-Kangas in 1986. She defines linguicism as “ideologies, structures and practices which are used to legitimate, effectuate, regulate and
+                        reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language” (Skutnabb-Kangas, 2015)</li>
+                    <li><span class="term" id="memoricide">[Memoricide]</span></br>The erasure of the history of one people on order to write that of another people's over it.</li>
+                    <li><span class="term" id="nakba">[Nakba]</span></br>The ethnic cleansing of Palestine in 1948.</li>
+                    <li><span class="term" id="other">[The Other]</span></br>The concept identifies the other human being in their state of being different from the social identity of the Self. Labeling a person as the Other alienates them from the
+                        center of society and places them at the margins of society.</li>
+                    <li><span class="term" id="romanization">[Romanization]</span></br>Conversion from a non-Latin script to the Latin writing system.</li>
+                    <li><span class="term" id="subaltern">[Subaltern]</span></br>Coined by Antonio Gramsci, the term identifies the cultural hegemony that excludes and displaces specific people and social groups from socio-economic institutions of
+                        society in order to deny their agency and voices in colonial politics</li>
+                    <li><span class="term" id="talmud">[Talmud]</span></br>The central text of Rabbinic Judaism and the primary source of Jewish religious law and Jewish theology.</li>
+                    <li><span class="term" id="talmud">[Taxonomical]</span></br>Relating to taxonomy — the practice and science of categorization or classification.</li>
+                    <li><span class="term" id="terra">[Terra Nullius]</span></br>Meaning “nobody’s land” (latin) — a colonial and ideological concept that perceives land as formally unoccupied.</li>
+                    <li><span class="term" id="toponym">[Toponym]</span></br>Place names or geographical names.</li>
+                    <li><span class="term" id="toponymicide">[Toponymicide]</span></br>The erasure of ancient place names and their replacement by newly coined ones.</li>
+                    <li><span class="term" id="zionism">[Zionism]</span></br>A Jewish nationalist movement that has had as its goal the creation and support of a Jewish national state in Palestine, the ancient homeland of the Jews (Hebrew: Eretz
+                        Yisraʾel, “the Land of Israel”).</li>
 
-
-                    </ul>
-                </div>
-                    <div id="menuToggle">
-
-                        <input type="checkbox" />
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    </br></br>
 
 
-                        <ul id="menu">
+                </ul>
+            </div>
+            <div id="menuToggle">
 
-                            <li><a href="#abstract"><span class="green">●</span> Abstract</a></li>
-                            <li><a href="#chapter-0"><span class="red">●</span> Introduction: Geopolitics of</br> <span class="white">●</span> Toponymic Inscription</a></li>
+                <input id="remember2" type="checkbox" onclick="validate()"/>
 
-                            <li><a href="#chapter-1"><span class="red">●</span> The Cartographic Cleansing</br><span class="white">●</span> of Palestine</a></li>
-                            <li><a href="#chapter-1-1"><span class="green">●</span> Territorial Entitlement</a></li>
-                            <li><a href="#chapter-1-2"><span class="green">●</span> The Cultural Arena</a></li>
-                            <li><a href="#chapter-1-3"><span class="green">●</span> A Comparative Reading of</br><span class="white">●</span> Palestinian and Israeli</br><span class="white">●</span>Toponyms</a></li>
-
-                            <li><a href="#chapter-2"><span class="red">●</span> A Rose by Any Other Name</br><span class="white">●</span> Would Smell as Sweet?</a></li>
-                            <li><a href="#chapter-2-1"><span class="green">●</span> The Great Toponymic Divide</a></li>
-                            <li><a href="#chapter-2-2"><span class="green">●</span> Tamed Dragon’s Teeth</a></li>
-                            <li><a href="#chapter-2-3"><span class="green">●</span> Transliteration and</br><span class="white">●</span> Homogenization</a></li>
-
-                            <li><a href="#chapter-3"><span class="red">●</span> Infrapolitics in Geography</a></li>
-                            <li><a href="#chapter-3-1"><span class="green">●</span> Toponymic Resistance</a></li>
-
-                            <li><a href="#conclusion"><span class="green">●</span> Conclusion</a></li>
-                            <li><a href="#references">Bibliography</a></li>
-
-                        </ul>
-                    </div>
+                <span class="icon icon2">📍</span>
 
 
-                    </nav>
+
+                <ul id="menu">
+
+                    <li><a href="#abstract"><span class="green">●</span> Abstract</a></li>
+                    <li><a href="#chapter-0"><span class="red">●</span> Introduction: Geopolitics of</br> <span class="white">●</span> Toponymic Inscription</a></li>
+
+                    <li><a href="#chapter-1"><span class="red">●</span> The Cartographic Cleansing</br><span class="white">●</span> of Palestine</a></li>
+                    <li><a href="#chapter-1-1"><span class="green">●</span> Territorial Entitlement</a></li>
+                    <li><a href="#chapter-1-2"><span class="green">●</span> The Cultural Arena</a></li>
+                    <li><a href="#chapter-1-3"><span class="green">●</span> A Comparative Reading of</br><span class="white">●</span> Palestinian and Israeli</br><span class="white">●</span> Toponyms</a></li>
+
+                    <li><a href="#chapter-2"><span class="red">●</span> A Rose by Any Other Name</br><span class="white">●</span> Would Smell as Sweet?</a></li>
+                    <li><a href="#chapter-2-1"><span class="green">●</span> The Great Toponymic Divide</a></li>
+                    <li><a href="#chapter-2-2"><span class="green">●</span> Tamed Dragon’s Teeth</a></li>
+                    <li><a href="#chapter-2-3"><span class="green">●</span> Transliteration and</br><span class="white">●</span> Homogenization</a></li>
+
+                    <li><a href="#chapter-3"><span class="red">●</span> Infrapolitics in Geography</a></li>
+                    <li><a href="#chapter-3-1"><span class="green">●</span> Toponymic Resistance</a></li>
+
+                    <li><a href="#conclusion"><span class="green">●</span> Conclusion</a></li>
+                    <li><a href="#references"><span class="white">●</span> Bibliography</a></li>
+
+                </ul>
+            </div>
 
 
-                    <div class="abs-container">
-                    <p class="abstract">
-                        <span class="sub" id="abstract"><span class="green">●</span> Abstract</span>
-                        The names of geographical locations, also known as toponyms, play a crucial role in constructing historical memories and shaping the identities of individuals and communities. The process of naming is not only about claiming land, but also about owning and controlling narratives of the environment. The naming of places holds political significance and is often used as a means to establish spatial domination, drawing borders between groups and shaping the relationship between individuals and their surroundings. In the 19th century, European state authorities used renaming strategies to erase earlier realities and construct new notions of national identity. Place naming can serve as a tool for promoting certain historical narratives and denying others. This study focuses on the geopolitically charged practice of toponymic inscription, with the main point of departure being the Zionist political project of Hebraizing Arabic toponyms in Palestine. The study will apply Marxist interpretive tools to grasp the establishment and maintenance of these structures and practices. The focus will then shift to the role of cartography in colonial discursive practices and finally to subliminal counter-hegemonic acts in the everyday lives of the subordinate.
+        </nav>
 
-                    </p>
 
-                    <p class="noteson">
-                    <span>Notes on translation and transliteration</span></br>
+        <div class="abs-container">
+            <p class="abstract">
+                <span class="sub" id="abstract"><span class="green">●</span> Abstract</span>
+                The names of geographical locations, also known as toponyms, play a crucial role in shaping the identities
+                of individuals and communities and constructing historical memories. The process of naming is not
+                only about claiming land, but also about owning and controlling narratives of the environment. The
+                naming of places holds political significance and is often used as a means to establish spatial domination,
+                drawing borders between groups and shaping the relationship between individuals and their surroundings.
+                Place naming can thus serve as a tool for constructing new notions of national identity and promoting
+                certain historical narratives while denying, surpressing or erasing others. Through decolonial and
+                Marxist-feminist analysis, this study will attempt to provide an overview of the geopolitically charged
+                practice of toponymic inscription, with the main point of departure being the Zionist political project of
+                Hebraizing Arabic toponyms in Palestine. The focus will then shift to the role and power of cartography
+                and the Latin script in colonial discursive practices, and finally to a closer look at subliminal counterhegemonic
+                acts of resistance in the everyday lives of the subordinate.
 
-                    This thesis follows the Arabic and Hebrew transliteration systems specified by the International Journal of Middle Eastern Studies (IJMES) and the Library of Congress, respectively. For the definitive forms “the” I have used a hyphenated “al-/ha-,” except for individual names that are familiar in different forms. Geographical names are by default displayed in the Latin script; alternative forms (in e.g. local or phonetic script) can be revealed by hovering/clicking the names.
-                </p>
-                </div>
+            </p>
+            <p class="noteson">
+                <span>Acknowledgements</span></br>
+                My utmost gratitude to Füsun Türetken for guiding me through this thesis process; to Noha Elhady and *name* for helping me with transliteration of Arabic and Hebrew names respectively; and to Suzan Karimi, Barbara Strzeżek, Luna van Schadewijk and María Rivero González for valuable feedback.
+                </br></br></br>
+                <span>Notes on translation and transliteration</span></br>
+
+                This thesis follows the Arabic and Hebrew transliteration systems specified by the International Journal of Middle Eastern Studies (IJMES) and the Library of Congress, respectively. For the definitive forms “the” I have used a
+                hyphenated “al-/ha-,” except for individual names that are familiar in different forms. Geographical names are by default displayed in the Latin script; alternative forms (in e.g. local or phonetic script) can be revealed by
+                hovering/clicking the names.
+            </p>
+
+
+
+        </div>
 
         <main>
 
             <p>
 
-            <span class="chapter" id="chapter-0"><span class="red">●</span> Introduction:</br>Geopolitics of Toponymic Inscription</span>
+                <span class="chapter" id="chapter-0"><span class="red">●</span> Introduction:</br>Geopolitics of Toponymic Inscription</span>
 
 
                 <span class="quote">“Just as none of us is outside or beyond geography, none of us is completely free from the struggle over geography. That struggle is complex and interesting because it is not only about soldiers and cannons but
                     also about ideas, about forms, about images and imaginings.”</span>
                 </br></br>
                 — Edward Said in <span class="highlight">Culture and Imperialism</span> (1994)
-            </br></br>
+                </br></br>
                 When individuals, communities or societies occupy a region of the earth, a territory, or a city, a plot of land, or when they follow routes, invest in them, or map them, they are not only claiming land but are highly involved in the
                 process of naming the globe — and by doing so owning and controlling the narratives of those environments. Depending on whether someone is a hunter-gatherer, farmer, navigator, merchant, conqueror, settler, dreamer, survivor,
                 engineer,
                 or administrator, this can take on quite various forms. Regardless of whether someone is colonizing a frontier, reclaiming ancestral lands or erasing symbols of authoritarian regimes, whether or not they speak a language with written
-                characters, the naming operation is never ultimate or exclusive; but it plays a key role in structuring reality (Giraut & Houssay-Holzschuch, 2022). <a href="#toponym" class="highlight" onclick="myValidation()">Toponyms</a><label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the geographical features of our planet.
+                characters, the naming operation is never ultimate or exclusive; but it plays a key role in structuring reality (Giraut & Houssay-Holzschuch, 2022). <a class="highlight" onclick="myValidation();validate()">Toponyms</a><label
+                    class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the
+                    geographical features of our planet.
                 </span> — also known as place names or geographical
                 names — play an important role in constructing historical memories, identifying the locations that are absorbed by those memories and granting them a tangible presence. They are a cultural element of shared public capital and
                 spatial infrastructure of our everyday life; they embody essential clues as to the historical and cultural heritage of geographical features of all kinds, whether they are constructed settlements like villages, cities, streets and
-                countries or natural places such as rivers, mountains or valleys (Kearns & Berg, 2002). In other words, every place name is a testimony of human life on earth.
-            </br></br>
+                countries or natural places such as rivers, mountains or valleys (Kearns & Berg, 2002). One might say that every place name is a testimony of human life on earth, which carries
+                with it a history and meaning.
+                </br></br>
                 Toponyms are, however, not mere spatial signifiers; they hold a semantic depth profoundly rooted in power relations and struggles over land and resources and the identities of the inhabitants. When constructed through hegemonic
                 processes, they become intrinsically politico-territorial instruments for establishing spatial domination (Guyot & Seethal, 2007), drawing borders between “us” and “them” — the <span class="highlight">Self</span> and the <span
-                    class="highlight">Other</span> — in time and space (Marin, 2012). The naming of places is highly political, creating a hierarchy and affecting everyday life, identity, civil status, and location. It shapes individual and collective relationships with places (Giraut & Houssay-Holzschuch, 2022). In nineteenth century European empire
+                    class="highlight">Other</span> — in time and space (Marin, 2012). The naming of places is highly political, creating a hierarchy and affecting everyday life, identity, civil status, and location. It shapes individual and
+                collective relationships with places (Giraut & Houssay-Holzschuch, 2022). In nineteenth century European empire
                 building, the state authorities deployed renaming strategies to erase earlier political, social and cultural realities in order to invent traditions, reinforce ideologies and to construct new notions of national identity.
                 Transformations of toponyms often signify a societal shift and can therefore function as either unifying or dividing catalysts.
-            </br></br>
-                The present paper is not meant to be an essay on place <span class="highlight">names</span> (classical toponymy), and their etymological and taxonomical properties. Rather, it aims to offer a general and, possibly, holistic overview of place <span class="highlight">naming</span> (political toponymy), i.e. the geopolitically charged socio-spatial practice of toponymic inscription as a means to promote particular — and deny other — historical narratives and conceptions of national identity and territorial reality. In order to grasp the establishment and maintenance of these
-                structures and practices, I will apply Foucauldian and Marxist interpretive tools. My point of departure is the Zionist political project of Hebraizing Arabic toponyms
-                in <span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> as a mechanism for perpetual social production of displacement and replacement — an enterprise spanning from the late 19th-century to the present day. The second chapter will focus on
+                </br></br>
+                The present paper is not meant to be an essay on place <span class="highlight">names</span> (classical toponymy), and their etymological and taxonomical properties. Rather, it aims to offer a general and, possibly, holistic overview
+                of place <span class="highlight">naming</span> (political toponymy), i.e. the geopolitically charged socio-spatial practice of toponymic inscription as a means to promote particular — and deny other — historical narratives and
+                conceptions of national identity and territorial reality. I will attempt to grasp the establishment and maintenance
+                of these structures and practices through decolonial and Marxist-feminist analytical
+                frameworks. My point of departure is the Zionist political project of Hebraizing Arabic toponyms
+                in <span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> as a mechanism for perpetual social production of displacement and replacement — an enterprise spanning from the late 19th-century
+                to the present day. The second chapter will focus on
                 role of cartography in the
                 demonstration of colonial discursive practices by looking at contemporary methods in map labeling and, in particular, the United Nations’ attempts to standardize geographical names to a Latinized form.
                 </br></br>
 
 
                 Although place naming is “a form of control or dispossession”, this domination “is rarely complete and can be challenged” (Alderman & Inwood, 2013). The toponymic landscape can thus serve as a site for challenging state authorities
-                and their hegemonic ideologies (Çakır, 2013). Resistance is often adversarial, but it can just as well be manifested in grass-root opposition and symbolic social acts, such as speech. The third and final chapter will hence deal with subliminal counter-hegemonic acts in the everyday life of the subordinate.
+                and their hegemonic ideologies (Çakır, 2013). Resistance is often adversarial, but it can just as well be manifested in grass-root opposition and symbolic social acts, such as speech. The third and final chapter will hence deal with
+                subliminal counter-hegemonic acts in the everyday life of the subordinate.
                 </br></br>
 
                 I am writing this text primarily as a Graphic Designer — as someone who holds a certain level of agency in visual representations of our world — and as such, I regard this text as a research into my professional social
-                responsibilities and the repercussions of a Graphic Designer’s actions as a communicator. I’m also writing from a privileged outsider position, as a white European male with a limited personal frame of reference and linguistic
+                responsibilities and the role of a Graphic Designer as a communicator. I’m also writing from a privileged outsider position, as a white European male with a limited personal frame of reference and linguistic
                 comprehension. Thus, in writing this text, I’m solely relying on English-language literature and English translations of literature, which becomes somewhat paradoxical when dealing with the topic of linguistics — and even more so as I
                 speak of preservation of Arabic naming traditions. Despite the inevitable distortion of translation, I find including non-English-language bodies of work crucial in the project of destabilizing normative academic practices (i.e. the
                 use of English as the presiding language in research communication). Apart from being a widely researched, multifaceted example of an over century-long, and still very much active, form of cultural oppression, the choice of using the
-                contested history of the <span class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span>/<span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> conflict as my main case study also stems from a sense of urgency in bringing attention to the situation at hand. The conflict is anything but idle; with annually increasing settler attacks in
+                contested history of the <span class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span>/<span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> conflict
+                as my main case study also stems from a sense of urgency in bringing attention to the situation at hand. The conflict is anything but idle; with annually increasing settler attacks in
                 the occupied West Bank, 2022 was the deadliest year for Palestinians in over 20 years<label class="margin-toggle sidenote-number"></label>
 
                 <span class="sidenote">‘With 2022 Deadliest Year in Israel-Palestine Conflict, Reversing Violent Trends Must Be International Priority, Middle East Coordinator Tells Security Council’, United Nations, 18 January 2023
@@ -221,7 +253,7 @@
                 </span>, while European governments are pushing for further suppression of pro-Palestinian solidarity under the guise of antisemitism<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">‘Germany just took a drastic step toward criminalizing Palestine activism’, Nederlands Palestina Komitee, 21 December 2022
                 </span>.
-            </br></br>
+                </br></br>
 
                 Although I have, as a member of the Swedish-speaking linguistic minority in Finland, experienced minor cultural marginalization, my life has by no means ever been marked by an oppressive apartheid regime, nor have I ever known racial
                 discrimination. I will thus attempt to express solidarity by reading across the lines of my own status. To quote writer and filmmaker Trinh T. Minh-ha: “I do not intend to speak about; just speak nearby.”<label
@@ -232,43 +264,51 @@
 
 
 
-            <span class="chapter" id="chapter-1"><span class="red">●</span> The Cartographic</br>Cleansing of Palestine</span>
+                <span class="chapter" id="chapter-1"><span class="red">●</span> The Cartographic</br>Cleansing of Palestine</span>
 
 
-                “Nothing has affected the course of political events in the Middle East more than the Arab-Israeli conflict. The Zionist drive to establish a home for the Jews in <span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> culminated in 1948 in the
+                “Nothing has affected the course of political events in the Middle East more than the Arab-Israeli conflict. The Zionist drive to establish a home for the Jews in <span class="box box--small"
+                    data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> culminated in 1948 in the
                 dismemberment of the country and
                 the establishment of the state of Israel. The events leading to this conclusion were characterized by political strife, military confrontations and demographic dislocation on a massive scale. Hundreds of thousands of Palestinians
-                (estimated amount around 700,000) were forced to leave their homes, to be replaced by waves of Jewish immigrants from all over the world. Some 150,000 Palestinians remained under Israeli rule. Almost overnight, the Palestinians in <span class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span> lost their majority status and found themselves a minority in their own country” (Suleiman, 2004).
-            </br></br>
-            <label class="image-anchor"></label>
-            <span class="caption">
-                <img src="assets/images/map2.jpg">
-                <img src="assets/images/map3.jpg">
-                <img src="assets/images/map1.jpg">
-                Example of Hebraization of the depopulated Palestinian town Beit Jibrin, demonstrated with maps from 1870s, 1940s and 2020 respectively.
-            </span>
-                Until today, the Israel-Palestinian conflict remains a contested topic over which opinions are highly polarized. The ethnic cleansing of <span class="box box--small" data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> in 1948 — commonly known as the <span class="highlight">Nakba</span> (catastrophe)<label class="margin-toggle sidenote-number"></label>
+                (estimated amount around 700,000) were forced to leave their homes, to be replaced by waves of Jewish immigrants from all over the world. Some 150,000 Palestinians remained under Israeli rule. Almost overnight, the Palestinians in
+                <span class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span> lost their majority status and found themselves a minority in their own country” (Suleiman, 2004).
+                </br></br>
+                <label class="image-anchor"></label>
+                <span class="caption">
+                    <img src="assets/images/map2.jpg">
+                    <img src="assets/images/map3.jpg">
+                    <img src="assets/images/map1.jpg">
+                    Example of Hebraization of the depopulated Palestinian town Beit Jibrin, demonstrated with maps from 1870s, 1940s and 2020 respectively.
+                </span>
+                Until today, the Israel-Palestinian conflict remains a contested topic over which opinions are highly polarized. The ethnic cleansing of <span class="box box--small"
+                    data-tooltip="فلسطين [fɪ.lɪs.tˤiː.n] &#013;Filasṭīn">Palestine</span> in 1948 — commonly known as the <span class="highlight">Nakba</span> (catastrophe)<label class="margin-toggle sidenote-number"></label>
 
-                <span class="sidenote">It is fair, however, to question the adequacy of the term ‘Nakba’. Referring to the ethnic cleansing of Palestine as a catastrophe or disaster suggests a sense of passivity. We regard earthquakes and
-                    tsunamis as disasters, of which no-body is responsible for and everybody is a victim of. The same cannot be said about the events of 1948—the ethnic cleansing was a crime; the roles of criminal and victim are abundantly clear and
-                    know
-                    to us all.
+                <span class="sidenote">It is fair, however, to question the adequacy of the term ‘Nakba’. Referring to the ethnic cleansing of
+                    Palestine as a catastrophe or disaster suggests a sense of passivity. We regard earthquakes and tsunamis
+                    as disasters, of which nobody is responsible for and everybody is a victim of. The same cannot be
+                    said about the events of 1948—the ethnic cleansing was a crime; the roles of criminal and victim are
+                    abundantly clear and know to us all. “Insisting on describing what happened to the Palestinians in
+                    1948 and ever since as a crime and not just a tragedy or even a catastrophe is essential if past evils are
+                    to be rectified” (Pappé, 2015).
                 </span>
                 — served
-                as a starting point for accelerated efforts to destroy the diverse cultural heritage of the land by the Israeli state; a toponymic project employing extensive <a onclick="myValidation()" href="#memoricide">memoricide</a><label class="margin-toggle sidenote-number"></label>
+                as a starting point for accelerated efforts to destroy the diverse cultural heritage of the land by the Israeli state; a toponymic project employing extensive <a onclick="myValidation();validate()">memoricide</a><label
+                    class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Memoricide: “The ‘erasure of the history of one people in order to write that of another people’s over it’, the continuous imposition of a Zionist layer and national pattern over everything that had been
                     Palestinian” (Pappé, 2006).
                 </span>
                 and linguistic dispossession. In a
                 systematic national effort, appointed by Israel’s first Prime Minister David Ben Gurion, the state set to deepen the erasure of the Palestinian toponymic landscape — and subsequently collective memory — by Hebraizing Arabic place
                 names
-                and giving new settlements Biblical and Talmudic names; thus, transforming Zionism, from what began as a European national movement, into a colonialist one (Masalha, 2015; Dahamshe, 2021; Pappé, 2003). A 1992 study documented the
+                and giving new settlements Biblical and Talmudic names; thus, transforming Zionism, from what began as a European national movement, into a colonialist one (Masalha, 2015; Dahamshe, 2021; Pappé, 2006). A 1992 study documented the
                 Hebraized names of about 2,780 historical locations, including 340 villages and towns, 1,000 ruins, 560 wadis<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Alternatively wād — an Arabic term traditionally referring to a valley. In some instances, it may refer to a wet (ephemeral) riverbed that contains water only when heavy rain occurs.
                 </span>
 
                 and rivers, 380 springs, 198 mountains and hills, 50 caves, 28 castles and palaces, and 14 pools
-                and lakes (Arraf, 1992; Amara, 2017). The production of a distinct Hebrew toponymy was conceived of and legitimized as a restorative measure and came to play a substantial part in the spatial history of modern <span class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span>, granting it
+                and lakes (Arraf, 1992; Amara, 2017). The production of a distinct Hebrew toponymy was conceived of and legitimized as a restorative measure and came to play a substantial part in the spatial history of modern <span
+                    class="box box--small" data-tooltip="[jisʁaˈʔel] &#013;Yīsrāʾēl &#013;יִשְׂרָאֵל">Israel</span>, granting it
                 greater authenticity and fostering a broader national unity (Azaryahu & Golan, 2001). As suggested by Marcelo Svirsky (2010), we can begin to understand the way in which the Zionist fabric has developed the Palestinian entity by
                 examining how the Zionists view and position themselves in relation to Palestinians and their land.
 
@@ -276,102 +316,187 @@
                 <span class="sub" id="chapter-1-1"><span class="green">●</span> Territorial Entitlement</span>
 
 
-                    The concept of the (constitutive) <span class="highlight">Other</span> — coined by Hegel in the late 18th-century<label class="margin-toggle sidenote-number"></label>
-                    <span class="sidenote">Further developed by Husserl, Lacan, Levinas, Sartre and de Beauvoir among others.
-                    </span> — identifies the other human being in their state of being different from the social identity of the Self (Borchert, 1967). Labeling a person as the <span class="highlight">Other</span> alienates them from the center of society and places them at the
-                    margins of society. In postcolonial studies, the term <span class="highlight">subaltern</span>, coined by the Italian Marxist theorist Antonio Gramsci, identifies the cultural hegemony that excludes and displaces specific people and social groups from
-                    socio-economic institutions of society in order to deny their agency and voices in colonial politics (Ludden, 2002). The following section will focus on the problem of the disappearance of the <span class="highlight">subaltern</span> in the context of the
-                    colonial concept of <span class="highlight">Terra Nullius</span>, seen as a continuous social production of collective displacement and replacement within a specific form of settler-colonialism — known as Zionism<label class="margin-toggle sidenote-number"></label>
-                    <span class="sidenote">Traditionally, in European colonial history, authority was generally supported by an ideology of cultural supremacy; in Zionism, however, it was accompanied by redemptive nationalism.
-                    </span>
+                The concept of the (constitutive) <span class="highlight">Other</span> — coined by Hegel in the late 18th-century<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Further developed by Husserl, Lacan, Levinas, Sartre and de Beauvoir among others.
+                </span> — identifies the other human being in their state of being different from the social identity of the Self (Borchert, 1967; Said, 1978). Labeling a person as the <span class="highlight">Other</span> alienates them from the
+                center of society and places them at the
+                margins of society. In postcolonial studies, the term <span class="highlight">subaltern</span>, coined by the Italian Marxist theorist Antonio Gramsci, identifies the cultural hegemony that excludes and displaces specific people and
+                social groups from
+                socio-economic institutions of society in order to deny their agency and voices in colonial politics (Ludden, 2002). The following section will focus on the problem of the disappearance of the <span class="highlight">subaltern</span>
+                in the context of the
+                colonial concept of <span class="highlight">Terra Nullius</span>, seen as a continuous social production of collective displacement and replacement within a specific form of settler-colonialism — known as Zionism<label
+                    class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Traditionally, in European colonial history, authority was generally supported by an ideology of cultural supremacy; in Zionism, however, it was accompanied by redemptive nationalism.
+                </span>
                 </br></br>
-                    The Latin expression <span class="highlight">Terra Nullius</span> (meaning “nobody’s land”) is a colonial and ideological concept that perceives land as formally unoccupied. The doctrine has served colonizers throughout history by
-                    legitimizing and morally justifying the sovereignty over a given territory upon conquest or settlement. Due to the absence of institutions and western agricultural practices, European colonizers claimed that “the indigenous
-                    inhabitants were not sufficiently settled or had not tilled the land in a manner that made them rightful owners” (Patton, 2000), thus expanding the meaning of <span class="highlight">Terra Nullius</span> to include territories
-                    considered ‘devoid of civilized society’ (Svirsky, 2010). The approach to treat inhabitants as non-civil or undereducated is part of the settler’s and colonialist’s strategy itself. It creates a means to justify the arrival of a
-                    colonial power or a settler in the first place.
-            </br></br>
-            <span class="caption">
-                <img src="assets/images/panoptic.png">
-                Study Drawing of the Jerusalem neighbourhood of French Hill. Israeli settlements in the West Bank and East Jerusalem are often located on hilltops and offer commanding views of the surrounding area. The Israeli military uses these settlements as surveillance outposts to monitor Palestinian activity. (Source: Eyal Weizman/Israel Builds, Ministry of Construction and Housing, 1972)
+                The Latin expression <span class="highlight">Terra Nullius</span> (meaning “nobody’s land”) is a colonial and ideological concept that perceives land as formally unoccupied. The doctrine has served colonizers throughout history by
+                legitimizing and morally justifying the sovereignty over a given territory upon conquest or settlement. Due to the absence of institutions and western agricultural practices, European colonizers claimed that “the indigenous
+                inhabitants were not sufficiently settled or had not tilled the land in a manner that made them rightful owners” (Patton, 2000), thus expanding the meaning of <span class="highlight">Terra Nullius</span> to include territories
+                considered ‘devoid of civilized society’ (Svirsky, 2010). The approach to treat inhabitants as non-civil or undereducated is part of the settler’s and colonialist’s strategy itself. It creates a means to justify the arrival of a
+                colonial power or a settler in the first place.
+                </br></br>
+                <span class="caption">
+                    <img src="assets/images/panoptic.png">
+                    Study Drawing of the Jerusalem neighbourhood of French Hill. Israeli settlements in the West Bank and East Jerusalem are often located on hilltops and offer commanding views of the surrounding area. The Israeli military uses these
+                    settlements as surveillance outposts to monitor Palestinian activity. (Source: Eyal Weizman/Israel Builds, Ministry of Construction and Housing, 1972)
 
-            </span>
-                    In his book <span class="highlight">Hollow Land: Israel's Architecture of Occupation</span>, architect Eyal Weizman examines the role of architecture and urban planning in the Israeli-Palestinian conflict, and shows how these fields have been used to maintain and reinforce the colonial relationship between the Israeli state and the Palestinian people. He argues that the architecture of the Occupied Territories serves as a tool of control and domination, and perpetuates the idea of <span class="highlight">Terra Nullius</span> by erasing the presence of Palestinians and replacing it with a vision of an uninhabited land waiting to be redeemed by the Israeli settlers. By exploring the ways in which architecture and urban planning contribute to the maintenance of the colonial relationship, Weizman offers a nuanced analysis of the impact of colonial discourse on the subaltern, and the ways in which it is perpetuated through the built environment (Weizman, 2007).
-            </br></br>
-                    Although the term <span class="highlight">Terra Nullius</span> was not specifically used in the colonial discourse of Zionists, we can find several analogous phrases in Zionist mythology suggesting notions of uninhabited lands,
-                    such as: ‘making the desert bloom’; the ‘conquest of the land’; and ‘land redemption.’ These mythical tools function as “cultural representations and disciplinary devices aimed at rallying the population behind the cause of an
-                    historical enterprise” (Svirsky, 2010). Dalsheim (2004) identifies denial and memoricide as ingredients of the Zionist practice by arguing that <span class="highlight">Terra Nullius</span> “encapsulates a fantasy, a product of a
-                    nationalist imagination, a way of thinking that fundamentally gives rise to ‘a longing to be rid of those who were never fully known’.” In Althusserian terms, state apparatuses are not limited to repressive methods, i.e. enforcing
-                    direct force and political control; they are furthermore fundamentally ideological, invoking specific ways of viewing the world, identities, relationships with other individuals, and their connections to society (Wolff, 2004). In
-                    this respect, <span class="highlight">Terra Nullius</span> serves as a construction that illustrates how Israeli Jews represent themselves to themselves; the desired absence of Palestinians erases and reconstructs the past and
-                    memory through mental acts of self-deception. How does one, then, manage to forget intentionally what one really believes?
-            </br></br>
-                    Self-deception constitutes of inevitably paradoxical lines of thought. As Elster (1983) remarks: “By wanting the non-existence of the object, one confers existence of it.” In other words, the <span class="highlight">Self</span>
-                    cannot exist without its vital counterpart — the <span class="highlight">Other</span>; and the Zionists’ mission to erase the memory of the ethnic cleansing of 1948 ensures the very presence of that memory. This is where
-                    discursive concepts such as <span class="highlight">Terra Nullius</span> come in handy. The unpleasant awareness of past wrongdoings is consciously rejected and replaced by a psychological mechanism that reconciles and ameliorates
-                    the wrong (Svirsky, 2010).
-                    </br></br>
+                </span>
+                In his book <span class="highlight">Hollow Land: Israel's Architecture of Occupation</span>, architect Eyal Weizman examines the role of architecture and urban planning in the Israeli-Palestinian conflict, and shows how these fields
+                have been used to maintain and reinforce the colonial relationship between the Israeli state and the Palestinian people. He argues that the architecture of the Occupied Territories serves as a tool of control and domination, and
+                perpetuates the idea of <span class="highlight">Terra Nullius</span> by erasing the presence of Palestinians and replacing it with a vision of an uninhabited land waiting to be redeemed by the Israeli settlers. By exploring the ways
+                in which architecture and urban planning contribute to the maintenance of the colonial relationship, Weizman offers a nuanced analysis of the impact of colonial discourse on the <span class="highlight">subaltern</span>, and the ways
+                in which it is perpetuated through the built environment (Weizman, 2007).
+                </br></br>
+                Although the term <span class="highlight">Terra Nullius</span> was not specifically used in the colonial discourse of Zionists, we can find several analogous phrases in Zionist mythology suggesting notions of uninhabited lands,
+                such as: ‘making the desert bloom’; the ‘conquest of the land’; and ‘land redemption.’ These mythical tools function as “cultural representations and disciplinary devices aimed at rallying the population behind the cause of an
+                historical enterprise” (Svirsky, 2010). Dalsheim (2004) identifies denial and memoricide as ingredients of the Zionist practice by arguing that <span class="highlight">Terra Nullius</span> “encapsulates a fantasy, a product of a
+                nationalist imagination, a way of thinking that fundamentally gives rise to ‘a longing to be rid of those who were never fully known’.” In Althusserian terms, state apparatuses are not limited to repressive methods, i.e. enforcing
+                direct force and political control; they are furthermore fundamentally ideological, invoking specific ways of viewing the world, identities, relationships with other individuals, and their connections to society (Wolff, 2004). In
+                this respect, <span class="highlight">Terra Nullius</span> serves as a construction that illustrates how Israeli Jews represent themselves to themselves; the desired absence of Palestinians erases and reconstructs the past and
+                memory through mental acts of self-deception. How does one, then, manage to forget intentionally what one really believes?
+                </br></br>
+                Self-deception constitutes of inevitably paradoxical lines of thought. As Elster (1983) remarks: “By wanting the non-existence of the object, one confers existence of it.” In other words, the <span class="highlight">Self</span>
+                cannot exist without its vital counterpart — the <span class="highlight">Other</span>; and the Zionists’ mission to erase the memory of the ethnic cleansing of 1948 ensures the very presence of that memory. This is where
+                discursive concepts such as <span class="highlight">Terra Nullius</span> come in handy. The unpleasant awareness of past wrongdoings is consciously rejected and replaced by a psychological mechanism that reconciles and ameliorates
+                the wrong (Svirsky, 2010).
+                </br></br>
+                This analysis of the concept of <span class="highlight">Terra Nullius</span> in the context of Zionism, however,
+                only scrapes the surface of the subaltern’s experience. Gayatri Spivak's seminal essay
+                <span class="highlight">Can the Subaltern Speak?</span> critiques the limitations of postcolonial theory by highlighting
+                the ways in which dominant (Western academic) discourses of power restrict the
+                ability of the <span class="highlight">subaltern</span> to fully express themselves. Spivak argues that the <span class="highlight">subaltern</span>
+                are rendered voiceless and invisible by the very structures of power that oppress them,
+                making it impossible for them to speak within dominant discourses. Instead, she calls
+                for a deeper engagement with “their lived experiences and the complex ways in which
+                they have been shaped by imperialism […] and an attempt to understand the subaltern
+                on their own terms, rather than imposing our own frameworks and categories onto
+                them” (Spivak, 1988).
 
-                    <span class="sub" id="chapter-1-2"><span class="green">●</span> The Cultural Arena</span>
+
+                <span class="sub" id="chapter-1-2"><span class="green">●</span> The Cultural Arena</span>
 
 
-                The names of places belong to the language of nationalism. Especially in areas where national or ethnic identities are contested, co-existing toponymies “compete for being recognized as legitimate and definitive,” and the existence and use — and correspondingly rejection — of place names become inherent features of conflict, as they concretize abstract arguments over historical and territorial claims (Azaryahu & Golan, 2001). The Zionist awareness of the political power of the map as a model for nation building — for mapping the national <span class="highlight">Self</span> and unmapping the <span class="highlight">Other</span> — was apparent since the early days of the British mandate in Palestine. The Jewish members on the Geographical Committee for Names in Palestine<label class="margin-toggle sidenote-number"></label>
+                The names of places belong to the language of nationalism. Especially in areas where national or ethnic identities are contested, co-existing toponymies “compete for being recognized as legitimate and definitive,” and the existence
+                and use — and correspondingly rejection — of place names become inherent features of conflict, as they concretize abstract arguments over historical and territorial claims (Azaryahu & Golan, 2001). The Zionist awareness of the
+                political power of the map as a model for nation building — for mapping the national <span class="highlight">Self</span> and unmapping the <span class="highlight">Other</span> — was apparent since the early days of the British mandate
+                in Palestine. The Jewish members on the Geographical Committee for Names in Palestine<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Committee operating under the Royal Geographical Society, the only body authorized to assign names throughout the British Empire, including Mandatory Palestine.
-                </span>  were in strong opposition towards the use of Arabic names, such as <span class="box box--small" data-tooltip="[ˈnæːblʊs] &#13; Nābulus &#013;نابلس">'Nablus'</span> instead of <span class="box box--small" data-tooltip="Šəḵem &#013;שכם">'Shechem'</span>, <span class="box box--small" data-tooltip="al-Khalīl &#013;الخليل">'Khalil'</span> instead of <span class="box box--small" data-tooltip="Ḥevrōn &#013;חֶבְרוֹן">'Hebron'</span> or <span class="box box--small" data-tooltip="Al-Quds &#013;القُدس">'el-Quds'</span> instead of <span class="box box--small" data-tooltip="[/dʒəˈruːsələm/] &#13; Yerushaláyim &#013;יְרוּשָׁלַיִם">'Jerusalem'</span>, on official maps produced by the Survey of Palestine<label class="margin-toggle sidenote-number"></label>
+                </span> were in strong opposition towards the use of Arabic names, such as <span class="box box--small" data-tooltip="[ˈnæːblʊs] &#13; Nābulus &#013;نابلس">'Nablus'</span> instead of <span class="box box--small"
+                    data-tooltip="Šəḵem &#013;שכם">'Shechem'</span>, <span class="box box--small" data-tooltip="al-Khalīl &#013;الخليل">'Khalil'</span> instead of <span class="box box--small" data-tooltip="Ḥevrōn &#013;חֶבְרוֹן">'Hebron'</span> or
+                <span class="box box--small" data-tooltip="Al-Quds &#013;القُدس">'el-Quds'</span> instead of <span class="box box--small" data-tooltip="[/dʒəˈruːsələm/] &#13; Yerushaláyim &#013;יְרוּשָׁלַיִם">'Jerusalem'</span>, on official maps
+                produced by the Survey of Palestine<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">Survey of Palestine was the government department responsible for the survey and mapping of Palestine during the British mandate period (1920–1948).
-                </span> , viewing this as anti-Jewish discrimination. The toponymic landscape became an ideological battleground — a cultural arena — and the Zionists’ attitudes clearly reflected the role of the map “as a model <span class="highlight">for</span>, rather than a model <span class="highlight">of</span> the landscape” in the framework of Zionist ideology (Suleiman, 2004).
+                </span> , viewing this as anti-Jewish discrimination. The toponymic landscape became an ideological battleground — a cultural arena — and the Zionists’ attitudes clearly reflected the role of the map “as a model <span
+                    class="highlight">for</span>, rather than a model <span class="highlight">of</span> the landscape” in the framework of Zionist ideology (Suleiman, 2004).
                 </br></br>
                 <!-- <span class="caption">
                     <img src="assets/images/map_destroyed.png">
                     A portion of a map reproduced by the Israeli survey department in 1958. Note the English transcrip-tion of Arab and Jewish place names, and the Hebrew overprint that includes names of new Jewish settlements established since 1948.
                 </span> -->
-                This mentality gained momentum in 1949, four months after Israel’s occupation of the <span class="box box--small" data-tooltip="ٱلنَّقَب an-Naqab &#13; [ɪnˈnɑ.qɑb] &#013;נֶגֶב /ˈneɡev/">Negev</span><label class="margin-toggle sidenote-number"></label>
+                This mentality gained momentum in 1949, four months after Israel’s occupation of the <span class="box box--small" data-tooltip="ٱلنَّقَب an-Naqab &#13; [ɪnˈnɑ.qɑb] &#013;נֶגֶב /ˈneɡev/">Negev</span><label
+                    class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">A vast desert region in the southern part of present-day Israel.
-                </span>, when Prime Minister Ben Gurion established the Negev Names Committee (NNC) and gave it the task of assigning “Hebrew names to all the places — mountains, valleys springs, roads and so on — in the Negev region” (Benvenisti, 2000). Ben Gurion’s instructions to the NNC left no space for misunderstandings: “We are obliged to remove the Arabic names for reasons of state. Just as we do not recognize the Arabs’ political proprietorship of the land, so also do we not recognize their spiritual proprietorship and their names” (cited in Benvenisti, 2000). The members of the committee were fully aware that they were not merely carrying out a technical exercise or work of research in their field of endeavor — it was an act of paramount political significance and symbolic appropriation; the concretization of Jewish proprietorship for more than half of Israel’s newly conquered territory (Benvenisti, 2000).
+                </span>, when Prime Minister Ben Gurion established the Negev Names Committee (NNC) and gave it the task of assigning “Hebrew names to all the places — mountains, valleys springs, roads and so on — in the Negev region” (Benvenisti,
+                2000). Ben Gurion’s instructions to the NNC left no space for misunderstandings: “We are obliged to remove the Arabic names for reasons of state. Just as we do not recognize the Arabs’ political proprietorship of the land, so also do
+                we not recognize their spiritual proprietorship and their names” (cited in Benvenisti, 2000). The members of the committee were fully aware that they were not merely carrying out a technical exercise or work of research in their field
+                of endeavor — it was an act of paramount political significance and symbolic appropriation; the concretization of Jewish proprietorship for more than half of Israel’s newly conquered territory (Benvenisti, 2000).
                 </br></br>
                 <span class="caption">
                     <img src="assets/images/octopus.jpg">
-                    This map appeared on the back cover of the 1952 anonymous book titled Occupied Palestine (Filastin al-Muhtalla). The cartographer depicted the State of Israel as an octopus, extending its arms to all four corners of Palestine. The West Bank and Gaza are shaded white.
+                    This map appeared on the back cover of the 1952 anonymous book titled Occupied Palestine (Filastin al-Muhtalla). The cartographer depicted the State of Israel as an octopus, extending its arms to all four corners of Palestine. The
+                    West Bank and Gaza are shaded white.
                 </span>
-                Ironically, out of the 533 names the NNC had assigned by the time it concluded its work in March 1951, 333 were either translations of, or based on phonetic similarity to the Arabic names they replaced. The committee justified this by arguing that the Arabic names originally derived from ancient Hebrew names and the act of renaming allowed them to ‘redeem’ the places in question from ‘corrupt’ Arabic names (Kadman, 2015; Suleiman, 2004). The names, used by the Bedouin of the Negev for centuries, were erased from the official Hebrew maps, and subsequently from road signs, newspapers, guidebooks and geography texts (Benvenisti, 2000). With this ‘purification’, an entire world of cultural memories and traditions vanished; expelled by force, just like the Palestinian Bedouin who used to roam the land.
+                Ironically, out of the 533 names the NNC had assigned by the time it concluded its work in March 1951, 333 were either translations of, or based on phonetic similarity to the Arabic names they replaced. The committee justified this by
+                arguing that the Arabic names originally derived from ancient Hebrew names and the act of renaming allowed them to ‘redeem’ the places in question from ‘corrupt’ Arabic names (Kadman, 2015; Suleiman, 2004). The names, used by the
+                Bedouin of the Negev for centuries, were erased from the official Hebrew maps, and subsequently from road signs, newspapers, guidebooks and geography texts (Benvenisti, 2000). With this ‘purification’, an entire world of cultural
+                memories and traditions vanished; expelled by force, just like the Palestinian Bedouin who used to roam the land.
                 </br></br>
 
-                In 1951 the same blueprint was applied to the rest of the country. An official map for civilian use, that included the Hebrew names of the new Israeli settlements, was produced in 1958<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">This map was based on the 1:100 000 map prepared by the British mandate government in 1942. The official place names of Mandatory Palestine were mainly Arabic or relating to Christian traditions, rendering them foreign from the perspective of Jewish nationalism and the Zionist project (Azaryahu and Golan, 2001).
-                </span>. The more than 400 Arab villages that had been destroyed since 1948 were preserved on the map with the addition of the Hebrew word <span class="highlight">‘harus’</span> (destroyed) next to the names. The map thus served as a palpable record of the Nakba, the dismemberment of Palestine and the establishment of Israel. “By removing most of the Arabic place names from the map,” Professor Yasir Suleiman writes, “Israel did not just create a new map, it also inscribed a new reality in which Hebrew won the battle over Arabic, just as early Zionists hoped it would. […] The elimination of Arabic place names from the map has also caused the loss of a set of meanings and traditions that express the connection of the Palestinians to the land” (Suleiman, 2004). A closer look at these toponymies reveals their abundance in conceptualizations and images that shed light on the different ways Palestinian and Israeli cultures view nature.
+                In 1951 the same blueprint was applied to the rest of the country. An official map for civilian use, that included the Hebrew names of the new Israeli settlements, was produced in 1958<label
+                    class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">This map was based on the 1:100 000 map prepared by the British mandate government in 1942. The official place names of Mandatory Palestine were mainly Arabic or relating to Christian traditions, rendering them
+                    foreign from the perspective of Jewish nationalism and the Zionist project (Azaryahu and Golan, 2001).
+                </span>. The more than 400 Arab villages that had been destroyed since 1948 were preserved on the map with the addition of the Hebrew word <span class="highlight">‘harus’</span> (destroyed) next to the names. The map thus served as a
+                palpable record of the Nakba, the dismemberment of Palestine and the establishment of Israel. “By removing most of the Arabic place names from the map,” Professor Yasir Suleiman writes, “Israel did not just create a new map, it also
+                inscribed a new reality in which Hebrew won the battle over Arabic, just as early Zionists hoped it would. […] The elimination of Arabic place names from the map has also caused the loss of a set of meanings and traditions that
+                express the connection of the Palestinians to the land” (Suleiman, 2004). A closer look at these toponymies reveals their abundance in conceptualizations and images that shed light on the different ways Palestinian and Israeli
+                cultures view nature.
                 </br></br>
-                Herewith, we also come to understand that the occupation of places is incomplete without memory and linguistic occupation. The act of colonization begins with strategic acts of linguicism — the systematic erasure of language culminating in discursive invisibility.
+                Herewith, we also come to understand that the occupation of places is incomplete without memory and linguistic occupation. The act of colonization begins with strategic acts of linguicism — the systematic erasure of language
+                culminating in discursive invisibility.
                 </br></br>
                 <img class="fullwidth onmobile" src="assets/images/nazareth_mobile.png">
                 <img class="fullwidth ondesktop" src="assets/images/nazareth.png">
-                <span class="caption">A portion of a map reproduced by the Israeli survey department in 1958. Note the English transcription of Arab and Jewish place names, and the purple Hebrew overprint that marks destruction of Palestinian villages, including Maʿlul, and names of new Jewish settlements established since 1948. (Source: Palestine Open Maps)</span>
+                <span class="caption">A portion of a map reproduced by the Israeli survey department in 1958. Note the English transcription of Arab and Jewish place names, and the purple Hebrew overprint that marks destruction of Palestinian
+                    villages, including Maʿlul, and names of new Jewish settlements established since 1948. (Source: Palestine Open Maps)</span>
+
                 <span class="sub" id="chapter-1-3"><span class="green">●</span> A Comparative Reading of Palestinian and Israeli Toponyms</span>
 
-                <span class="quote">“The wealth of Arabic toponymy is astounding in its beauty, its sensitivity to the landscape, its delicacy of observation and choice of images. Its metaphors have a poetic quality; its humor is sometimes refined, sometimes sarcastic. The knowledge of the climate, the familiarity with nature and inanimate objects is absolute.”</span>
-            </br></br>
-                —	Meron Benvenisti in <span class="highlight">Sacred Landscape</span> (2000)
-            </br></br>
-                In the following section, due to my unfamiliarity with the Arabic and Hebrew languages and scripts, I have relied heavily on the comparative readings of Arabic and Hebrew toponyms brilliantly conducted by Professor Nur Masalha (2015), Dr. Amer Dahamshe (2021) and Meron Benvenisti (2000), in order to shed light on the socio-, ethno-, and psycholinguistic considerations related to the different spatial thinking of Israelis and Palestinians. Dahamshe identifies five analytical categories in the Zionist renaming process: unification, uniqueness, masculine rhetoric, sanitation and linguistic mimicry.
+                <span class="quote">“The wealth of Arabic toponymy is astounding in its beauty, its sensitivity to the landscape, its delicacy of observation and choice of images. Its metaphors have a poetic quality; its humor is sometimes refined,
+                    sometimes sarcastic. The knowledge of the climate, the familiarity with nature and inanimate objects is absolute.”</span>
                 </br></br>
-                <span class="highlight">Unification</span> refers to the standardization of names, disregarding indigenous concepts. For example, the Hebrew name for the wadi <span class="box box--small" data-tooltip="נחל יפתחאל">Naḥal Yiftaẖ'el</span> covers 24 km of the river and its two tributaries, while in Arabic, six different names are used to refer to the same river; <span class="box box--small">Wādī al-Maʿaṣir</span> (Wine Press River) and <span class="box box--small">Wādī al-Mughr</span> (Cave River) are the names of the two tributaries; the sections of the main river are called <span class="box box--small">Wādī Jaraban</span> — after the river’s ugly and uneven shape that resembles the skin of those afflicted with eczema; <span class="box box--small">Wādī al-Aawaj</span> (Winding River); <span class="box box--small">Wādī Rumanah</span>, after the nearby village; and <span class="box box--small">Wādī al-Khaladiyya</span>, after a seasonal Bedouin encampment. These names reveal the familiar and intimate contact between Palestinians and their surroundings.
+                — Meron Benvenisti in <span class="highlight">Sacred Landscape</span> (2000)
                 </br></br>
-                <span class="highlight">Uniqueness</span> refers to using a single name to signify a single feature. In Arabic, the same word is often used for a number of features. For instance, the name <span class="box box--small">al-Tīnah</span> — which stems from the presence of nearby fig trees — is a reoccurring name for springs and rivers, which have been Hebraized as <span class="box box--small">ʿEin Kaner, ʿEin Pagah, ʿEin Yaqim</span> and <span class="box box--small">Naḥal Miron</span>. These panoptic strategies are employed by the Zionists to essentially serve economic and political purposes.
+                In the following section, due to my unfamiliarity with the Arabic and Hebrew languages and scripts, I have relied heavily on the comparative readings of Arabic and Hebrew toponyms brilliantly conducted by Professor Nur Masalha (2015),
+                Dr. Amer Dahamshe (2021) and Meron Benvenisti (2000), in order to shed light on the socio-, ethno-, and psycholinguistic considerations related to the different spatial thinking of Israelis and Palestinians. Dahamshe identifies five
+                analytical categories in the Zionist renaming process: unification, uniqueness, masculine rhetoric, sanitation and linguistic mimicry.
                 </br></br>
-                The pre-1948 Palestinian geographical space had significant representations of Palestinian women and their folklore. Zionist renaming practices have constituted gendered power relations by diminishing the female subject and feminine connotations and replacing them with <span class="highlight">masculine rhetoric</span> and patriarchal conventions; names of Palestinian women were replaced by Hebrew male names. For example, <span class="box box--small">ʿAyn Zarefah</span> was renamed <span class="box box--small">ʿEin Zefan</span>, and <span class="box box--small">ʿAyn Umm Ḥamid</span> (Spring of Hamid’s Mother) became <span class="box box--small">ʿEin Ḥomeṭ</span> (which refers to a male lizard). It is also worth mentioning that in the rhetoric of Zionist colonization as well as in Hebrew literature, settling a territory is often described as a form of sexual act, particularly between a man and a <span class="highlight">‘virgin land’</span> (Rogani, 2009).
+                <span class="highlight">Unification</span> refers to the standardization of names, disregarding indigenous concepts. For example, the Hebrew name for the wadi <span class="box box--small" data-tooltip="נחל יפתחאל">Naḥal
+                    Yiftaḥel</span> covers 24 km of the river and its two tributaries, while in Arabic, six different names are used to refer to the same river; <span class="box box--small">Wādī al-Maʿaṣir</span> (Wine Press River) and <span
+                    class="box box--small">Wādī al-Mughr</span> (Cave River) are the names of the two tributaries; the sections of the main river are called <span class="box box--small">Wādī Jaraban</span> — after the river’s ugly and uneven shape
+                that resembles the skin of those afflicted with eczema; <span class="box box--small">Wādī al-Aawaj</span> (Winding River); <span class="box box--small">Wādī Rumanah</span>, after the nearby village; and <span
+                    class="box box--small">Wādī al-Khaladiyya</span>, after a seasonal Bedouin encampment. These names reveal the familiar and intimate contact between Palestinians and their surroundings.
                 </br></br>
-                <span class="highlight">Sanitation</span> refers to replacing Palestinian names perceived by the Zionists as ‘wild’ and ‘inappropriate’. As we have already concluded, the Palestinians are intimately familiar with their surroundings, including their harsh and threatening aspects. <span class="box box--small">Wādī al-Majnunah</span> (Madwoman River), referring to the irregular flow of the river and the intensive pulses that caused great damage to the surrounding agricultural lands, driving the landowners mad, was replaced by <span class="box box--small">Naḥal Beit Haʿemek</span>, referring to a nearby kibbutz, while <span class="box box--small">Wādī al-Maḍabiʿ</span> (Hyena River) became <span class="box box--small">Naḥal Tzviyah</span> (Gazelle River). These ‘inappropriate’ names also served as evidence for the Zionists of the Palestinians’ inability to tame the forces of nature and cultivate the land, further justifying the mission of ‘making the desert bloom’.
+                <span class="highlight">Uniqueness</span> refers to using a single name to signify a single feature. In Arabic, the same word is often used for a number of features. For instance, the name <span class="box box--small">al-Tīnah</span>
+                — which stems from the presence of nearby fig trees — is a reoccurring name for springs and rivers, which have been Hebraized as <span class="box box--small">ʿEin Kaner, ʿEin Pagah, ʿEin Yaqim</span> and <span
+                    class="box box--small">Naḥal Miron</span>. These panoptic strategies are employed by the Zionists to essentially serve economic and political purposes.
                 </br></br>
-                There is, however, a certain ambivalence in the Zionists’ renaming practices. Despite going through extreme lengths to erase the Palestinians’ historical and national attachment to the land, numerous orthographic elements of Arabic names have been retained in the Hebraized forms through <span class="highlight">linguistic mimicry</span>. These acts can take shape as direct translations — such as <span class="box box--small">Jabal al-Suwaydi</span> being directly translated to <span class="box box--small">Har Shiḥoret</span> (both meaning ‘Black Mountain’) — or based on phonetic or morphological similarity — such as <span class="box box--small">ʿAyn Umm Ṭamrun</span> becoming <span class="box box--small">ʿEin Ṭamir</span>, or <span class="box box--small">ʿAyn al-ʿAsal</span> becoming <span class="box box--small">ʿEin Esel</span>.
+                The pre-1948 Palestinian geographical space had significant representations of Palestinian women and their folklore. Zionist renaming practices have constituted gendered power relations by diminishing the female subject and feminine
+                connotations and replacing them with <span class="highlight">masculine rhetoric</span> and patriarchal conventions; names of Palestinian women were replaced by Hebrew male names. For example, <span class="box box--small">ʿAyn
+                    Zarefah</span> was renamed <span class="box box--small">ʿEin Zefan</span>, and <span class="box box--small">ʿAyn Umm Ḥamid</span> (Spring of Hamid’s Mother) became <span class="box box--small">ʿEin Ḥomeṭ</span> (which refers to a
+                male lizard). It is also worth mentioning that in the rhetoric of Zionist colonization as well as in Hebrew literature, settling a territory is often described as a form of sexual act, particularly between a man and a <span
+                    class="highlight">‘virgin land’</span> (Rogani, 2009).
                 </br></br>
-                We thus come to realize that despite the extremely complex perspectives involved in the Zionists’ (rather arbitrary) renaming project, its main objective is to deny the role of the Palestinian names as linguistic vessels carrying history, culture and memory.
+                <span class="highlight">Sanitation</span> refers to replacing Palestinian names perceived by the Zionists as ‘wild’ and ‘inappropriate’. As we have already concluded, the Palestinians are intimately familiar with their surroundings,
+                including their harsh and threatening aspects. <span class="box box--small">Wādī al-Majnunah</span> (Madwoman River), referring to the irregular flow of the river and the intensive pulses that caused great damage to the surrounding
+                agricultural lands, driving the landowners mad, was replaced by <span class="box box--small">Naḥal Beit Haʿemeḳ</span>, referring to a nearby kibbutz, while <span class="box box--small">Wādī al-Maḍabiʿ</span> (Hyena River) became
+                <span class="box box--small">Naḥal Tzviyah</span> (Gazelle River). These ‘inappropriate’ names also served as evidence for the Zionists of the Palestinians’ inability to tame the forces of nature and cultivate the land, further
+                justifying the mission of ‘making the desert bloom’.
+                </br></br>
+                There is, however, a certain ambivalence in the Zionists’ renaming practices. Despite going through extreme lengths to erase the Palestinians’ historical and national attachment to the land, numerous orthographic elements of Arabic
+                names have been retained in the Hebraized forms through <span class="highlight">linguistic mimicry</span>. These acts can take shape as direct translations — such as <span class="box box--small">Jabal al-Suwaydi</span> being directly
+                translated to <span class="box box--small">Har Shiḥoret</span> (both meaning ‘Black Mountain’) — or based on phonetic or morphological similarity — such as <span class="box box--small">ʿAyn Umm Ṭamrun</span> becoming <span
+                    class="box box--small">ʿEin Ṭamir</span>, or <span class="box box--small">ʿAyn al-ʿAsal</span> becoming <span class="box box--small">ʿEin Esel</span>.
+                </br></br>
+                We thus come to realize that despite the extremely complex perspectives involved in the Zionists’ (rather arbitrary) renaming project, its main objective is to deny the role of the Palestinian names as linguistic vessels carrying
+                history, culture and memory.
+                </br></br></br></br>
+                <img class="fullwidth onmobile" src="assets/images/innab_m.jpeg">
+                <img class="fullwidth ondesktop" src="assets/images/innab.jpeg">
+                <span class="caption">Saba Innab <span class="highlight">Untitled (Map)</span> (2012) from From "How to Build Without a Land" (2011-ongoing)</br>(Source: Saba Innab)</span>
 
 
                 <span class="chapter" id="chapter-2"><span class="red">●</span> A Rose by Any Other Name Would Smell as Sweet?</span>
 
 
-                Professors Maoz Azaryahu and Arnon Golan (2001) describe the purpose of the map to be an “objective and definitive representation of the landscape, and their authority is conductive to the substantialization of place names as an aspect of the landscape and to rendering a specific toponymy legitimate.” In other words, cartography is intrinsically a form of political discourse; whether intentional or unintentional, maps produce and, above all, suppress knowledge and perpetuate systems of power and oppression. J.B. Harley addresses this Foucauldian view<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Dispositif, a term coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physical, and administrative mechanisms and knowledge structures which enhance and maintain the exercise of power within the social body. Understanding place naming as dispositif allows us to interpret and analyze the process more generally in relation to a wider social, political and spatial order (Giraut & Houssay-Holzschuch, 2016).
-                </span> on maps and mapmaking as <span class="highlight">cartographic silence</span> (Harley, 1988). This <span class="highlight">silence</span> is an active feature of cartographic language and “a necessary mode of cartographic abstraction entailed by the ‘distortion’ involved in any approach to depicting the four-dimensional world in two-dimensional form” (Harley & Laxton, 2001; Pater, 2016; Monmonier, 1996; Reddleman, 2018). Apart from functioning as a loaded weapon of colonial powers, as was discussed in the previous chapter, cartographic silencing also appears as a side-effect of toponymic modernization. An example of this is the attempts by the United Nations to standardize geographical names and their graphic forms in the Latin script. Despite the numerous technocratic attempts aiming at the systemization and homogenization of spatial onomastics, the practice of representing toponyms in maps has not been successfully globally standardized, and several different methods for map labeling are in use today (Vuolteenaho & Berg, 2009).
+                Professors Maoz Azaryahu and Arnon Golan (2001) describe the purpose of the map to be an “objective and definitive representation of the landscape, and their authority is conductive to the substantialization of place names as an
+                aspect of the landscape and to rendering a specific toponymy legitimate.” In other words, cartography is intrinsically a form of political discourse; whether intentional or unintentional, maps produce and, above all, suppress
+                knowledge and perpetuate systems of power and oppression. J.B. Harley addresses this Foucauldian view<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Understanding place naming as dispositif allows us to interpret and analyze the process more generally in relation to a wider social, political and spatial order (Giraut & Houssay-Holzschuch, 2016).
+                </span> on maps and mapmaking as <span class="highlight">cartographic silence</span> (Harley, 1988). This <span class="highlight">silence</span> is an active feature of cartographic language and “a necessary mode of cartographic
+                abstraction entailed by the ‘distortion’ involved in any approach to depicting the four-dimensional world in two-dimensional form” (Harley & Laxton, 2001; Pater, 2016; Monmonier, 1996; Reddleman, 2018). In her artworks, Palestinian-
+                Jordanian architect and artist Saba Innab interrogates the relationship between
+                power and space in the context of Palestine and the broader Middle East. Innab’s
+                critiques of colonialism and occupation highlight the ways in which maps and other
+                forms of spatial representation can be used to silence or marginalize certain voices and
+                perspectives. By drawing attention to these power dynamics, Innab’s work challenges
+                the idea that cartography can ever be truly objective or neutrallabel <label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">See e.g. <a href="https://www.berliner-kuenstlerprogramm.de/en/artist/saba-innab/">Berliner Künstlerprogramm</a> & <a href="https://universes.art/en/nafas/articles/2014/saba-innab">Universes in Universe</a>
+                </span>.
+                </br></br>
+                Apart from functioning as a loaded weapon of colonial powers, as was discussed in the previous chapter, cartographic silencing also appears as a side-effect of toponymic modernization. An example of this is the attempts by the United
+                Nations to standardize geographical names and their graphic forms in the Latin script. Despite the numerous technocratic attempts aiming at the systemization and homogenization of spatial onomastics, the practice of representing
+                toponyms in maps has not been successfully globally standardized, and several different methods for map labeling are in use today (Vuolteenaho & Berg, 2009).
                 <span class="caption">
                     <img src="assets/images/gun.png">
                     Map of Israel as the barrel of a gun illustrated by an Israeli high-school student
@@ -381,21 +506,42 @@
 
                 <span class="sub" id="chapter-2-1"><span class="green">●</span> The Great Toponymic Divide</span>
 
-                When we want to specify a particular geographical feature, we may sometimes find several names available for it. Determining the ‘appropriate’ name for a feature comes with many cultural and political issues. “Apart from acknowledging local sensitivities, we may also need to establish a balance between the name we ourselves recognize and the name as recognized in the locality itself, on the ground” (Woodman, 2012). Toponyms can generally be divided into two main categories, <span class="highlight">endonyms</span> and <span class="highlight">exonyms</span>. Paul Woodman calls this division <span class="highlight">‘the great toponymic divide’</span>.
+                When we want to specify a particular geographical feature, we may sometimes find several names available for it. Determining the ‘appropriate’ name for a feature comes with many cultural and political issues. “Apart from acknowledging
+                local sensitivities, we may also need to establish a balance between the name we ourselves recognize and the name as recognized in the locality itself, on the ground” (Woodman, 2012). Toponyms can generally be divided into two main
+                categories, <span class="highlight">endonyms</span> and <span class="highlight">exonyms</span>. Paul Woodman calls this division <span class="highlight">‘the great toponymic divide’</span>.
                 </br></br>
-                Endonyms are native geographical names written in the local language and script, the local population’s self-designated names for their surroundings. <span class="box box--small" data-tooltip="[ˈsuo̯mi] &#13; Finland">Suomi</span> (Finland), <span class="box box--small" data-tooltip="[ˈmɒɟɒrorsaːɡ] &#13; Hungary">Magyarország</span> (Hungary), <span class="box box--small" data-tooltip="[eˈlaða] &#13; Greece">Ελλάδα</span> (Greece) and <span class="box box--small" data-tooltip="[ʊkrɐˈjinɐ] &#13;Ukraïna &#13; Ukraine">Україна</span> (Ukraine) are all examples of endonyms. These names have not undergone any kind of transformation and thus preserve the correct pronunciation. However, the use of local languages — and above all local scripts — presents challenges for non-native or otherwise unfamiliar users. Another challenge arises in cases where larger geographical features, like mountain ranges or seas, are surrounded by several countries that all have their own unique name for the feature, in some cases also in different scripts (Dušek & Popelková, 2021).
+                Endonyms are native geographical names written in the local language and script, the local population’s self-designated names for their surroundings. <span class="box box--small" data-tooltip="[ˈsuo̯mi] &#13; Finland">Suomi</span>
+                (Finland), <span class="box box--small" data-tooltip="[ˈmɒɟɒrorsaːɡ] &#13; Hungary">Magyarország</span> (Hungary), <span class="box box--small" data-tooltip="[eˈlaða] &#13; Greece">Ελλάδα</span> (Greece) and <span
+                    class="box box--small" data-tooltip="[ʊkrɐˈjinɐ] &#13;Ukraïna &#13; Ukraine">Україна</span> (Ukraine) are all examples of endonyms. These names have not undergone any kind of transformation and thus preserve the correct
+                pronunciation. However, the use of local languages — and above all local scripts — presents challenges for non-native or otherwise unfamiliar users. Another challenge arises in cases where larger geographical features, like mountain
+                ranges or seas, are surrounded by several countries that all have their own unique name for the feature, in some cases also in different scripts (Dušek & Popelková, 2021).
                 </br></br>
-                Exonyms, on the other hand, are non-native names, established outside the local linguistic community. Maps employing exonyms are primarily targeted at ‘domestic’ users (i.e. users in a specific linguistic region). They are commonly found in e.g. school atlases, where they represent a more accessible and easily comprehendible form of local names for the targeted users (Dušek & Popelková, 2021). <span class="highlight">Kööpenhamina</span> (Finnish name for <span class="box box--small" data-tooltip="[kʰøpm̩ˈhɑwˀn] &#13; Copenhagen">København</span>), <span class="highlight">Laibach</span> (German name for <span class="box box--small" data-tooltip="[/ljubljàːna/]">Ljubljana</span>) and <span class="highlight">Venice</span> (English name for <span class="box box--small" data-tooltip="[veˈnɛttsja] &#13; Venice">Venezia</span>) are examples of exonyms. Additionally, if a (large) geographical feature extends over more than one country, each of those countries (and languages within those countries) might have a unique endonym for it. In such cases, instead of choosing one of the local endonyms, many languages have developed exonyms to refer to the features in question.<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Geographer Naftali Kadmon gives the example of “[t]he river starting in Germany under the endonym <span class="highlight">Donau</span> and ending in the Black Sea as <span class="highlight">Dunaj</span> traverses eight countries and carries five different endonyms; hence, for simplicity, the English language uses the exonym <span class="highlight">Danube</span>” (Kadmon, 2001).
-                </span> A rather obvious disadvantage of this system is that it makes maps implicitly incomprehensible for users outside the designated linguistic community. Furthermore, exonyms are mainly established for places of greater significance (countries, major cities, oceans, mountain ranges, etc.), meaning that most geographical features do not have a corresponding exonym.
+                Exonyms, on the other hand, are non-native names, established outside the local linguistic community. Maps employing exonyms are primarily targeted at ‘domestic’ users (i.e. users in a specific linguistic region). They are commonly
+                found in e.g. school atlases, where they represent a more accessible and easily comprehendible form of local names for the targeted users (Dušek & Popelková, 2021). <span class="highlight">Kööpenhamina</span> (Finnish name for <span
+                    class="box box--small" data-tooltip="[kʰøpm̩ˈhɑwˀn] &#13; Copenhagen">København</span>), <span class="highlight">Laibach</span> (German name for <span class="box box--small" data-tooltip="[/ljubljàːna/]">Ljubljana</span>) and
+                <span class="highlight">Venice</span> (English name for <span class="box box--small" data-tooltip="[veˈnɛttsja] &#13; Venice">Venezia</span>) are examples of exonyms. Additionally, if a (large) geographical feature extends over more
+                than one country, each of those countries (and languages within those countries) might have a unique endonym for it. In such cases, instead of choosing one of the local endonyms, many languages have developed exonyms to refer to the
+                features in question.<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Geographer Naftali Kadmon gives the example of “[t]he river starting in Germany under the endonym <span class="highlight">Donau</span> and ending in the Black Sea as <span class="highlight">Dunaj</span>
+                    traverses eight countries and carries five different endonyms; hence, for simplicity, the English language uses the exonym <span class="highlight">Danube</span>” (Kadmon, 2001).
+                </span> A rather obvious disadvantage of this system is that it makes maps implicitly incomprehensible for users outside the designated linguistic community. Furthermore, exonyms are mainly established for places of greater
+                significance (countries, major cities, oceans, mountain ranges, etc.), meaning that most geographical features do not have a corresponding exonym.
                 </br></br>
-                As a sub-category of endonyms, I ought to mention endonyms written in the Latin (Roman) script. In these cases, names are romanized, i.e. converted from the local script into the Latin writing system, with the aim of constructing a single unified form for all geographical names in order to avoid ambiguity and confusion. This system enjoys widespread international support and is promoted by the United Nations, which I will discuss more in detail in the next section. Despite its success, this approach carries several disadvantages; Firstly, much like in the case of exonyms, it creates discrepancies between names on maps and their local forms and renders maps virtually useless for people unfamiliar with the Latin script<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Although the Latin script is the most widespread script in the world, there are regions, such as China and several Arab countries, where a large proportion of the population is not familiar of proficient in the Latin script.
-                </span>. Secondly, its preference for the Latin script is fundamentally Eurocentric; in many regions it creates associations to the linguistic mutilation projects carried out by European colonial empires, and it contributes profoundly to the homogenization of the linguistic and cultural landscape (Dušek & Popelková, 2021).
+                As a sub-category of endonyms, I ought to mention endonyms written in the Latin (Roman) script. In these cases, names are romanized, i.e. converted from the local script into the Latin writing system, with the aim of constructing a
+                single unified form for all geographical names in order to avoid ambiguity and confusion. This system enjoys widespread international support and is promoted by the United Nations, which I will discuss more in detail in the next
+                section. Despite its success, this approach carries several disadvantages; Firstly, much like in the case of exonyms, it creates discrepancies between names on maps and their local forms and renders maps virtually useless for people
+                unfamiliar with the Latin script<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Although the Latin script is the most widespread script in the world, there are regions, such as China and several Arab countries, where a large proportion of the population is not familiar of proficient in the
+                    Latin script.
+                </span>. Secondly, its preference for the Latin script is fundamentally Eurocentric; in many regions it creates associations to the linguistic mutilation projects carried out by European colonial empires, and it contributes profoundly
+                to the homogenization of the linguistic and cultural landscape (Dušek & Popelková, 2021).
                 </br></br>
-                Outside ‘the great toponymic divide’ we can find an additional, perhaps the most ‘linguistically neutral’, method — transcription based on pronunciation. Its main advantage is that information on local pronunciation of place names is always available, and with a wide variety of official transcription systems, pronunciations can be preserved in their original form. Transcription is furthermore independent of the written form, which means that it is equally applicable for phonemic, syllabic or logographic scripts — as well as for unwritten languages. The most widely used transcription system is the International Phonetic Alphabet (IPA)<label class="margin-toggle sidenote-number"></label>
+                Outside ‘the great toponymic divide’ we can find an additional, perhaps the most ‘linguistically neutral’, method — transcription based on pronunciation. Its main advantage is that information on local pronunciation of place names is
+                always available, and with a wide variety of official transcription systems, pronunciations can be preserved in their original form. Transcription is furthermore independent of the written form, which means that it is equally
+                applicable for phonemic, syllabic or logographic scripts — as well as for unwritten languages. The most widely used transcription system is the International Phonetic Alphabet (IPA)<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">The IPA is, however, not the only phonetic alphabet available. Others include the Americanist Phonetic Notation, the Uralic Phonetic Alphabet, Pinyin and the Arabic International Phonetic Alphabet.
-                </span> , which you might have encountered in lexicons or on Wikipedia. The most significant drawback of the IPA is, as one might anticipate, its European origin; apart from a few Greek characters and a handful of newly created characters, it is solely based on the Latin script — and therefore read from left to right (Dušek & Popelková, 2021). Thus, promoting the use of the IPA in map labeling would further enforce the dominant role of the Latin script.
+                </span> , which you might have encountered in lexicons or on Wikipedia. The most significant drawback of the IPA is, as one might anticipate, its European origin; apart from a few Greek characters and a handful of newly created
+                characters, it is solely based on the Latin script — and therefore read from left to right (Dušek & Popelková, 2021). Thus, promoting the use of the IPA in map labeling would further enforce the dominant role of the Latin script.
                 </br></br>
                 <img class="fullwidth onmobile" src="assets/images/ipa_mobile.png">
                 <img class="fullwidth ondesktop" src="assets/images/ipa.jpg">
@@ -404,152 +550,258 @@
                 <span class="sub" id="chapter-2-2"><span class="green">●</span> Tamed Dragon’s Teeth</span>
 
 
-                There is a story in Greek mythology about Cadmus, a Prince of <span class="box box--small" data-tooltip="صور | Ṣūr">Tyre</span>, who sailed to <span class="box box--small" data-tooltip="Βοιωτία | /biˈoʊʃ(i)ə/">Boeotia</span> in Greece in search for his sister Europa. Upon arrival he encountered a fierce dragon. Cadmus slayed the dragon and sowed its teeth in the ground, which miraculously sprouted an army of men who started killing each other. Once the massacre was over, five men remained, and they helped Cadmus build the city of Thebes and conquer the tribes of Greece. Along with barbaric tribes, Cadmus introduced literacy and the Phoenician letters<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">The Phoenician alphabet (c. 1050–150 BC) is also called the Early Linear script because it is an early development of the Proto- or Old Canaanite or Proto-Sinaitic script, into a linear, purely alphabetic script, also marking the transfer from a multi-directional writing system, where a variety of writing directions occurred, to a regulated horizontal, right-to-left script.
+                There is a story in Greek mythology about Cadmus, a Prince of <span class="box box--small" data-tooltip="صور | Ṣūr">Tyre</span>, who sailed to <span class="box box--small" data-tooltip="Βοιωτία | /biˈoʊʃ(i)ə/">Boeotia</span> in Greece
+                in search for his sister Europa. Upon arrival he encountered a fierce dragon. Cadmus slayed the dragon and sowed its teeth in the ground, which miraculously sprouted an army of men who started killing each other. Once the massacre was
+                over, five men remained, and they helped Cadmus build the city of Thebes and conquer the tribes of Greece. Along with barbaric tribes, Cadmus introduced literacy and the Phoenician letters<label
+                    class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">The Phoenician alphabet (c. 1050–150 BC) is also called the Early Linear script because it is an early development of the Proto- or Old Canaanite or Proto-Sinaitic script, into a linear, purely alphabetic
+                    script, also marking the transfer from a multi-directional writing system, where a variety of writing directions occurred, to a regulated horizontal, right-to-left script.
                 </span> into Greece. Unlike pre-alphabetic (pictographic) writing-systems, the alphabet was efficient and easy to learn, allowing the rise of empires and military bureaucracies, and the fall of priestly power.
                 </br></br>
-                This myth of the co-origins of literacy and the empire symbolizes the power, authority and violence embodied in the alphabet. Letters — the key to wisdom — are, in a way, a form of tamed dragon’s teeth — an agent of power. As Marshall McLuhan explains in <span class="highlight">Understanding Media</span>: “Languages are filled with testimony to the grasping, devouring power and precision of teeth. That the power of letters as agents of aggressive order and precision should be expressed as extensions of the dragon's teeth is natural and fitting. Teeth are emphatically visual in their lineal order. Letters are not only like teeth visually, but their power to put teeth into the business of empire-building is manifest in our Western history.” (McLuhan, 1964)
+                This myth of the co-origins of literacy and the empire symbolizes the power, authority and violence embodied in the alphabet. Letters — the key to wisdom — are, in a way, a form of tamed dragon’s teeth — an agent of power. As Marshall
+                McLuhan explains in <span class="highlight">Understanding Media</span>: “Languages are filled with testimony to the grasping, devouring power and precision of teeth. That the power of letters as agents of aggressive order and
+                precision should be expressed as extensions of the dragon's teeth is natural and fitting. Teeth are emphatically visual in their lineal order. Letters are not only like teeth visually, but their power to put teeth into the business of
+                empire-building is manifest in our Western history.” (McLuhan, 1964)
                 </br></br>
-                As (western) societies became more sophisticated, the alphabets used to write gained an increasingly phonetic form. Rather than pictures or ideas, as is the case in e.g. Egyptian hieroglyphs, letters came to represent syllables and ultimately individual speech sounds — vowels and consonants — as is the case in the Latin script (Pater, 2016), which is today used by 70% of the world’s population (Pariona, 2019). Not all scripts are, however, alphabetic. Another large cluster of writing systems, used from the Eastern Mediterranean  to Southeast Asia, fall under the category of <span class="highlight">syllabic</span> writing systems. These systems focus on the syllables rather than specific letters. Within this category we find e.g. the Arabic and Hebrew scripts, which mainly utilize consonants, most of the vowels only being spoken. Hence, “knowing the Arabic script but not the language will allow you to produce only a rough approximation of the sound value of a given word” (Collin, 2005). These “alphabetical differences” can create major challenges in translation.
+                As (western) societies became more sophisticated, the alphabets used to write gained an increasingly phonetic form. Rather than pictures or ideas, as is the case in e.g. Egyptian hieroglyphs, letters came to represent syllables and
+                ultimately individual speech sounds — vowels and consonants — as is the case in the Latin script (Pater, 2016), which is today used by 70% of the world’s population (Pariona, 2019). Not all scripts are, however, alphabetic. Another
+                large cluster of writing systems, used from the Eastern Mediterranean to Southeast Asia, fall under the category of <span class="highlight">syllabic</span> writing systems. These systems focus on the syllables rather than specific
+                letters. Within this category we find e.g. the Arabic and Hebrew scripts, which mainly utilize consonants, most of the vowels only being spoken. Hence, “knowing the Arabic script but not the language will allow you to produce only a
+                rough approximation of the sound value of a given word” (Collin, 2005). These “alphabetical differences” can create major challenges in translation.
 
                 <span class="sub" id="chapter-2-3"><span class="green">●</span> Transliteration and Homogenization</span>
 
                 <span class="quote">“Do you translate by eye or by ear?
-                Translation seeks faithfulness and accuracy and ends up always betraying either the letter of the text, its spirit, or its aesthetics. The original text is always already an impossible translation that renders translation impossible.”</span>
+                    Translation seeks faithfulness and accuracy and ends up always betraying either the letter of the text, its spirit, or its aesthetics. The original text is always already an impossible translation that renders translation
+                    impossible.”</span>
                 </br></br>
-                —	Trinh T. Minh-ha in <span class="highlight">Surname Viet Given Name Nam</span> (1989)
+                — Trinh T. Minh-ha in <span class="highlight">Surname Viet Given Name Nam</span> (1989)
                 </br></br>
 
-                When two writing systems lack interlegibility, we resort to transliteration — the conversion of a string of letters to another string of letters, usually based on the phonetics of the original word (Josan & Lehan, 2010). The most common practice of transliteration today is romanization — i.e. the transfer of non-Latin writing to the Latin script by means of an expanded Latin alphabet with the use of diacritical marks and letter combinations — mainly due to the role of English as an imperial language and the ‘language of globalization’ — a “language of both oppression and opportunity” (Kharchenko, 2017). This notion of the English language being the key to modernization and Westernization, has led many nations to switch to the Latin script. Notable examples are the cases of <span class="box box--small" data-tooltip="Việt Nam &#13; [vîət nāːm]">Vietnam</span> (mid-17th-century), <span class="box box--small" data-tooltip="România &#13; [romɨˈni.a]">Romania</span> (1860s), <span class="box box--small" data-tooltip="Shqipëri &#13; [/ʃcipəˈɾi/]">Albania</span> (1908) and <span class="box box--small" data-tooltip="Türkiye &#13; [ˈtyɾcije]">Turkey</span> (1928).
+                When two writing systems lack interlegibility, we resort to transliteration — the conversion of a string of letters to another string of letters, usually based on the phonetics of the original word (Josan & Lehan, 2010). The most
+                common practice of transliteration today is romanization — i.e. the transfer of non-Latin writing to the Latin script by means of an expanded Latin alphabet with the use of diacritical marks and letter combinations — mainly due to the
+                role of English as an imperial language and the ‘language of globalization’ — a “language of both oppression and opportunity” (Kharchenko, 2017). This notion of the English language being the key to modernization and Westernization,
+                has led many nations to switch to the Latin script. Notable examples are the cases of <span class="box box--small" data-tooltip="Việt Nam &#13; [vîət nāːm]">Vietnam</span> (mid-17th-century), <span class="box box--small"
+                    data-tooltip="România &#13; [romɨˈni.a]">Romania</span> (1860s), <span class="box box--small" data-tooltip="Shqipëri &#13; [/ʃcipəˈɾi/]">Albania</span> (1908) and <span class="box box--small"
+                    data-tooltip="Türkiye &#13; [ˈtyɾcije]">Turkey</span> (1928).
                 </br></br>
                 <span class="caption">
                     <img src="assets/images/dig.jpg">
-                    Dig the Booty by Slavs and Tatars (2009) features a transliteration of an aphorism across the Latin, Cyrillic and and Perso-Arabic scripts in homage to the vicissitudes of the Azeri alphabet which changed 3 times over the past century: from Arabic to Latin in 1929, from Latin to Cyrillic in 1939, only to go back to Latin in 1991.
+                    Dig the Booty by Slavs and Tatars (2009) features a transliteration of an aphorism across the Latin, Cyrillic and and Perso-Arabic scripts in homage to the vicissitudes of the Azeri alphabet which changed 3 times over the past
+                    century: from Arabic to Latin in 1929, from Latin to Cyrillic in 1939, only to go back to Latin in 1991.
                 </span>
-                In the 1920s and 30s, the Soviet Union initiated a campaign to replace the 72 traditional writing systems within the union with systems based on the Latin script. Between 1923 and 1939, Latin alphabets were created for 50 of these languages. The campaign did, however, fall short, and in 1936 a new campaign began with the aim of converting the languages of the USSR to Cyrillic instead. This project was largely completed four years later. Following the fall of the Soviet Union in 1991, a trend of once again converting to the Latin script emerged among post-Soviet nations in the name of modernization and disassociation with the Russian intellectual and cultural sphere. <span class="box box--small" data-tooltip="Azərbaycan &#13; [ɑːzæɾbɑjˈdʒɑn]">Azerbaijan</span>, followed by <span class="box box--small" data-tooltip="Oʻzbekiston &#13; Ўзбекистон &#13; [ozbekiˈstɒn]">Uzbekistan</span> and <span class="box box--small" data-tooltip="Türkmenistan &#13; [tʏɾkmønʏˈθːɑːn]">Turkmenistan</span>, as well as <span class="box box--small" data-tooltip="[molˈdova]">Moldova</span>, all made the switch in the 1990s. In 2017, the President of <span class="box box--small" data-tooltip="Қазақстан &#13; Qazaqstan &#13; [kazaxˈstan]">Kazakhstan</span> Nursultan Nazarbayev announced that a switch to the Latin script, a symbolic move to calcify the nation’s independence, is being prepared; marking the third script change in Kazakhstan within 100 years<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Kazakh, a Turkic language, used to be written in Arabic until the 1920s when the Soviet Union briefly introduced the Latin alphabet before eventually replacing it by the Cyrillic one in 1940 (The Guardian, 2017).
-                </span>. The project is set to be completed by 2025 (The Guardian, 2017; Haddad, 2017). The announcement received widespread criticism, especially after the government revealed the suggested new Latin alphabet known as the ‘apostrophe alphabet’ (the alphabet features 23 Latin letters, along with 9 specific Kazakh sounds, which were identified by placing an apostrophe after the letter). A number of prominent Kazakh-speaking academics and professors argued that “the move would complicate the writing system and only diminish the status of the Kazakh language in the country.” Concerns were also raised about the alphabet requiring multiple apostrophes in one word to separate Kazakh-specific sounds, such as in the word <span class="highlight">s’yg’ys’</span>, meaning <span class="highlight">east</span> (Kudaibergenova, 2017).
+                In the 1920s and 30s, the Soviet Union initiated a campaign to replace the 72 traditional writing systems within the union with systems based on the Latin script. Between 1923 and 1939, Latin alphabets were created for 50 of these
+                languages. The campaign did, however, fall short, and in 1936 a new campaign began with the aim of converting the languages of the USSR to Cyrillic instead. This project was largely completed four years later. Following the fall of
+                the Soviet Union in 1991, a trend of once again converting to the Latin script emerged among post-Soviet nations in the name of modernization and disassociation with the Russian intellectual and cultural sphere. <span
+                    class="box box--small" data-tooltip="Azərbaycan &#13; [ɑːzæɾbɑjˈdʒɑn]">Azerbaijan</span>, followed by <span class="box box--small" data-tooltip="Oʻzbekiston &#13; Ўзбекистон &#13; [ozbekiˈstɒn]">Uzbekistan</span> and <span
+                    class="box box--small" data-tooltip="Türkmenistan &#13; [tʏɾkmønʏˈθːɑːn]">Turkmenistan</span>, as well as <span class="box box--small" data-tooltip="[molˈdova]">Moldova</span>, all made the switch in the 1990s. In 2017, the
+                President of <span class="box box--small" data-tooltip="Қазақстан &#13; Qazaqstan &#13; [kazaxˈstan]">Kazakhstan</span> Nursultan Nazarbayev announced that a switch to the Latin script, a symbolic move to calcify the nation’s
+                independence, is being prepared; marking the third script change in Kazakhstan within 100 years<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Kazakh, a Turkic language, used to be written in Arabic until the 1920s when the Soviet Union briefly introduced the Latin alphabet before eventually replacing it by the Cyrillic one in 1940 (The Guardian,
+                    2017).
+                </span>. The project is set to be completed by 2025 (The Guardian, 2017; Haddad, 2017). The announcement received widespread criticism, especially after the government revealed the suggested new Latin alphabet known as the ‘apostrophe
+                alphabet’ (the alphabet features 23 Latin letters, along with 9 specific Kazakh sounds, which were identified by placing an apostrophe after the letter). A number of prominent Kazakh-speaking academics and professors argued that “the
+                move would complicate the writing system and only diminish the status of the Kazakh language in the country.” Concerns were also raised about the alphabet requiring multiple apostrophes in one word to separate Kazakh-specific sounds,
+                such as in the word <span class="highlight">s’yg’ys’</span>, meaning <span class="highlight">east</span> (Kudaibergenova, 2017).
                 </br></br>
                 <span class="caption">
                     <img src="assets/images/latin.png">
                     <span class="highlight">Қоғам</span> – “society” in Kazakh – is divided. The word in Latin alphabet would be spelled as <span class="highlight">“qog’am”</span>
                     literally dividing it into two parts. Illustration by Erden Zikibay
                 </span>
-                Transliteration of toponyms is of paramount importance in today’s society when we consider the need to compile various geographical maps, atlases, archival documents, telephone and address books, geographical and historical essays, travel guides, GPS systems, Google Maps, journalism and media, reference pointers and signs, etc., in foreign languages (Sarsembayeva & Agabekova, 2022). This need raises questions about standardization and homogenization of toponyms at an international level, to the extent that it is addressed at the UN level.
+                Transliteration of toponyms is of paramount importance in today’s society when we consider the need to compile various geographical maps, atlases, archival documents, telephone and address books, geographical and historical essays,
+                travel guides, GPS systems, Google Maps, journalism and media, reference pointers and signs, etc., in foreign languages (Sarsembayeva & Agabekova, 2022). This need raises questions about standardization and homogenization of toponyms
+                at an international level, to the extent that it is addressed at the UN level.
                 </br></br>
-                In 1959, the Economic and Social Council (ECOSOC) facilitated the formation of a small group of experts who aimed to provide technical advice on standardizing geographical names at both national and international levels. This meeting led to the establishment of the United Nations Conferences on the Standardization of Geographical Names (UNCSGN) and the United Nations Group of Experts on Geographical Names (UNGEGN). The purpose of these entities is to “establish usable and consistent written forms of toponyms and their applications throughout the world.” The group believes that standardizing geographical names is necessary for modern society as it leads to more accurate administration and communication, as well as time and cost savings in various sectors such as government, industry, commerce, and education (UNGEGN, 2006). In practice, this standardization process takes shape as an enterprise of romanization; the Latin script has been designated as the sole global standard for toponyms and a standard transliteration system has been established for non-Latin scripts — subsequently blatantly marginalizing them.
+                In 1959, the Economic and Social Council (ECOSOC) facilitated the formation of a small group of experts who aimed to provide technical advice on standardizing geographical names at both national and international levels. This meeting
+                led to the establishment of the United Nations Conferences on the Standardization of Geographical Names (UNCSGN) and the United Nations Group of Experts on Geographical Names (UNGEGN). The purpose of these entities is to “establish
+                usable and consistent written forms of toponyms and their applications throughout the world.” The group believes that standardizing geographical names is necessary for modern society as it leads to more accurate administration and
+                communication, as well as time and cost savings in various sectors such as government, industry, commerce, and education (UNGEGN, 2006). In practice, this standardization process takes shape as an enterprise of romanization; the Latin
+                script has been designated as the sole global standard for toponyms and a standard transliteration system has been established for non-Latin scripts — subsequently blatantly marginalizing them.
                 </br></br>
-                We thus come to understand that linguicism and technocratic homogenization do not only happen on a national, but also an international level; And furthermore, that these acts do not only occur in hegemonic contexts, but also as a consequence of a desire for Westernization. In the next chapter we will look into forces countering these developments and assess alternative methods for conventional graphic representation in cartography by considering a wider sensory spectrum, namely the influence of speech.
+                We thus come to understand that linguicism and technocratic homogenization do not only happen on a national, but also an international level; And furthermore, that these acts do not only occur in hegemonic contexts, but also as a
+                consequence of a desire for Westernization. In the next chapter we will look into forces countering these developments and assess alternative methods for conventional graphic representation in cartography by considering a wider
+                sensory spectrum, namely the influence of speech.
 
                 <span class="chapter" id="chapter-3"><span class="red">●</span> Infrapolitics in Geography</span>
 
 
                 <span class="quote">“When the great lord passes, the wise peasant bows deeply and silently farts”</span>
                 </br></br>
-                —	Ethiopian Proverb
+                — Ethiopian Proverb
                 </br></br>
-                Resistance within geography is conventionally conceptualized as organized collective opposition to particular configurations of power relations, such as strikes, protests and riots. Even though they might be considered unremarkable, it is important to also recognize the less grandiose oppositional acts of those who lack the backing of institutions — the ‘quiet’ acts that take place in everyday practices. Italian philosopher Giorgio Agamben explores the idea of <span class="highlight">‘bare life’</span> and the ways in which power operates on bodies through the creation of exclusionary zones and the suspension of rights. He argues that acts of resistance, including those that are subtle and mundane, can serve to challenge and subvert dominant power structures and create spaces of potentiality and freedom (Agamben, 1998; 2014). To further conceptualize these acts, James Scott (1990) coined the compelling term <span class="highlight">infrapolitics</span>. For some, these subliminal acts of resistance do not aim <span class="highlight">overcoming</span>, but rather <span class="highlight">withstanding</span> configurations of power and rendering them inoperative.
+                Resistance within geography is conventionally conceptualized as organized collective opposition to particular configurations of power relations, such as strikes, protests and riots. Even though they might be considered unremarkable,
+                it is important to also recognize the less grandiose oppositional acts of those who lack the backing of institutions — the ‘quiet’ acts that take place in everyday practices. Italian philosopher Giorgio Agamben explores the idea of
+                <span class="highlight">‘bare life’</span> and the ways in which power operates on bodies through the creation of exclusionary zones and the suspension of rights. He argues that acts of resistance, including those that are subtle and
+                mundane, can serve to challenge and subvert dominant power structures and create spaces of potentiality and freedom (Agamben, 1998; 2014). To further conceptualize these acts, James Scott (1990) coined the compelling term <span
+                    class="highlight">infrapolitics</span>. For some, these subliminal acts of resistance do not aim <span class="highlight">overcoming</span>, but rather <span class="highlight">withstanding</span> configurations of power and
+                rendering them inoperative.
                 </br></br>
-                An example of this is the Nassar family, who reside on a hilltop farm in the Palestinian village of <span class="box box--small" data-tooltip="بتير">Battir</span> in the occupied <span class="box box--small" data-tooltip="الضفة الغربية הַגָּדָה הַמַּעֲרָבִית HaGadáh HaMaʽarávit | aḍ-Ḍiffah al-Ġarbiyyah">West Bank</span>, who have been fighting for their land rights for over 25 years. Despite having their farm declared as “state land” by Israeli officials and facing obstacles such as denied building permits and transportation barriers, the family has chosen to resist non-violently through various means. These include running volunteer and community projects, summer camps for children, and selling products made from their crops. When faced with challenges such as a lack of building permits or utilities, they found creative solutions such as building premises underground and using solar panels. They also utilize social networks to keep their farming activities alive despite the pressures from the colonial authorities. This form of resistance emphasizes remaining open, avoiding dependencies, and maintaining a non-violent way of life (Joronen, 2016).
+                An example of this is the Nassar family, who reside on a hilltop farm in the Palestinian village of <span class="box box--small" data-tooltip="بتير">Battir</span> in the occupied <span class="box box--small"
+                    data-tooltip="الضفة الغربية הַגָּדָה הַמַּעֲרָבִית HaGadáh HaMaʽarávit | aḍ-Ḍiffah al-Ġarbiyyah">West Bank</span>, who have been fighting for their land rights for over 25 years. Despite having their farm declared as “state land”
+                by Israeli officials and facing obstacles such as denied building permits and transportation barriers, the family has chosen to resist non-violently through various means. These include running volunteer and community projects, summer
+                camps for children, and selling products made from their crops. When faced with challenges such as a lack of building permits or utilities, they found creative solutions such as building premises underground and using solar panels.
+                They also utilize social networks to keep their farming activities alive despite the pressures from the colonial authorities. This form of resistance emphasizes remaining open, avoiding dependencies, and maintaining a non-violent way
+                of life (Joronen, 2016).
                 </br></br>
                 <img class="fullwidth onmobile" src="assets/images/voice_mobile.png">
                 <img class="fullwidth ondesktop" src="assets/images/voice.png">
-                <span class="caption"><span class="highlight">Language Gulf in the Shouting Valley</span> by Lawrence Abu Hamdan (2013) as part of the exhibition <span class="highlight">Meeting Points 7 – Ten Thousand Wiles and a Hundred Thousand Tricks</span> at the Museum of Contemporary Art Antwerp, Belgium. </span></br>
+                <span class="caption"><span class="highlight">Language Gulf in the Shouting Valley</span> by Lawrence Abu Hamdan (2013) as part of the exhibition <span class="highlight">Meeting Points 7 – Ten Thousand Wiles and a Hundred Thousand
+                        Tricks</span> at the Museum of Contemporary Art Antwerp, Belgium. </span></br>
 
                 During the Six-Day War<label class="margin-toggle sidenote-number"></label>
-                <span class="sidenote">Fought between Israel and the joined forces of Egypt, Syria and Jordan from 5 to 10 of June 1967. As a result of Israel’s victory, it annexed the Golan Heights from Syria, the West Bank and East Jerusalem from Jordan and the Gaza Strip and the Sinai Peninsula from Egypt.
-                </span> in 1967, Israel annexed <span class="box box--small" data-tooltip="هَضْبَةُ الْجَوْلَانِ Haḍbatu l-Jawlān">The Golan Heights</span> from <span class="box box--small" data-tooltip="سُورِيَة Sūriyā">Syria</span>, resulting in the drawing of a new border which geographically divided the local Druze<label class="margin-toggle sidenote-number"></label>
+                <span class="sidenote">Fought between Israel and the joined forces of Egypt, Syria and Jordan from 5 to 10 of June 1967. As a result of Israel’s victory, it annexed the Golan Heights from Syria, the West Bank and East Jerusalem from
+                    Jordan and the Gaza Strip and the Sinai Peninsula from Egypt.
+                </span> in 1967, Israel annexed <span class="box box--small" data-tooltip="هَضْبَةُ الْجَوْلَانِ Haḍbatu l-Jawlān">The Golan Heights</span> from <span class="box box--small" data-tooltip="سُورِيَة Sūriyā">Syria</span>, resulting in
+                the drawing of a new border which geographically divided the local Druze<label class="margin-toggle sidenote-number"></label>
                 <span class="sidenote">An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.
-                </span> communities and families. On the Syrian side of the ceasefire line lies a place known as the <span class="highlight">‘Shouting Valley’</span>, a topographic feature which creates an acoustic leak and amplifies sound traveling across the border, which is used by the communities on each side to communicate with each other (Abu Hamdan, 2017). The power of these voices defying an imposed geographical boundary is poignantly encapsulated in both Smadar Dreyfus’ installation <a class="highlight" href="https://vimeo.com/536438584" target=”_blank”>Mother’s Day</a> (2006–08) and Lawrence Abu Hamdan’s audio essay <a class="highlight" href="https://vimeo.com/78175668?embedded=true&source=vimeo_logo&owner=7053630" target=”_blank”>Language Gulf in the Shouting Valley</a> (2013).
+                </span> communities and families. On the Syrian side of the ceasefire line lies a place known as the <span class="highlight">‘Shouting Valley’</span>, a topographic feature which creates an acoustic leak and amplifies sound traveling
+                across the border, which is used by the communities on each side to communicate with each other (Abu Hamdan, 2017). The power of these voices defying an imposed geographical boundary is poignantly encapsulated in both Smadar Dreyfus’
+                installation <a class="highlight" href="https://vimeo.com/536438584" target=”_blank”>Mother’s Day</a> (2006–08) and Lawrence Abu Hamdan’s audio essay <a class="highlight"
+                    href="https://vimeo.com/78175668?embedded=true&source=vimeo_logo&owner=7053630" target=”_blank”>Language Gulf in the Shouting Valley</a> (2013).
 
                 <span class="sub" id="chapter-3-1"><span class="green">●</span> Toponymic Resistance</span>
 
-                Place names do not only exist as toponymic inscriptions in written form; their main form of existence lie in the spectrum of speech. Even though place names in many cases have prevailing official forms or generally enjoy widespread agreement, “the way the name is pronounced reflects, and contributes to, the constitution of <span class="highlight">imagined communities</span> […] and can thus be deployed to assert a politics of representation” (Berg & Kearns, 2002). In other words, speech can function as a creative and assertive act, independent of forces of hegemony and dominant discourses, that creates alternative realities. In this section we will consider ways in which groups constructed as the Other resist official, top-down naming practices by creating alternative toponomies.
+                Place names do not only exist as toponymic inscriptions in written form; their main form of existence lie in the spectrum of speech. Even though place names in many cases have prevailing official forms or generally enjoy widespread
+                agreement, “the way the name is pronounced reflects, and contributes to, the constitution of <span class="highlight">imagined communities</span> […] and can thus be deployed to assert a politics of representation” (Berg & Kearns,
+                2002). In other words, speech can function as a creative and assertive act, independent of forces of hegemony and dominant discourses, that creates alternative realities. In this section we will consider ways in which groups
+                constructed as the Other resist official, top-down naming practices by creating alternative toponomies.
                 </br></br>
-                In <span class="highlight">The Practice of Everyday Life</span>, Michel de Certeau speaks of everyday practices, such as walking or speaking, as diverse, creative, small-scale tactics — “an art of the weak” (de Certeau, 1984). He makes a clear distinction between <span class="highlight">strategies</span> and <span class="highlight">tactics</span> — the former being the framework of the dominant institutions to assert objectives, and the latter being individual everyday acts (of resistance) and ways to diverge from the conventions prescribed by the hegemon. Berg and Kearns (2002) argue that “[p]lace names are publicly pronounced, and there is thus scope to not only <span class="highlight">identify</span> a point on the map, but also to <span class="highlight">make</span> a point through (metaphorically) mapping out one’s politics of place in speech”, and suggest that these acts of resistance can occur on at least two levels: through the creation and deployment of alternative (indigenous) toponyms, and the performative act of using alternative pronunciations for official names.
+                In <span class="highlight">The Practice of Everyday Life</span>, Michel de Certeau speaks of everyday practices, such as walking or speaking, as diverse, creative, small-scale tactics — “an art of the weak” (de Certeau, 1984). He
+                makes a clear distinction between <span class="highlight">strategies</span> and <span class="highlight">tactics</span> — the former being the framework of the dominant institutions to assert objectives, and the latter being individual
+                everyday acts (of resistance) and ways to diverge from the conventions prescribed by the hegemon. Berg and Kearns (2002) argue that “[p]lace names are publicly pronounced, and there is thus scope to not only <span
+                    class="highlight">identify</span> a point on the map, but also to <span class="highlight">make</span> a point through (metaphorically) mapping out one’s politics of place in speech”, and suggest that these acts of resistance can
+                occur on at least two levels: through the creation and deployment of alternative (indigenous) toponyms, and the performative act of using alternative pronunciations for official names.
                 </br></br>
-                Philosopher Judith Butler defines performativity as “the reiterative and citational practice by which discourse produces the effects that it names” (Butler, 1993). Drawing on this conceptualization, we can understand the specific pronunciation of names, not only as a <span class="highlight">descriptive act</span>, but also as a <span class="highlight">constitutive act</span> — one that can carry particular meanings or political agendas. Pronouncing a place name also involves a process of selection: one either abides to the prescribed practices — and in doing so, constructs not only a place-name, but also a position for the <span class="highlight">Self</span> within the context hegemonic socio-spatial relations — or chooses alternative phonetic emphases and intonations and subsequently disrupts and interrogates the overarching structures one exists within (Berg & Kearns, 2002). The work of Trinh T. Minh-ha can also be relevant to this discussion on the performative nature of place names. Minh-ha's concept of ‘writing-resistance’ highlights how the act of naming can be a form of resistance against dominant cultural discourses and colonial practices. In her book <span class="highlight">Woman, Native, Other: Writing Postcoloniality and Feminism</span>, Minh-ha explores the politics of representation and the construction of identity through language, arguing that naming is a political act that carries cultural and historical significance. In this context, Minh-ha's work adds another dimension to the argument that naming can serve as a creative and assertive act of resistance (Minh-ha, 1989). Furthermore, by forming alliances within and across disenfranchised communities, the affect of resistance can gain momentum, more solidarity and voices and exposure to the global community.
+                Philosopher Judith Butler defines performativity as “the reiterative and citational practice by which discourse produces the effects that it names” (Butler, 1993). Drawing on this conceptualization, we can understand the specific
+                pronunciation of names, not only as a <span class="highlight">descriptive act</span>, but also as a <span class="highlight">constitutive act</span> — one that can carry particular meanings or political agendas. Pronouncing a place
+                name also involves a process of selection: one either abides to the prescribed practices — and in doing so, constructs not only a place-name, but also a position for the <span class="highlight">Self</span> within the context hegemonic
+                socio-spatial relations — or chooses alternative phonetic emphases and intonations and subsequently disrupts and interrogates the overarching structures one exists within (Berg & Kearns, 2002). The work of Trinh T. Minh-ha can also be
+                relevant to this discussion on the performative nature of place names. Minh-ha's concept of ‘writing-resistance’ highlights how the act of naming can be a form of resistance against dominant cultural discourses and colonial practices.
+                In her book <span class="highlight">Woman, Native, Other: Writing Postcoloniality and Feminism</span>, Minh-ha explores the politics of representation and the construction of identity through language, arguing that naming is a
+                political act that carries cultural and historical significance. In this context, Minh-ha's work adds another dimension to the argument that naming can serve as a creative and assertive act of resistance (Minh-ha, 1989). Furthermore,
+                by forming alliances within and across disenfranchised communities, the affect of resistance can gain momentum, more solidarity and voices and exposure to the global community.
                 </br></br>
                 <span class="caption">
                     <img src="assets/images/yafa.jpeg">
                     A planned new sign with the historic Arabic name of a street in Jaffa, next to the current street sign. (Source: Nawal Arafat)
 
                 </span>
-                One of the most active arenas for challenging Israeli naming traditions is the city of <span class="box box--small" data-tooltip="يَافَا יָפוֹ">Jaffa</span>. Rather than taking a militant approach and trying to cancel or erase current names, a group of local women — namely Rachel Hagigi, Shani Egozin and Nawal Arafat — launched the Shawari’a Yafa (Streets of Jaffa) project, which aims to connect the city’s various communities, including Jewish ones, by giving historical street names a shared presence in the public space. Due to strict policies by the mayor of Tel-Aviv–Jaffa and the municipality’s naming committee (which doesn’t have a single Arab member), hanging additional signs next to existing street signs was not a legal option. Instead they decided to create small, pointed banners and persuaded homeowners to hang them from their balconies and windows facing the streets (Zandberg, 2022).
+                One of the most active arenas for challenging Israeli naming traditions is the city of <span class="box box--small" data-tooltip="يَافَا יָפוֹ">Jaffa</span>. Rather than taking a militant approach and trying to cancel or erase current
+                names, a group of local women — namely Rachel Hagigi, Shani Egozin and Nawal Arafat — launched the Shawari’a Yafa (Streets of Jaffa) project, which aims to connect the city’s various communities, including Jewish ones, by giving
+                historical street names a shared presence in the public space. Due to strict policies by the mayor of Tel-Aviv–Jaffa and the municipality’s naming committee (which doesn’t have a single Arab member), hanging additional signs next to
+                existing street signs was not a legal option. Instead they decided to create small, pointed banners and persuaded homeowners to hang them from their balconies and windows facing the streets (Zandberg, 2022).
                 </br></br>
-                Despite the intense efforts by the Zionists authorities to overwrite Arabic place names that clash with Israeli ideology, many traditional names have been preserved through oral traditions, to the extent that they are even acknowledged on a municipal level. The persistence of these toponyms in such a hostile environment can to some extent be understood through what Laura Kostanski calls <span class="highlight">toponymic attachment</span> — “a symbolic relationship that people form which can help in transmitting meanings to a place” (Kostanski, 2009). As mentioned in Chapter 1, the Hebraization project of the toponymic landscape gained unprecedented momentum following the ethnic cleansing of 1948. Interestingly, archives from the <span class="box box--small" data-tooltip="Al-Quds &#013;القُدس | [/dʒəˈruːsələm/] &#13; Yerushaláyim &#013;יְרוּשָׁלַיִם">Jerusalem</span> municipality reveal a stubborn reluctance by the local authorities to abide to the imposed policies, obstructing the renaming of these areas until 1958 by continually formulating excuses for the delay (Socquet-Juglard, 2022). In a letter to the National Naming Committee in 1957, the Deputy Mayor of Jerusalem writes: “[…] you will understand that I am not enthusiastic about proposals to give neighbourhoods new names instead of their historical names, which mirror the fine history of new Jerusalem. […] Every generation should know that Jerusalem had a non-Jewish period […]” (Aderet, 2011). This ten-year lapse was manifestly enough time for the Arabic toponyms to be entrenched in the mental and physical maps of the new Jewish settlers residing in Jerusalem. In other words, the settlers became dependent on these names “to express and transmit not only the identity of the place they live, but also, indirectly, their own collective identity” (Socquet-Juglard, 2022). This toponymic attachment forced the Jerusalem Municipality to acknowledge the Arabic names alongside the official Hebrew names, not only on road signs, but also in official maps and documents. The persistence of these Arabic toponyms compellingly confirms the strength of practices versus policies.
+                Despite the intense efforts by the Zionists authorities to overwrite Arabic place names that clash with Israeli ideology, many traditional names have been preserved through oral traditions, to the extent that they are even
+                acknowledged on a municipal level. The persistence of these toponyms in such a hostile environment can to some extent be understood through what Laura Kostanski calls <span class="highlight">toponymic attachment</span> — “a symbolic
+                relationship that people form which can help in transmitting meanings to a place” (Kostanski, 2009). As mentioned in Chapter 1, the Hebraization project of the toponymic landscape gained unprecedented momentum following the ethnic
+                cleansing of 1948. Interestingly, archives from the <span class="box box--small" data-tooltip="Al-Quds &#013;القُدس | [/dʒəˈruːsələm/] &#13; Yerushaláyim &#013;יְרוּשָׁלַיִם">Jerusalem</span> municipality reveal a stubborn reluctance
+                by the local authorities to abide to the imposed policies, obstructing the renaming of these areas until 1958 by continually formulating excuses for the delay (Socquet-Juglard, 2022). In a letter to the National Naming Committee in
+                1957, the Deputy Mayor of Jerusalem writes: “[…] you will understand that I am not enthusiastic about proposals to give neighbourhoods new names instead of their historical names, which mirror the fine history of new Jerusalem. […]
+                Every generation should know that Jerusalem had a non-Jewish period […]” (Aderet, 2011). This ten-year lapse was manifestly enough time for the Arabic toponyms to be entrenched in the mental and physical maps of the new Jewish
+                settlers residing in Jerusalem. In other words, the settlers became dependent on these names “to express and transmit not only the identity of the place they live, but also, indirectly, their own collective identity” (Socquet-Juglard,
+                2022). This toponymic attachment forced the Jerusalem Municipality to acknowledge the Arabic names alongside the official Hebrew names, not only on road signs, but also in official maps and documents. The persistence of these Arabic
+                toponyms compellingly confirms the strength of practices versus policies.
 
                 <span class="sub" id="conclusion"><span class="green">●</span> Conclusion</span>
 
-                In this thesis I have attempted, through a Gramscian-Foucauldian lens, to offer an overview of the geopolitical affects of toponymic inscription, on a national and international level. By examining the ideological strategies involved in Zionist nation-building, we have come to understand that the socio-spatial practice of place naming can function as a powerful politico-territorial instrument for spatial and cultural domination, primarily by means of linguistic dispossession and memoricide. A closer look at various romanization enterprises revealed that these practices not only take shape in hegemonic contexts but also as a consequence of a desire for modernization. The closing section highlights the importance of recognizing and valuing the subliminal forms of resistance that can challenge and subvert dominant power structures and create spaces of potentiality and freedom.
+                In this thesis I have attempted, through a decolonial lens, to offer an overview of the
+                geopolitical affects of toponymic inscription on a national and transnational level. By
+                examining the ideological strategies involved in Zionist nation-building, we have come
+                to understand that the socio-spatial practice of place naming can function as a powerful
+                politico-territorial instrument for spatial and cultural domination, primarily by means
+                of linguistic dispossession and memoricide. A closer look at various romanization enterprises
+                revealed that these practices not only take shape in hegemonic contexts but
+                also as a consequence of a desire for modernization. The closing section highlights the
+                importance of recognizing and valuing the subliminal forms of resistance that can challenge
+                and subvert dominant power structures and create spaces of potentiality and
+                freedom.
                 </br></br>
-                Although the examples given in this text are mostly focused on the historical region of Palestine, it is important to realize that these hegemonic acts are, and have been, practiced in virtually every corner of the earth. The analytical framework presented and applied here can hopefully serve as a starting point for further research on the topic of toponymicide in other regions.
+                Although the examples given in this text are mostly focused on the historical
+                region of Palestine, it is important to realize that these hegemonic acts are, and have
+                been, practiced in virtually every corner of the earth. The analytical framework presented
+                and applied here can hopefully serve as a starting point for further research on
+                the topic of <span class="highlight">toponymicide</span> in other regions. By examining the ways in which geography,
+                and cartography in particular, is entangled with politics and power, we can perhaps
+                begin to imagine new ways of representing space that are more inclusive and just.
 
                 <p class="credits">
-                © Samuel Salminen, 2023</br>
-                BA Graphic Design</br>
-                Royal Academy of Art, The Hague</br></br>
-                Supervised by Prof. Füsun Türetken
+                    © Samuel Salminen, 2023</br>
+                    BA Graphic Design</br>
+                    Royal Academy of Art, The Hague</br></br>
+                    Supervised by Prof. Füsun Türetken
+                </p>
+
+
+
             </p>
-
-
-
-</p>
         </main>
         <div class="line"></div>
         <button id="footnotes-m" class="collapsible">Notes</button>
         <div class="mobile-footnotes">
 
-        <p>[1] Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the geographical features of our planet.</p>
-        <p>[2] ‘With 2022 Deadliest Year in Israel-Palestine Conflict, Reversing Violent Trends Must Be International Priority, Middle East Coordinator Tells Security Council’, United Nations, 18 January 2023</p>
-        <p>[3] ‘Benjamin Netanyahu returns as PM of Israel’s most far-right gov’t’, Al Jazeera, 29 December 2022</p>
-        <p>[4] ‘Germany just took a drastic step toward criminalizing Palestine activism’, Nederlands Palestina Komitee, 21 December 2022</p>
-        <p>[5] In Reassemblage (1982) by Trinh T. Minh-ha</p>
-        <p>[6] It is fair, however, to question the adequacy of the term ‘Nakba’. Referring to the ethnic cleansing of Palestine as a catastrophe or disaster suggests a sense of passivity. We regard earthquakes and tsunamis as disasters, of which no-body is responsible for and everybody is a victim of. The same cannot be said about the events of 1948—the ethnic cleansing was a crime; the roles of criminal and victim are abundantly clear and know to us all. “Insisting on describ-ing what happened to the Palestinians in 1948 and ever since as a crime and not just a tragedy or even a catastrophe is essential if past evils are to be rectified” (Pappé, 2015).</p>
-        <p>[7] Memoricide: “The ‘erasure of the history of one people in order to write that of another people’s over it’, the contin-uous imposition of a Zionist layer and national pattern over everything that had been Palestinian” (Pappé, 2006).</p>
-        <p>[8] Alternatively wād—an Arabic term traditionally referring to a valley. In some instances, it may refer to a wet (ephemeral) riverbed that contains water only when heavy rain occurs.</p>
+            <p>[1] Beside geographical features on the earth, the term ‘toponym’ also covers cosmographical features, i.e. all features in the observable universe. In this text, however, I use the ‘toponym’ only to refer to the geographical features
+                of our planet.</p>
+            <p>[2] ‘With 2022 Deadliest Year in Israel-Palestine Conflict, Reversing Violent Trends Must Be International Priority, Middle East Coordinator Tells Security Council’, United Nations, 18 January 2023</p>
+            <p>[3] ‘Benjamin Netanyahu returns as PM of Israel’s most far-right gov’t’, Al Jazeera, 29 December 2022</p>
+            <p>[4] ‘Germany just took a drastic step toward criminalizing Palestine activism’, Nederlands Palestina Komitee, 21 December 2022</p>
+            <p>[5] In Reassemblage (1982) by Trinh T. Minh-ha</p>
+            <p>[6] It is fair, however, to question the adequacy of the term ‘Nakba’. Referring to the ethnic cleansing of Palestine as a catastrophe or disaster suggests a sense of passivity. We regard earthquakes and tsunamis as disasters, of which
+                no-body is responsible for and everybody is a victim of. The same cannot be said about the events of 1948—the ethnic cleansing was a crime; the roles of criminal and victim are abundantly clear and know to us all. “Insisting on
+                describ-ing what happened to the Palestinians in 1948 and ever since as a crime and not just a tragedy or even a catastrophe is essential if past evils are to be rectified” (Pappé, 2015).</p>
+            <p>[7] Memoricide: “The ‘erasure of the history of one people in order to write that of another people’s over it’, the contin-uous imposition of a Zionist layer and national pattern over everything that had been Palestinian” (Pappé,
+                2006).</p>
+            <p>[8] Alternatively wād—an Arabic term traditionally referring to a valley. In some instances, it may refer to a wet (ephemeral) riverbed that contains water only when heavy rain occurs.</p>
 
-        <p>[9] Further developed by Husserl, Lacan, Levinas, Sartre and de Beauvoir among others.</p>
-        <p>[10] Traditionally, in European colonial history, authority was generally supported by an ideology of cultural supremacy; in Zionism, it was accompanied by redemptive nationalism.</p>
-        <p>[11] Committee operating under the Royal Geographical Society, the only body authorized to assign names throughout the British Empire, including Mandatory Palestine.</p>
-        <p>[12] Survey of Palestine was the government department responsible for the survey and mapping of Palestine during the British mandate period (1920–1948).</p>
-        <p>[13] A vast desert region in the southern part of present-day Israel.</p>
-        <p>[14] Arab (desert) tribes who follow a nomadic way of life.</p>
-        <p>[15] This map was based on the 1:100 000 map prepared by the British mandate government in 1942. The official place names of Mandatory Palestine were mainly Arabic or relating to Christian traditions, rendering them foreign from the perspective of Jewish nationalism and the Zionist project (Azaryahu and Golan, 2001).</p>
-        <p>[16] Coined by Tove Skutnabb-Kangas in 1986. She defines linguicism as “ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and immaterial) between groups which are defined on the basis of language” (Skutnabb-Kangas, 2015).</p>
-        <p>[17] Dispositif, a term coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physi-cal, and administrative mechanisms and knowledge structures which enhance and maintain the exercise of power with-in the social body. Understanding place naming as dispositif allows us to interpret and analyze the process more gen-erally in relation to a wider social, political and spatial order (Giraut & Houssay-Holzschuch, 2016).</p>
+            <p>[9] Further developed by Husserl, Lacan, Levinas, Sartre and de Beauvoir among others.</p>
+            <p>[10] Traditionally, in European colonial history, authority was generally supported by an ideology of cultural supremacy; in Zionism, it was accompanied by redemptive nationalism.</p>
+            <p>[11] Committee operating under the Royal Geographical Society, the only body authorized to assign names throughout the British Empire, including Mandatory Palestine.</p>
+            <p>[12] Survey of Palestine was the government department responsible for the survey and mapping of Palestine during the British mandate period (1920–1948).</p>
+            <p>[13] A vast desert region in the southern part of present-day Israel.</p>
+            <p>[14] Arab (desert) tribes who follow a nomadic way of life.</p>
+            <p>[15] This map was based on the 1:100 000 map prepared by the British mandate government in 1942. The official place names of Mandatory Palestine were mainly Arabic or relating to Christian traditions, rendering them foreign from the
+                perspective of Jewish nationalism and the Zionist project (Azaryahu and Golan, 2001).</p>
+            <p>[16] Coined by Tove Skutnabb-Kangas in 1986. She defines linguicism as “ideologies, structures and practices which are used to legitimate, effectuate, regulate and reproduce an unequal division of power and resources (both material and
+                immaterial) between groups which are defined on the basis of language” (Skutnabb-Kangas, 2015).</p>
+            <p>[17] Dispositif, a term coined by French philosopher Michel Foucault in 1977, refers to the various institutional, physi-cal, and administrative mechanisms and knowledge structures which enhance and maintain the exercise of power
+                with-in the social body. Understanding place naming as dispositif allows us to interpret and analyze the process more gen-erally in relation to a wider social, political and spatial order (Giraut & Houssay-Holzschuch, 2016).</p>
 
-        <p>[18] Although the Latin script is the most widespread script in the world, there are regions, such as China and several Arab countries, where a large proportion of the population is not familiar of proficient in the Latin script.</p>
-        <p>[19] The IPA is, however, not the only phonetic alphabet available. Others include the Americanist Phonetic Notation, the Uralic Phonetic Alphabet, Pinyin and the Arabic International Phonetic Alphabet.</p>
-        <p>[20] Tyre is still today a thriving city on the Mediterranean coast of Lebanon.</p>
-        <p>[21] The Phoenician alphabet (c. 1050–150 BC) is also called the Early Linear script because it is an early development of the Proto- or Old Canaanite or Proto-Sinaitic script, into a linear, purely alphabetic script, also marking the transfer from a multi-directional writing system, where a variety of writing directions occurred, to a regulated horizontal, right-to-left script.</p>
+            <p>[18] Although the Latin script is the most widespread script in the world, there are regions, such as China and several Arab countries, where a large proportion of the population is not familiar of proficient in the Latin script.</p>
+            <p>[19] The IPA is, however, not the only phonetic alphabet available. Others include the Americanist Phonetic Notation, the Uralic Phonetic Alphabet, Pinyin and the Arabic International Phonetic Alphabet.</p>
+            <p>[20] Tyre is still today a thriving city on the Mediterranean coast of Lebanon.</p>
+            <p>[21] The Phoenician alphabet (c. 1050–150 BC) is also called the Early Linear script because it is an early development of the Proto- or Old Canaanite or Proto-Sinaitic script, into a linear, purely alphabetic script, also marking the
+                transfer from a multi-directional writing system, where a variety of writing directions occurred, to a regulated horizontal, right-to-left script.</p>
 
-        <p>[22] Kazakh, a Turkic language, used to be written in Arabic until the 1920s when the Soviet Union briefly introduced the Latin alphabet before eventually replacing it by the Cyrillic one in 1940 (The Guardian, 2017).</p>
-        <p>[23] Fought between Israel and the joined forces of Egypt, Syria and Jordan from 5 to 10 of June 1967. As a result of Israel’s victory, it annexed the Golan Heights from Syria, the West Bank and East Jerusalem from Jordan and the Gaza Strip and the Sinai Peninsula from Egypt. </p>
-        <p>[24] An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.</p>
-    </div>
+            <p>[22] Kazakh, a Turkic language, used to be written in Arabic until the 1920s when the Soviet Union briefly introduced the Latin alphabet before eventually replacing it by the Cyrillic one in 1940 (The Guardian, 2017).</p>
+            <p>[23] Fought between Israel and the joined forces of Egypt, Syria and Jordan from 5 to 10 of June 1967. As a result of Israel’s victory, it annexed the Golan Heights from Syria, the West Bank and East Jerusalem from Jordan and the Gaza
+                Strip and the Sinai Peninsula from Egypt. </p>
+            <p>[24] An Arabic-speaking ethnoreligious group, primarily located in Lebanon, Syria and Israel.</p>
+        </div>
 
         <div class="references" id="references">
-            <p><span class="author" id="aderet">Aderet, Ofer</span> (2011) ‘A Stir Over Sign Language’, <span class="highlight">Haaretz</span> (https://www.haaretz.com/2011-07-29/ty-article/a-stir-over-sign-language/0000017f-e24c-d568-ad7f-f36f17ee0000)</p>
+            <p><span class="author" id="aderet">Aderet, Ofer</span> (2011) ‘A Stir Over Sign Language’, <span class="highlight">Haaretz</span>
+                (https://www.haaretz.com/2011-07-29/ty-article/a-stir-over-sign-language/0000017f-e24c-d568-ad7f-f36f17ee0000)</p>
             <p><span class="author" id="agamben1">Agamben, Giorgio</span> (1998) <span class="highlight">Homo sacer: Sovereign Power and Bare Life</span> (Stanford: Stanford
-            University Press)</p>
+                University Press)</p>
             <p><span class="author" id="agamben2">Agamben, Giorgio</span> (2014) ‘What is a destituent power?’ <span class="highlight">Environment and Planning D:
-            Society and Space</span>, 32: 65–74.</p>
-            <p><span class="author" id="alderman">Alderman, Derek & Inwood, Joshua</span> (2013) ‘Landscapes of memory and socially just futures’, <span class="highlight">The Wiley-Blackwell Companion to Cultural Geography</span>, 186–197 (New York: Wiley)</p>
-            <p><span class="author" id="azaryahu">Azaryahu, Maoz & Golan, Arnon</span> (2001) ‘(Re)naming the Landscape: The Formation of the Hebrew Map of Israel 1949–1960’, <span class="highlight">Journal of Historical Geography</span>, 27/2: 178–195</p>
+                    Society and Space</span>, 32: 65–74.</p>
+            <p><span class="author" id="alderman">Alderman, Derek & Inwood, Joshua</span> (2013) ‘Landscapes of memory and socially just futures’, <span class="highlight">The Wiley-Blackwell Companion to Cultural Geography</span>, 186–197 (New York:
+                Wiley)</p>
+            <p><span class="author" id="azaryahu">Azaryahu, Maoz & Golan, Arnon</span> (2001) ‘(Re)naming the Landscape: The Formation of the Hebrew Map of Israel 1949–1960’, <span class="highlight">Journal of Historical Geography</span>, 27/2:
+                178–195</p>
             <p><span class="author" id="benvenisti">Benvenisti, Meron</span> (2000) <span class="highlight">Sacred Landscape: The Buried History of the Holy Land since 1948</span> (Berkeley: University of California Press)</p>
             <p><span class="author" id="berg">Berg, Lawrence & Kearns, Robin</span> (2002) ‘Proclaiming Place: Towards a Geography of Place Name
-            Pronunciation’, <span class="highlight">Social and Cultural Geography</span>, 3: 283–302</p>
+                Pronunciation’, <span class="highlight">Social and Cultural Geography</span>, 3: 283–302</p>
             <p><span class="author" id="berg2">Berg, Lawrence & Vuolteenaho, Jani</span> (2009) <span class="highlight">Critical Toponymies: The Contested Politics of Place
-            Naming</span> (Farnham: Ashgate)</p>
+                    Naming</span> (Farnham: Ashgate)</p>
             <p><span class="author" id="borchert">Borchert</span> (1967) <span class="highlight">The Encyclopedia of Philosophy, Vol. 1</span> (New York: Macmillan)</p>
-            <p><span class="author" id="bruno">Bruno, Giuliana</span> (2002) <span class="highlight">Atlas of Emotion: Journeys in Art, Architecture and Film</span> (New York: Verso)</p>
             <p><span class="author" id="butler">Butler, Judith</span> (1993) <span class="highlight">Bodies That Matter: On the Discursive Limits of ‘Sex’</span> (New York: Routledge)</p>
             <p><span class="author" id="cakir">Çakır, Beril</span> (2013) <span class="highlight">Crafting Symbolic Geographies in Modern Turkey: Kurdish Assimilation and the
-            Politics of (Re)Naming</span> (The Hague: Erasmus University Digital Repository)</p>
+                    Politics of (Re)Naming</span> (The Hague: Erasmus University Digital Repository)</p>
             <p><span class="author" id="collin">Collin, Richard</span> (2005) ‘Revolutionary Scripts: The Politics of Writing Systems’, <span class="highlight">Vernacular 2005
-            Conference on Language and Society</span> (Mexico)</p>
-            <p><span class="author" id="dahamshe">Dahamshe, Amer</span> (2021) ‘Palestinian Arabic Versus Israeli Hebrew Place-names: Comparative Cultural Reading of Landscape Nomenclature and Israeli Renaming Strategies’, <span class="highlight">Journal of Holy Land and Palestine Studies</span>, 20/1: 62–82 (Edinburgh University Press)</p>
+                    Conference on Language and Society</span> (Mexico)</p>
+            <p><span class="author" id="dahamshe">Dahamshe, Amer</span> (2021) ‘Palestinian Arabic Versus Israeli Hebrew Place-names: Comparative Cultural Reading of Landscape Nomenclature and Israeli Renaming Strategies’, <span
+                    class="highlight">Journal of Holy Land and Palestine Studies</span>, 20/1: 62–82 (Edinburgh University Press)</p>
             <p><span class="author" id="dalsheim">Dalsheim, Joyce</span> (2004) ‘Settler Nationalism, Collective Memories of Violence and the ’Uncanny Other’’, <span class="highlight">Social Identities</span>, 10/2: 151–170</p>
             <p><span class="author" id="decerteau">De Certeau, Michel</span> (1984) <span class="highlight">The Practices of Everyday Life</span> (Berkeley: University of California Press)</p>
             <p><span class="author" id="duzek">Dužek, Radek & Popelková, Renata</span> (2021) ’Map Labeling with the International Phonetic Alphabet: The Example of the Middle East’, <span class="highlight">Journal of Maps</span>, 17/1: 136–144</p>
@@ -557,45 +809,61 @@
             <p><span class="author" id="giraut1">Giraut, Frédéric & Houssay-Holzschuch, Myriam</span> (2016) ‘Place Naming as Dispositif: Toward a Theoretical Framework’, <span class="highlight">Geopolitics</span> 21/1: 1–21</p>
             <p><span class="author" id="giraut2">Giraut, Frédéric & Houssay-Holzschuch, Myriam</span> (2022) <span class="highlight">The Politics of Place Naming: Naming the World</span> (London: Wiley-ISTE)</p>
             <p><span class="author" id="gregory">Gregory, Derek</span> (1994) <span class="highlight">Geographical Imaginations</span> (Wiley-Blackwell: Cambridge, MA)</p>
-            <p><span class="author" id="guyot">Guyot, Sylvain & Seethal, Cecil</span> (2007) ‘Identity of Place, Places of Identities, Change of Place Names in Post-Apartheid South Africa’, <span class="highlight">The South African Geographical Journal</span>, 89: 55–63</p>
-            <p><span class="author" id="haddad">Haddad, Patrick</span> (2017) ‘Flipping the Script: How and Why Languages Change Their Alphabets’, <span class="highlight">languagetrainers.co.uk</span> (https://www.languagetrainers.co.uk/blog/flipping-the-script-how-and-why-languages-change-their-alphabets/)</p>
+            <p><span class="author" id="guyot">Guyot, Sylvain & Seethal, Cecil</span> (2007) ‘Identity of Place, Places of Identities, Change of Place Names in Post-Apartheid South Africa’, <span class="highlight">The South African Geographical
+                    Journal</span>, 89: 55–63</p>
+            <p><span class="author" id="haddad">Haddad, Patrick</span> (2017) ‘Flipping the Script: How and Why Languages Change Their Alphabets’, <span class="highlight">languagetrainers.co.uk</span>
+                (https://www.languagetrainers.co.uk/blog/flipping-the-script-how-and-why-languages-change-their-alphabets/)</p>
             <p><span class="author" id="harley1">Harley, John Brian</span> (1988) ‘Silences and Secrecy: The Hidden Agenda of Cartography in Early Modern Europe’, <span class="highlight">Imago Mundi</span>, 40/1: 57–76</p>
             <p><span class="author" id="harley2">Harley, John Brian & Laxton, Paul</span> (2001) <span class="highlight">The New Nature of Maps: Essays in the History of Cartography</span> (Baltimore: John Hopkins University Press)</p>
             <p><span class="author" id="hughes">Hughes, Sarah M.</span> (2019) ‘On Resistance in Human Geography’, <span class="highlight">Progress in Human Geography</span>, 44/6: 1141–1160.</p>
-            <p><span class="author" id="joronen">Joronen, Mikko</span> (2016) ‘Refusing to Be a Victim, Refusing to Be an Enemy: Form-of-Life as Resistance in the Palestinian Struggle Against Settler Colonialism’, <span class="highlight">Political Geography</span>, 56: 91–100</p>
+            <p><span class="author" id="joronen">Joronen, Mikko</span> (2016) ‘Refusing to Be a Victim, Refusing to Be an Enemy: Form-of-Life as Resistance in the Palestinian Struggle Against Settler Colonialism’, <span class="highlight">Political
+                    Geography</span>, 56: 91–100</p>
             <p><span class="author" id="josan">Josan, G. S. & Lehal, G. S.</span> (2010) ‘A Punjabi to Hindi machine translation system for the web’, <span class="highlight">Journal of Computers</span>, 5: 975–979</p>
-            <p><span class="author" id="kadman">Kadman, Noga</span> (2015) <span class="highlight">Erased from Space and Consciousness: Israel and the Depopulated Palestinian Villages of 1948</span> (Bloomington & Indianapolis: Indiana University Press)</p>
+            <p><span class="author" id="kadman">Kadman, Noga</span> (2015) <span class="highlight">Erased from Space and Consciousness: Israel and the Depopulated Palestinian Villages of 1948</span> (Bloomington & Indianapolis: Indiana University
+                Press)</p>
             <p><span class="author" id="kadmon">Kadmon, Naftali</span> (2001) <span class="highlight">Toponymy: The Lore, Laws and Language of Geographical Names</span> (New York: Vantage Press)</p>
             <p><span class="author" id="kharchenko">Kharchenko, Nataliya</span> (2017) ‘Heritage languages in English-dominated contexts: Creating barriers or opportunities?’, <span class="highlight">Journal of Academic Perspectives</span></p>
-            <p><span class="author" id="kostanski">Kostanski, Laura</span> (2009) <span class="highlight">’What’s in a name?’: Place and Toponymic Attachment, Identity and Dependence: A Case Study of the Grampians (Gariwerd) National Park Name Restoration Process</span> (University of Ballarat)</p>
-            <p><span class="author" id="kudaibergenova">Kudaibergenova, Diana</span> (2018) ‘Kazakhstan’s New Latin Alphabet Project Spurs Discussions Online’, <span class="highlight">Voices on Central Asia</span> (https://voicesoncentralasia.org/kazakhstans-new-latin-alphabet-project-spurs-discussions-online/)</p>
+            <p><span class="author" id="kostanski">Kostanski, Laura</span> (2009) <span class="highlight">’What’s in a name?’: Place and Toponymic Attachment, Identity and Dependence: A Case Study of the Grampians (Gariwerd) National Park Name
+                    Restoration Process</span> (University of Ballarat)</p>
+            <p><span class="author" id="kudaibergenova">Kudaibergenova, Diana</span> (2018) ‘Kazakhstan’s New Latin Alphabet Project Spurs Discussions Online’, <span class="highlight">Voices on Central Asia</span>
+                (https://voicesoncentralasia.org/kazakhstans-new-latin-alphabet-project-spurs-discussions-online/)</p>
             <p><span class="author" id="ludden">Ludden, David</span> (2002) <span class="highlight">Reading Subaltern Studies Critical History, Contested Meaning and the Globalization of South Asia</span> (Delhi: Permanent Black)</p>
-            <p><span class="author" id="marin">Marin, Anaïs</span> (2012) ‘Bordering Time in the Cityscape, Toponymic Changes as Temporal Boundarymaking: Street Renaming in Leningrad/St. Petersburg’, <span class="highlight">Geopolitics</span>, 17: 192–216.</p>
-            <p><span class="author" id="masalha">Masalha, Nur</span> (2015) ‘Settler-Colonialism, Memoricide and Indigenous Toponymic Memory: The Appropriation of Palestinian Place Names by the Israeli State’, <span class="highlight">Journal of Holy Land and Palestine Studies</span>, 14/1: 3–57 (Edinburgh University Press)</p>
+            <p><span class="author" id="marin">Marin, Anaïs</span> (2012) ‘Bordering Time in the Cityscape, Toponymic Changes as Temporal Boundarymaking: Street Renaming in Leningrad/St. Petersburg’, <span class="highlight">Geopolitics</span>, 17:
+                192–216.</p>
+            <p><span class="author" id="masalha">Masalha, Nur</span> (2015) ‘Settler-Colonialism, Memoricide and Indigenous Toponymic Memory: The Appropriation of Palestinian Place Names by the Israeli State’, <span class="highlight">Journal of Holy
+                    Land and Palestine Studies</span>, 14/1: 3–57 (Edinburgh University Press)</p>
             <p><span class="author" id="mcluhan">McLuhan, Marshall</span> (1964) <span class="highlight">Understanding Media: The Extensions of Man</span> (New York, McGraw-Hill)</p>
             <p><span class="author" id="minh-ha">Minh-ha, Trinh T.</span> (1989) <span class="highlight">Woman, Native, Other: Writing Postcoloniality and Feminism</span> (Bloomington: Indiana University Press)</p>
             <p><span class="author" id="monmonier">Monmonier, Mark</span> (1996) ‘How to Lie with Maps’, <span class="highlight">The American Statistician</span>, 51/2</p>
             <p><span class="author" id="pappe">Pappé, Ilan</span> (2006) <span class="highlight">The Ethnic Cleansing of Palestine</span> (Oxford: Oneword Publications)</p>
             <p><span class="author" id="pappe2">Pappé, Ilan</span> (2015) ‘Old and New Conversations’, <span class="highlight">On Palestine</span>, eds. Frank Barat (Illinois: Hay-market Books)</p>
-            <p><span class="author" id="pariona">Pariona, Amber</span> (2019) ‘The World's Most Popular Writing Scripts’, <span class="highlight">WorldAtlas</span> (https://www.worldatlas.com/articles/the-world-s-most-popular-writing-scripts.html)</p>
+            <p><span class="author" id="pariona">Pariona, Amber</span> (2019) ‘The World's Most Popular Writing Scripts’, <span class="highlight">WorldAtlas</span> (https://www.worldatlas.com/articles/the-world-s-most-popular-writing-scripts.html)
+            </p>
             <p><span class="author" id="pater">Pater, Ruben</span> (2016) <span class="highlight">The Politics of Design: A (Not So) Global Design Manual for Visual Communication</span> (Amsterdam: BIS Publishers)</p>
             <p><span class="author" id="patton">Patton, Paul</span> (2000) <span class="highlight">Deleuze and the Political</span> (London: Routledge)</p>
-            <p><span class="author" id="puzey">Puzey, Guy & Vuolteenaho, Jani</span> (2016) ‘Developing a Gramscian Approach to Toponymy’, <span class="highlight">Names and Their Environment: Proceedings of the 25th International Congress of Onomastic Sciences, vol. 2: Toponomastics II</span> (Glasgow: University of Glasgow)</p>
+            <p><span class="author" id="puzey">Puzey, Guy & Vuolteenaho, Jani</span> (2016) ‘Developing a Gramscian Approach to Toponymy’, <span class="highlight">Names and Their Environment: Proceedings of the 25th International Congress of
+                    Onomastic Sciences, vol. 2: Toponomastics II</span> (Glasgow: University of Glasgow)</p>
             <p><span class="author" id="reddleman">Reddleman, Claire</span> (2017) <span class="highlight">Cartographic Abstraction in Contemporary Art: Seeing with Maps</span> (London: Routledge)</p>
-            <p><span class="author" id="rogani">Rogani, Haggai</span> (2009) ‘Rhetoric of Masculine Control of Human-Land Relations: Gender and Ecological Aspects of Poems That Accompanied the Zionist Settlement Project’, <span class="highlight">Israel Studies in Language and Society</span>, 2/1: 48–62.</p>
+            <p><span class="author" id="rogani">Rogani, Haggai</span> (2009) ‘Rhetoric of Masculine Control of Human-Land Relations: Gender and Ecological Aspects of Poems That Accompanied the Zionist Settlement Project’, <span
+                    class="highlight">Israel Studies in Language and Society</span>, 2/1: 48–62.</p>
             <p><span class="author" id="said">Said, Edward</span> (1978) <span class="highlight">Orientalism</span> (New York: Pantheon Books)</p>
             <p><span class="author" id="said2">Said, Edward</span> (1994) <span class="highlight">Culture and Imperialism</span> (New York: Vintage Books)</p>
-            <p><span class="author" id="sarsembayeva">Sarsembayeva A.Bb & Agabekova ZH.A.</span> (2022) ‘Problems of Transliteration in the Study of Standardization and Unification of Toponyms of Kazakhstan’, <span class="highlight">Bulletin. Series: Philological Sciences</span></p>
+            <p><span class="author" id="sarsembayeva">Sarsembayeva A.Bb & Agabekova ZH.A.</span> (2022) ‘Problems of Transliteration in the Study of Standardization and Unification of Toponyms of Kazakhstan’, <span class="highlight">Bulletin. Series:
+                    Philological Sciences</span></p>
             <p><span class="author" id="scott">Scott, James C.</span> (1990) <span class="highlight">Domination and the Arts of Resistance: Hidden Transcripts</span> (New Haven: Yale University Press)</p>
             <p><span class="author" id="skutnabb-kangas">Skutnabb-Kangas, Tove</span> (2015) ‘Linguicism’, <span class="highlight">The Encyclopedia of Applied Linguistics</span> (Malden: Blackwell)</p>
-            <p><span class="author" id="socquet-juglard">Socquet-Juglard, Myriam</span> (2009) ‘From Written Language to National Heritage: The Genealogy of the French Academy of Inscriptions and Belles-Lettres’, <span class="highlight">The European Legacy</span><span class="highlight">, 14: 537–548</p>
+            <p><span class="author" id="socquet-juglard">Socquet-Juglard, Myriam</span> (2009) ‘From Written Language to National Heritage: The Genealogy of the French Academy of Inscriptions and Belles-Lettres’, <span class="highlight">The European
+                    Legacy</span><span class="highlight">, 14: 537–548</p>
             <p><span class="author" id="stein">Stein, Gertrude</span> (1922) <span class="highlight">Geography and Plays</span> (Boston: The Four Seas Company)</p>
             <p><span class="author" id="suleiman">Suleiman, Yasir</span> (2004) <span class="highlight">A War of Words: Language and Conflict in the Middle East</span> (Cambridge: Cambridge University Press)</p>
-            <p><span class="author" id="svirsky">Svirsky, Marcelo</span> (2010) ‘The Production of Terra Nullius and the Zionist-Palestinian Conflict’, <span class="highlight">Deleuze and the Postcolonial</span>, 220-250 (Edinburgh University Press)</p>
+            <p><span class="author" id="svirsky">Svirsky, Marcelo</span> (2010) ‘The Production of Terra Nullius and the Zionist-Palestinian Conflict’, <span class="highlight">Deleuze and the Postcolonial</span>, 220-250 (Edinburgh University Press)
+            </p>
             <p><span class="author" id="weizman">Weizman, Eyal</span> (2007) <span class="highlight">Hollow land: Israel's architecture of occupation</span> (London: Verso)</p>
             <p><span class="author" id="wolff">Wolff, Richard D.</span> (2005) ‘Ideological State Apparatuses, Consumerism, and U.S. Capitalism: Lessons for the Left’, <span class="highlight">Rethinking Marxism</span>, 17/2: 223-235</p>
-            <p><span class="author" id="woodman">Woodman, Paul</span> (2012) <span class="highlight">The Great Toponymic Divide: Reflections on the Definitions and Usage of Endonyms and Exonyms</span> (Warsaw: Head Office of Geodesy and Cartography)</p>
-            <p><span class="author" id="zandberg">Zandberg, Esther</span> (2022) ‘Where the Streets Have No Arabic Name, a Group of Women Reminds Us of Palestinian History’, <span class="highlight">Haaretz</span> (https://www.haaretz.com/israel-news/2022-01-20/ty-article- magazine/.premium/where-the-streets-have-no-arabic-names-a-group-of-women-remind-us-of-history/0000017f-ef59-df98-a5ff-effd9b320000)</p>
+            <p><span class="author" id="woodman">Woodman, Paul</span> (2012) <span class="highlight">The Great Toponymic Divide: Reflections on the Definitions and Usage of Endonyms and Exonyms</span> (Warsaw: Head Office of Geodesy and Cartography)
+            </p>
+            <p><span class="author" id="zandberg">Zandberg, Esther</span> (2022) ‘Where the Streets Have No Arabic Name, a Group of Women Reminds Us of Palestinian History’, <span class="highlight">Haaretz</span>
+                (https://www.haaretz.com/israel-news/2022-01-20/ty-article- magazine/.premium/where-the-streets-have-no-arabic-names-a-group-of-women-remind-us-of-history/0000017f-ef59-df98-a5ff-effd9b320000)</p>
 
         </div>
 
@@ -638,10 +906,28 @@
 
         }
 
+        let icon1 = document.querySelector('.icon1');
+        let icon2 = document.querySelector('.icon2');
+
         function myValidation() {
-            $("#checkbox").prop("checked", true);
+            $("#remember").prop("checked", true);
         }
 
+        let boxCheck = document.querySelector('#remember');
+        let boxCheck2 = document.querySelector('#remember2');
+
+        function validate(){
+            if (remember.checked == 1){
+              icon1.innerHTML = '✕';
+            } else {
+              icon1.innerHTML = '📖';
+            }
+            if (remember2.checked == 1){
+              icon2.innerHTML = '✕';
+            } else {
+              icon2.innerHTML = '📍';
+            }
+          }
 
         let abs = window.scrollY + document.querySelector('#abstract').getBoundingClientRect().top;
         let ch0 = window.scrollY + document.querySelector('#chapter-0').getBoundingClientRect().top;
@@ -694,17 +980,43 @@
         var i;
 
         for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-            console.log('hey');
-          });
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+                console.log('hey');
+            });
         }
+
+
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
 
     </script>
 
