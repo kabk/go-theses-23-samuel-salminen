@@ -525,6 +525,7 @@ h1{
     font-size: 0.75rem;
     padding-left: 1vW;
     padding-right: 1vW;
+    line-height: 120%;
 }
 
 .chapter {
