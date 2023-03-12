@@ -461,7 +461,6 @@ a:focus-visible {
 .cover {
     width: 100vW;
     margin-top: 10vH;
-    position: absolute;
 }
 
 .cover_m {
@@ -1227,7 +1226,6 @@ header h1 {
   }
 
   .cover_m {
-      position: absolute;
       width: 100vW;
       top: 0;
       display: block;
