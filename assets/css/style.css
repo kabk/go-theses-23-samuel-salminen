@@ -486,6 +486,10 @@ a:focus-visible {
   text-indent: -2rem ;
 }
 
+#references-m {
+    display: none;
+}
+
 
 
 .sidenote {
@@ -1026,6 +1030,14 @@ header h1 {
     display: none;
   }
 
+  #references-m {
+      display: block;
+  }
+
+  #references {
+      display: none;
+  }
+
   .fullwidth {
       width: 100%;
   transform: translate(0, 0);
@@ -1230,6 +1242,7 @@ header h1 {
       top: 0;
       display: block;
   }
+
 
   .green {
       top: 0 !important;
