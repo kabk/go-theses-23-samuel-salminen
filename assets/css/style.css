@@ -188,6 +188,71 @@ margin-bottom: 0.5vH;
     color: #ef2a30;
 }
 
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top:2vH;
+  right: 1.5vW;
+  z-index: 4000;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #009834;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f8f8ff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ef2a30;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ef2a30;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 #menuToggle {
     display: block;
     position: fixed;
@@ -354,6 +419,17 @@ text-decoration: underline;
     font-family: Arial;
     font-size: 0.75rem;
     cursor: help;
+}
+
+.original, .romanized {
+    color: #009834;
+    font-family: Arial;
+    font-size: 0.75rem;
+
+}
+
+.romanized {
+    display: none;
 }
 
 
@@ -1016,6 +1092,17 @@ header h1 {
     padding: 2vW;
 }
 
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top:7vH;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4000;
+}
+
 .term {
     color: #ef2a30;
     font-family: 'AlpinaBold';
@@ -1101,6 +1188,13 @@ header h1 {
       font-family: Arial;
       font-size: 0.95rem;
       cursor: help;
+  }
+
+  .original, .romanized {
+      color: #009834;
+      font-family: Arial;
+      font-size: 0.95rem;
+
   }
 
   .tooltip {
