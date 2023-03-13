@@ -1097,7 +1097,8 @@ header h1 {
   display: inline-block;
   width: 60px;
   height: 34px;
-  top:86vH;
+  top: unset;
+  bottom: 9vH;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4000;
