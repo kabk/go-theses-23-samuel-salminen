@@ -1034,7 +1034,7 @@ header h1 {
       display: block;
   }
 
- 
+
 
   .fullwidth {
       width: 100%;
@@ -1113,6 +1113,7 @@ header h1 {
       margin: -1vH 0 0 -2.5vW;
       padding: 5vW;
       padding-top: 15vW;
+      overflow: scroll;
   }
 
   #menu2 {
