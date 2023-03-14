@@ -1401,6 +1401,7 @@ header h1 {
   p{
     font-size: 1rem;
     text-align: left;
+    hyphens: auto;
   }
 
   header p{
