@@ -1031,6 +1031,7 @@
   var header = document.querySelector("header");
   var para = document.querySelector("p");
   var root = document.querySelector(":root");
+  var imgs = document.querySelectorAll("img");
   var menu = document.querySelector("#menu");
   var menu2 = document.querySelector("#menu2");
   var menuTog = document.querySelector("#menuToggle").querySelectorAll("a");
@@ -1057,6 +1058,7 @@
     refer.style.borderColor = "#f8f8ff";
     collaps.style.color = "#f8f8ff";
 
+
         if (mWidth.matches) { // If media query matches
         header.style.backgroundColor = "black";
         header.style.borderColor = "#f8f8ff";
@@ -1073,6 +1075,9 @@
         }
         for (var i=0;i<white.length;i+=1){
           white[i].style.color = "black";
+        }
+        for (var i=0;i<imgs.length;i+=1){
+          imgs[i].style.webkitFilter = "brightness(90%)";
         }
 
   } else {
@@ -1104,6 +1109,9 @@
     }
     for (var i=0;i<white.length;i+=1){
       white[i].style.color = "#f8f8ff";
+    }
+    for (var i=0;i<imgs.length;i+=1){
+      imgs[i].style.webkitFilter = "brightness(100%)";
     }
   }
 }
