@@ -1066,7 +1066,7 @@ body, html {
 }
 
 header h1 {
-    font-size: 10vW;
+    font-size: 12vW;
 }
 
 .caption {
@@ -1369,7 +1369,7 @@ header h1 {
      position: fixed;
      width:100%;
      z-index: 1;
-     height:5.5vH;
+     height:6vH;
      background-color: #f8f8ff;
      border-bottom: 2px solid black;
 
@@ -1377,7 +1377,7 @@ header h1 {
 
   header h1{
     display:block;
-    font-size:4vH;
+    font-size:4.5vH;
     line-height:100%;
     font-weight:normal;
     width:100%;
