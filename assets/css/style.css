@@ -365,10 +365,11 @@ input:checked + .slider:before {
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
     color: black;
+    cursor:pointer;
 }
 
 #menuToggle a:hover {
-text-decoration: underline;
+    font-family: "AlpinaBold";
 }
 
 
