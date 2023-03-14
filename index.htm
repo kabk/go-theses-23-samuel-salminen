@@ -1037,6 +1037,8 @@
   var abs = document.querySelector(".abs-container");
   var desc = document.querySelector(".description");
   var collaps = document.querySelector(".collapsible");
+  var refer = document.querySelector(".references");
+  var line = document.querySelector(".line");
   var white = document.querySelectorAll(".white");
   var original = document.getElementsByClassName("original");
   var romanized = document.getElementsByClassName("romanized");
@@ -1051,6 +1053,8 @@
     abs.style.borderColor = "#f8f8ff";
     menu.style.borderColor = "#f8f8ff";
     menu2.style.borderColor = "#f8f8ff";
+    line.style.borderColor = "#f8f8ff";
+    refer.style.borderColor = "#f8f8ff";
     collaps.style.color = "#f8f8ff";
 
         if (mWidth.matches) { // If media query matches
@@ -1080,7 +1084,8 @@
     abs.style.borderColor = "black";
     menu.style.borderColor = "black";
     menu2.style.borderColor = "black";
-
+    line.style.borderColor = "black";
+    refer.style.borderColor = "black";
     collaps.style.color = "black";
 
     if (mWidth.matches) { // If media query matches
