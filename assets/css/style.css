@@ -55,11 +55,7 @@
   src: url("../fonts/ABCSynt-Regular.otf") format("opentype");
 }
 
-@font-face {
-  font-family: "Arial";
-  font-weight: normal;
-  src: url("../fonts/Arial.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "Quadrant";
   font-weight: normal;
