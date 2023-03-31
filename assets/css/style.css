@@ -97,6 +97,24 @@
   font-weight: normal;
   src: url("../fonts/Rosart-RegularItalic.ttf") format("truetype");
 }
+/*
+@font-face {
+  font-family: "Greta";
+  font-weight: normal;
+  src: url("../fonts/GretaTextPro-RegularPlus.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greta-Bold";
+  font-weight: normal;
+  src: url("../fonts/GretaTxtProBolPlus.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Greta-Italic";
+  font-weight: normal;
+  src: url("../fonts/GretaTextProItalicPlus.otf") format("opentype");
+} */
 
 
 /* VARIABLES */
@@ -113,7 +131,7 @@
   --color-theme-4: rgba(255,25,200,0.8);
   --color-theme-5: rgba(195,170,120,0.8);
   /* Font settings */
-  --font-family: 'Alpina';
+  --font-family: "Greta Text Regular";
   --font-size: 22px;
   /* Margins settings */
   --margin: 0;
@@ -148,7 +166,7 @@ body {
     margin-bottom: 0;
     vertical-align: baseline;
     position: relative;
-    font-family: "Alpina";
+    font-family: "Greta Text Regular";
     font-size:0.5rem;
     text-align: justify;
     color: #ef2a30;
@@ -161,7 +179,7 @@ body {
 
 .term {
     color: #ef2a30;
-    font-family: 'AlpinaBold';
+    font-family: "Greta Text Bold";
 }
 
 .caption img {
@@ -252,7 +270,7 @@ input:checked + .slider:before {
 #menuToggle {
     display: block;
     position: fixed;
-    bottom: 2vH;
+    bottom: 1.1vH;
     left: 1.5vW;
     width: 21vW;
     z-index: 10;
@@ -284,7 +302,7 @@ input:checked + .slider:before {
 }
 
 .icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #menu span {
@@ -353,14 +371,14 @@ input:checked + .slider:before {
 
 #menu li {
     z-index: 4;
-    font-family: "AlpinaMedium";
+    font-family: "Greta Text Regular";
     font-size:0.8rem;
     line-height: 110%;
     margin-bottom: 1.8vH;
 
 }
 #menuToggle a {
-    font-family: "AlpinaMedium";
+    font-family: "Greta Text Regular";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -369,7 +387,7 @@ input:checked + .slider:before {
 }
 
 #menuToggle a:hover {
-    font-family: "AlpinaBold";
+    font-family: "Greta Text Bold";
 }
 
 
@@ -388,8 +406,8 @@ input:checked + .slider:before {
 #menuToggle2 {
     display: block;
     position: fixed;
-    bottom: 2vH;
-    right: 1.5vW;
+    bottom: 1.1vH;
+    right: 0.5vW;
     width: 21vW;
     z-index: 10;
     -webkit-user-select: none;
@@ -413,17 +431,28 @@ input:checked + .slider:before {
 
 .box {
     color: #009834;
-    font-family: Arial;
-    font-size: 0.75rem;
+    /* font-family: Arial;
+    font-size: 0.75rem; */
     cursor: help;
 }
 
 .original, .romanized {
     color: #009834;
-    font-family: Arial;
-    font-size: 0.75rem;
+    /* font-family: Arial;
+    font-size: 0.75rem; */
 
 }
+
+.original-arabic {
+    font-family: "Greta Text Arabic Regular";
+    color: #009834;
+}
+
+.original-hebrew {
+    font-family: "Greta Text Hebrew Regular";
+    color: #009834;
+}
+
 
 .romanized {
     display: none;
@@ -503,14 +532,14 @@ input:checked + .slider:before {
 
 #menu2 li {
     z-index: 4;
-    font-family: "Alpina";
+    font-family: "Greta Text Regular";
     font-size:0.6rem;
     line-height: 120%;
     margin-bottom: 1.5vH;
 
 }
 #menuToggle2 a {
-    font-family: "Alpina";
+    font-family: "Greta Text Regular";
     font-variation-settings: "slnt" 0;
     transition: font-variation-settings 0.3s ease-in-out;
     text-decoration: none;
@@ -566,7 +595,7 @@ a:focus-visible {
 
 
 .sidenote {
-    font-family: "Alpina";
+    font-family: "Greta Text Regular";
     font-size:0.5rem;
     text-align: justify;
     color: #009834;
@@ -710,29 +739,27 @@ ol, ul{
 }
 
 .noteson span {
-    font-family: 'AlpinaBold';
+    font-family: "Greta Text Bold";
 }
 
 .quote {
- font-family: 'AlpinaItalic';
+ font-family: "Greta Text Regular Italic";
  background-color: #009834;
 }
 
 .author {
-    font-family: 'AlpinaBold';
+    font-family: "Greta Text Bold";
 }
 
 .highlight {
-    font-family: 'AlpinaItalic';
+    font-family: "Greta Text Regular Italic";
 }
 
-.highlight:hover {
-font-variation-settings: "slnt" -32;
-}
+
 
 .toponym {
 
-     font-family: 'Arial';
+     font-family: "Greta Text Regular";
      font-size: 0.78rem;
      color: #009834;
 }
@@ -973,7 +1000,7 @@ select:focus {
 /* hide desktop mobile etc */
 .bold {
     font-size: 1.5rem;
-    font-family: 'AlpinaMedium';
+    font-family: "Greta Text Bold";
 }
 .desktop {
   display: block;
@@ -1079,7 +1106,7 @@ header h1 {
     margin-bottom: 1vH;
     vertical-align: baseline;
     position: relative;
-    font-family: "Alpina";
+    font-family: "Greta Text Regular";
     font-size:0.8rem;
     text-align: left;
     color: #ef2a30;
@@ -1103,7 +1130,7 @@ header h1 {
 
 .term {
     color: #ef2a30;
-    font-family: 'AlpinaBold';
+    font-family: "Greta Text Bold";
 }
 
 .caption img {
@@ -1154,7 +1181,7 @@ header h1 {
 
 
   .mobile-footnotes p {
-      font-family: "Alpina";
+      font-family: "Greta Text Regular";
       font-size:0.8rem;
       text-align: left;
       color: #009834;
@@ -1172,7 +1199,7 @@ header h1 {
       position: relative;
       left: 5vW;
       top: 1vH;
-      font-family: "Alpina";
+      font-family: "Greta Text Regular";
       font-size:1.5rem;
       color: black;
       background-color: transparent;
@@ -1183,15 +1210,15 @@ header h1 {
 
   .box {
       color: #009834;
-      font-family: Arial;
-      font-size: 0.95rem;
+      /* font-family: Arial;
+      font-size: 0.95rem; */
       cursor: help;
   }
 
   .original, .romanized {
       color: #009834;
-      font-family: Arial;
-      font-size: 0.95rem;
+      /* font-family: Arial;
+      font-size: 0.95rem; */
 
   }
 
@@ -1249,7 +1276,7 @@ header h1 {
 
   #menu li {
       z-index: 4;
-      font-family: "AlpinaMedium";
+      font-family: "Greta Text Bold";
       font-size:1.2rem;
       /* line-height: 120%; */
       margin-bottom: 1.2vH;
@@ -1260,7 +1287,7 @@ header h1 {
       font-size: 0.8rem;
   }
   #menuToggle a {
-      font-family: "AlpinaMedium";
+      font-family: "Greta Text Bold";
       font-variation-settings: "slnt" 0;
       transition: font-variation-settings 0.3s ease-in-out;
       text-decoration: none;
